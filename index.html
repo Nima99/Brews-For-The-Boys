@@ -4,9 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
+    <title>Brewery API</title>
+       <!-- This links to the jQuery Library -->
+       <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+       <!--- Bootstrap -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    </head>
 <body>
+    <!----------Beginning of site asks if you're 21 ////  This will dissapear once the user clicks yes or no -->
+    <div id= "legal-age" >
+    <div class="jumbotron">
+                <h1 class="display-4" >Are you 21 years old?</h1>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Yes</a>
+                <a class="btn btn-primary btn-lg" href="#" role="button">No</a>
+              </div>
+            </div>           
+<!--------------------Imput Forms-------------------------------->
+<form id = "imput-form">
+        <div class="form-group">
+          <label for="formGroupExampleInput">Type of Beer you're looking for?</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Stout, Ale, ect.">
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput2">Mile Radius</label>
+          <select class="form-control">
+                <option>5</option>
+                <option>10</option>
+                <option>15</option>
+                <option>20</option>
+                <option>25</option>
+                <option>30</option>
+                <option>35</option>
+                <option>40</option>
+                <option>45</option>
+
+                     
+              </select>
+                    </div>
+      
+            <div class="form-group">
+              <label for="formGroupExampleInput">Price willing to pay</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="$10">
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput2">Present Location</label>
+              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Current Location">
+            </div>
+          </form>
+
+
+<!----javascript---->
+    <script type="text/javascript">
+    var 
+
+    </script>
     
 </body>
 </html>
