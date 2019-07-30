@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <link rel="stylesheet" href="./Assets/CSS/brews.css">
+  </head>
+  <body>
+    <h3>My Google Maps Demo</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+
+
+
+    <div id="formsection">
+
+    <form action="#">
+    <label for="city">Input City Here</label>
+    <input class="inputs" id="city" type="text">
+
+    <label for="state">Input State Here</label>
+    <input id="state" class="inputs" type="text">
+
+    <input class="inputs" type="text">
+
+    <input class="inputs" type="text">
+
+    <button id="submitem">Submit</button>
+    </form>
+
+    </div>
+
+
+
+
+
+
+    <script
+     src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSwZ9eE8eDmGB7gufa5vI2RLBE9PU3rXg&callback=initMap">
+    </script>
+
+    <script  async src="./Assets/Javascript/brews.js"></script>
+
+  </body>
+</html>
