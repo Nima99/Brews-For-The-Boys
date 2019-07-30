@@ -7,6 +7,8 @@
 let city;
 let state;
 let queryURL;
+let displayBeers = $("#displaybeers")
+console.log(displayBeers)
 
 
 $("#submitem").on("click", function () {
@@ -34,7 +36,7 @@ initMap()
 
 
 function initMap() {
-    // The location of Uluru
+
     let central = { lat: 39.8283, lng: -98.5795 };
 
     let zoomlevel = 4;
@@ -70,13 +72,26 @@ if (city || state) {
 
         // use data-value to help with later on click functions
 
+        //can use regexps to searc h for keywords decided on based off
+
         for (let brewery of response) {
             let brewLat = parseFloat(brewery.latitude) 
             let brewLong = parseFloat(brewery.longitude)
             let location = { lat: brewLat, lng: brewLong };
             console.log(location)
-            let marker = new google.maps.Marker({ position: location, map: map });
-            marker.addClass("clickmarker")
+            let marker = new google.maps.Marker({ position: location,
+                map: map,
+                title: brewery.name});
+            marker.addListener("click", function (){
+                //why wont this work? Find a way to empty all child nodes from a div, but not the text in the div itself, though current method works
+                displayBeers.empty()
+                console.log("click successful")
+                console.log(this.title)
+                $(`<div data-name="${this.title}">A clickable list of all the beers for a given brewery will go here when a brewery is clicked on This brewery is named ${this.title}</div>`).appendTo(displayBeers)
+                
+            })
+
+
         }
 
     })
