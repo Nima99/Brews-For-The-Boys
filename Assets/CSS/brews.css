@@ -1,3 +1,25 @@
+#legal-age {
+    background-color: black;
+}
+.jumbotron {
+    margin-top: 20px;
+    width:800px;
+    height: 450px;
+    background-image: url(https://static.vinepair.com/wp-content/uploads/2017/01/legal-drinking-age-inside.jpg);
+    background-size: cover;
+    margin-left: 250px;
+    
+   
+    
+}
+
+#jumboCara {
+    margin-top: 20px;
+    
+    
+
+}
+
 #map {
     width: 100%;
     height: 400px;

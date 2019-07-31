@@ -1,7 +1,52 @@
 
+//// BEGINNING OF DOCUMENT ASKS IF YOU ARE 21 //
+
+$(document).ready(function() {
+    $('#old-enough').hide();
+    $('#sorry').hide();
+    $('#footer').hide();
+
+    
+});
 
 
 
+/// CLICK EVENTS FOR 21 JUMBOTRON
+// CLICK FUNCTION FOR WHEN NO IS CLICKED
+//CLICK FUNCTION FOR WHEN YES IS CLICKED -- Jumbotron disappears, and rest of the pages reappear
+$('#yesButton').on('click', function(){
+    $('#legal-age').hide();
+    $('#sorry').hide();
+    $('#old-enough').show();
+    $('#footer').show();
+    
+});
+
+$('#noButton').on('click', function(){
+    $('#legal-age').hide();
+    $('#old-enough').hide();
+    $('#sorry').show();
+    $('#footer').hide();
+    
+      
+});
+
+
+
+
+
+//click start button -- needs to show questions, start timer, intake answers.
+//$('#yesButton').on('click', function(){
+ //   $('#startBtn').hide();
+ //   unHide(); 
+ //   startTimer();
+//$('.results').hide();
+    
+//});
+
+
+
+///////////////////////////////////////////////////////////////////
 //can ask for user i.d. here, and use it for central
 
 let city;
