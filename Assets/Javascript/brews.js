@@ -6,6 +6,9 @@
 
 let city;
 let state;
+let styleKeywords;
+let abv;
+let ibu;
 let queryURL;
 let displayBeers = $("#displaybeers")
 console.log(displayBeers)
@@ -15,6 +18,9 @@ $("#submitem").on("click", function () {
     event.preventDefault()
 city = $("#city").val().trim()
 state = $("#state").val().trim()
+
+//give styles, abv, abu their user inputted values here
+
 console.log(city)
 console.log(state)
 queryURL = `https://api.openbrewerydb.org/breweries?by_state=${state}&by_city=${city}&per_page=50`
@@ -78,13 +84,76 @@ if (city || state) {
 
         // create series of arrays, each modified by input search parameters, if they are found using Object.values, or just manually by property name, then push to the new array, finally display the new array under the div. 
 
+
+
+        // ABV: 	low: up to and including 4%
+        // medium: up to and including 7%
+        //     high: 7-11%
+        //     Very high: above 11%
+        
+        // IBU Scale: 	low: >=20
+        //         medium: 21 - 50
+        //     high: 50-80
+        //     Very High: Above 80
+        
+
+
+
+        
+
         let breweriesCollection = [
-            {"pegasus city brewery": {info: "blahblah",
+            {"pegasus city brewing company": {info: "Small but mighty, our taproom is a place to relax, enjoy a cold brew, and be among friends.",
             beers: [
                 {
-                    name: "examplename", 
-
-                }
+                    name: "nine volt", 
+                    keywords: ["paleale"],
+                    style: "Tripel",
+                    abv: 9.1,
+                    abvRank: "high",
+                    ibu: 35,
+                    ibuRank: "medium",
+                    info: "This deceptively easy-to-drink tripel is drier and less sweet, with an extremely clean finish. Light bodied with a hint of citrus and spice aromas, it pairs well with pasta, swing dancing and Sam Lao"
+                },
+                {
+                    name: "cannoneer", 
+                    keywords: ["arale"],
+                    style: "Bold Amber",
+                    abv: 7.4,
+                    abvRank: "high",
+                    ibu: 29,
+                    ibuRank: "medium",
+                    info: "This flavorful amber is medium-bodied with a crisp finish and light caramel aroma. A beer made with all-american ingredients, it pairs well with Texas BBQ, golden retrievers, and the American Dream"
+                },
+                {
+                    name: "highpoint", 
+                    keywords: ["ale"],
+                    style: "Porch Ale",
+                    abv: 5.3,
+                    abvRank: "medium",
+                    ibu: 20,
+                    ibuRank: "low",
+                    info: "Our flagship beer is caramel-colored and light-bodied. First brewed and enjoyed on a porch, this English Mild Ale is extremely refreshing with a toasted malt aroma. Pairs well with seafood, the old 97’s, and sunsets."
+                },
+                {
+                    name: "sixth floor", 
+                    keywords: ["porter"],
+                    style: "Easy Porter",
+                    abv: 5.4,
+                    abvRank: "medium",
+                    ibu: 31,
+                    ibuRank: "medium",
+                    info: "Our easy porter has all the taste and flavor, without the heaviness, so it can be enjoyed year-round. With a medium body and roasted coffee aroma, it pairs well with steak, smooth jazz, and conspiracy theories."
+                },
+                {
+                    name: "texikaner", 
+                    keywords: ["lager"],
+                    style: "Black Lager",
+                    abv: 5.2,
+                    abvRank: "medium",
+                    ibu: 21,
+                    ibuRank: "medium",
+                    info: "Though dark in color, this lager is light-bodied and extremely smooth. A mix of German and Mexican lager flavors gives it a mild toffee aroma and crisp finish, pairs well with Tex-Mex, Willie Nelson, and beachcombing"
+                },
 
             ]} }
         ]
@@ -99,6 +168,7 @@ if (city || state) {
             let marker = new google.maps.Marker({ position: location,
                 map: map,
                 title: brewery.name});
+
             marker.addListener("click", function (){
                 //why wont this work? Find a way to empty all child nodes from a div, but not the text in the div itself, though current method works
                 displayBeers.empty()
