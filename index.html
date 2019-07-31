@@ -1,51 +1,83 @@
-<!DOCTYPE html>
-
-<html>
+    
+<html lang="en">
   <head>
-
-    <link rel="stylesheet" href="./Assets/CSS/brews.css">
-  </head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Brewery API</title>
+         <!-- This links to the jQuery Library -->
+         <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+         <!--- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+         <!-----Link CSS --->
+        <link rel="stylesheet" href="./Assets/CSS/brews.css">
+        </head>
   <body>
-    <h3>My Google Maps Demo</h3>
-    <!--The div element for the map -->
-    <div id="map"></div>
-
-
-
-    <div id="formsection">
-
-    <form action="#">
-    <label for="city">Input City Here</label>
-    <input class="inputs" id="city" type="text">
-
-    <label for="state">Input State Here</label>
-    <input id="state" class="inputs" type="text">
-
-    <input class="inputs" type="text">
-
-    <input class="inputs" type="text">
-
-    <button id="submitem">Submit</button>
-    </form>
-
+    <!------------Nav Bar -------------------------->
+      <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Beer Fun!</a>
+            
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">More Information</a>
+          </li>
+        </ul>
+      <!----------Beginning of site asks if you're 21 ////  This will dissapear once the user clicks yes or no -->
+      <div id= "legal-age" >
+     <div class="jumbotron">
+                  <h1 class="display-4" >Are you 21 years old?</h1>
+                  <a class="btn btn-primary btn-lg" href="#" role="button">Yes</a>
+                  <a class="btn btn-primary btn-lg" href="#" role="button">No</a>
+                </div>
+              </div>           
+  <!-------------------------------Div Element for Map---------------------------------->
+              <h3>My Google Maps Demo</h3>
+                <div id="map"></div>
+  <!--------------------Imput ss-------------------------------->
+  <div>
+  <form id = "formsection">
+          <div class="form-group">
+            <label for="formGroupExampleInput">Type of Beer you're looking for?</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Stout, Ale, ect.">
+          </div>
+          
+            <label for="formGroupExampleInput2">Input City Here</label>
+            <input class="inputs" id="city" type="text">
+            <label for="state">Input State Here</label>
+            <input id="state" class="inputs" type="text">                           
+           <label for="formGroupExampleInput">Price willing to pay</label>
+              <input type="text" class="inputs" id="willingToPay" placeholder="$10">
+            
+              
+              <button id="submitem">Submit</button>
+      </form>
     </div>
-
-
-
-
-
-
-    <script
-     src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"></script>
-
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSwZ9eE8eDmGB7gufa5vI2RLBE9PU3rXg&callback=initMap">
-    </script>
-
-    <script  async src="./Assets/Javascript/brews.js"></script>
-
-  </body>
-
-</html>
+  
+    <div class="container"></div>
+  
+    <div>Beers are displayed here</div>
+    <div id="displaybeers"></div>
+  
+    </div>
+  
+     
+  
+  
+      <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+     crossorigin="anonymous"></script>
+  
+     <script async defer
+     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSwZ9eE8eDmGB7gufa5vI2RLBE9PU3rXg&callback=initMap">
+     </script>
+  
+     <script  async src="./Assets/Javascript/brews.js"></script>
+  
