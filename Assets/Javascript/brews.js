@@ -74,6 +74,23 @@ if (city || state) {
 
         //can use regexps to searc h for keywords decided on based off
 
+        //Code to filter the map markers
+
+        // create series of arrays, each modified by input search parameters, if they are found using Object.values, or just manually by property name, then push to the new array, finally display the new array under the div. 
+
+        let breweriesCollection = [
+            {"pegasus city brewery": {info: "blahblah",
+            beers: [
+                {
+                    name: "examplename", 
+
+                }
+
+            ]} }
+        ]
+
+        // Each div should be styled, have an identifying information data-name attribute, which can be used to bring up the information for the appropriate beers, after filtering these too
+
         for (let brewery of response) {
             let brewLat = parseFloat(brewery.latitude) 
             let brewLong = parseFloat(brewery.longitude)
