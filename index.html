@@ -103,23 +103,46 @@
 <div>
 <form id = "formsection">
         <div class="form-group">
-          <label for="formGroupExampleInput">Type of Beer you're looking for?</label>
-          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Stout, Ale, ect.">
-        </div>
+          <label for="style keywords">Type of Beer you're looking for?</label>
+          <select class="form-control" class="form-control" >
+             <option>Pick Your Beer</option>
+              <option>Stout</option>
+              <option>IPA</option>
+              <option>Porter</option>
+              <option>Belgian</option>
+              <option>Red Ale</option>
+              <option>Amber Ale</option>
+              <option>Pale Ale</option>
+              <option>Wild Ale</option>
+              <option>Wheat Beer</option>
+              <option>Farmhouse Ales</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+              <label for="ibu">IBU Scale</label>
+              <select class="form-control" class="form-control" >
+                  <option>Low: >=20 </option>
+                  <option>Medium: 20-49 </option>
+                  <option>High: 50-80 </option>
+                  <option>Very High: Above 80 </option>
+                </select>
+              </div>
         
-          <label for="formGroupExampleInput2">Input City Here</label>
-          <input class="inputs" id="city" type="text">
-          <label for="state">Input State Here</label>
-          <input id="state" class="inputs" type="text">                           
-         <label for="formGroupExampleInput">Price willing to pay</label>
-            <input type="text" class="inputs" id="willingToPay" placeholder="$10">
-          
-            
-            <button id="submitem">Submit</button>
+          <label for="ABV">ABV</label>
+          <select class="form-control" class="form-control" >
+              <option>Low: Up to and including 4%</option>
+              <option>Medium: Up to and including 7%</option>
+              <option>High: 7-10%</option>
+              <option>Very High: Above 10%</option>
+            </select>
+          </div>
+
+           <button id="submitem">Submit</button>
     </form>
   </div>
 <!---------------------------RESULTS SHOWN HERE---------------------------------------->
-  <div class="container"></div>
+  <div id="results"></div>
 
   <div>Beers are displayed here</div>
   <div id="displaybeers"></div>
