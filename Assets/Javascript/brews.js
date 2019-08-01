@@ -1,12 +1,12 @@
 
 //// BEGINNING OF DOCUMENT ASKS IF YOU ARE 21 //
 
-$(document).ready(function() {
+$(document).ready(function () {
     $('#old-enough').hide();
     $('#sorry').hide();
     $('#footer').hide();
-    
-    
+
+
 });
 
 
@@ -14,22 +14,21 @@ $(document).ready(function() {
 /// CLICK EVENTS FOR 21 JUMBOTRON
 // CLICK FUNCTION FOR WHEN NO IS CLICKED
 //CLICK FUNCTION FOR WHEN YES IS CLICKED -- Jumbotron disappears, and rest of the pages reappear
-$('#yesButton').on('click', function(){
+$('#yesButton').on('click', function () {
     $('#legal-age').hide();
     $('#sorry').hide();
     $('#old-enough').show();
     $('#footer').show();
-    $('#').show();
-    
+
 });
 
-$('#noButton').on('click', function(){
+$('#noButton').on('click', function () {
     $('#legal-age').hide();
     $('#old-enough').hide();
     $('#sorry').show();
     $('#footer').hide();
-    
-      
+
+
 });
 
 
@@ -38,11 +37,11 @@ $('#noButton').on('click', function(){
 
 //click start button -- needs to show questions, start timer, intake answers.
 //$('#yesButton').on('click', function(){
- //   $('#startBtn').hide();
- //   unHide(); 
- //   startTimer();
+//   $('#startBtn').hide();
+//   unHide(); 
+//   startTimer();
 //$('.results').hide();
-    
+
 //});
 
 
@@ -50,11 +49,11 @@ $('#noButton').on('click', function(){
 ///////////////////////////////////////////////////////////////////
 //can ask for user i.d. here, and use it for central
 
-let city;
-let state;
-let styleKeywords = ["pilsner", "lager"];
+// let city;
+// let state;
+let styleKeywords;
 let abv;
-let ibu = "medium";
+let ibu;
 let queryURL;
 let displayBeers = $("#displaybeers");
 let breweriesDisplay = [];
@@ -83,7 +82,7 @@ let breweriesCollection = [
         beers: [
             {
                 name: "Nine Volt",
-                keywords: ["paleale"],
+                keywords: "paleale",
                 style: "Tripel",
                 abv: 9.1,
                 abvRank: "high",
@@ -93,7 +92,7 @@ let breweriesCollection = [
             },
             {
                 name: "Cannoneer",
-                keywords: ["redamberale"],
+                keywords: "redamberale",
                 style: "Bold Amber",
                 abv: 7.4,
                 abvRank: "high",
@@ -103,7 +102,7 @@ let breweriesCollection = [
             },
             {
                 name: "Highpoint",
-                keywords: ["ale"],
+                keywords: "ale",
                 style: "Porch Ale",
                 abv: 5.3,
                 abvRank: "medium",
@@ -113,7 +112,7 @@ let breweriesCollection = [
             },
             {
                 name: "Sixth Floor",
-                keywords: ["porter"],
+                keywords: "porter",
                 style: "Easy Porter",
                 abv: 5.4,
                 abvRank: "medium",
@@ -123,7 +122,7 @@ let breweriesCollection = [
             },
             {
                 name: "Texikaner",
-                keywords: ["lager"],
+                keywords: "lager",
                 style: "Black Lager",
                 abv: 5.2,
                 abvRank: "medium",
@@ -142,7 +141,7 @@ let breweriesCollection = [
         beers: [
             {
                 name: "100 Million Angels Singing",
-                keywords: ["ipa", "imperialdouble"],
+                keywords: "ipa",
                 style: "Double IPA",
                 abv: 9.2,
                 abvRank: "high",
@@ -152,7 +151,7 @@ let breweriesCollection = [
             },
             {
                 name: "Fire Ant Funeral",
-                keywords: ["redamberale"],
+                keywords: "redamberale",
                 style: "Amber Ale",
                 abv: 6,
                 abvRank: "medium",
@@ -162,7 +161,7 @@ let breweriesCollection = [
             },
             {
                 name: "50 Foot Jackrabbit",
-                keywords: ["ipa"],
+                keywords: "ipa",
                 style: "IPA",
                 abv: 7,
                 abvRank: "high",
@@ -172,7 +171,7 @@ let breweriesCollection = [
             },
             {
                 name: "Payne Pills",
-                keywords: ["pilsner", "lager"],
+                keywords: "pilsner",
                 style: "Citrus Pilsner",
                 abv: 5.5,
                 abvRank: "medium",
@@ -291,8 +290,19 @@ let breweriesCollection = [
 
 $("#submitem").on("click", function () {
     event.preventDefault()
-    city = $("#city").val().trim()
-    state = $("#state").val().trim()
+
+    ibu = $("#ibu").val().trim();
+    abv = $("#abv").val().trim();
+    styleKeywords = $("#stylekeywords").val().trim();
+
+    console.log(ibu)
+    console.log(abv)
+    console.log(styleKeywords)
+
+
+    // city = $("#city").val().trim()
+    // state = $("#state").val().trim()
+
 
     //give styles, abv, abu their user inputted values here
 
@@ -300,7 +310,7 @@ $("#submitem").on("click", function () {
 
 
 
-    
+
 
 
 
@@ -308,20 +318,23 @@ $("#submitem").on("click", function () {
     for (let brewery of breweriesCollection) {
         for (let beer of brewery.beers) {
 
-            if (styleKeywords.every(function (element){
-
-                    if (beer.keywords.includes(element)) {
-                        return true;
+            if (beer.ibuRank === ibu && beer.abvRank === abv && styleKeywords === beer.keywords) {
+                if (!breweriesDisplay.includes(brewery)) {
+                    breweriesDisplay.push(brewery)
                 }
-            })) {
-                if (beer.ibuRank === ibu && beer.abvRank === abv) { 
-                    if (!breweriesDisplay.includes(brewery)) {
-                        breweriesDisplay.push(brewery)
-                    }
+
+            // if (styleKeywords.every(function (element) {
+
+            //     if (beer.keywords.includes(element)) {
+            //         return true;
+            //     }
+            // })) 
+            // {
+
                 }
             }
         }
-    }
+    
 
     console.log(breweriesDisplay)
 
@@ -329,13 +342,13 @@ $("#submitem").on("click", function () {
 
 
 
-   
 
 
-    console.log(city)
-    console.log(state)
-    queryURL = `https://api.openbrewerydb.org/breweries?by_state=${state}&by_city=${city}&per_page=50`
-    console.log(queryURL)
+
+    // console.log(city)
+    // console.log(state)
+    // queryURL = `https://api.openbrewerydb.org/breweries?by_state=${state}&by_city=${city}&per_page=50`
+    // console.log(queryURL)
 
 
     // // if (state) {
@@ -373,53 +386,51 @@ function initMap() {
 
 
 
-    if (city || state) {
+    if (abv || ibu) {
 
-        $.ajax({
-            url: queryURL,
-            method: "GET"
-        }).then(function (response) {
-            console.log(response)
-            console.log(response[7].latitude)
-            console.log(response[7].longitude)
-            console.log(response.length)
-
-
-
-            // filter responses here using array of obs initialized outside into list of viable breweries
-
-            // use data-value to help with later on click functions
-
-            //Code to filter the map markers
-
-            // create series of arrays, each modified by input search parameters, if they are found using Object.values, or just manually by property name, then push to the new array, finally display the new array under the div. 
-
-      
-
-            for (let brewery of response) {
-                let brewLat = parseFloat(brewery.latitude)
-                let brewLong = parseFloat(brewery.longitude)
-                let location = { lat: brewLat, lng: brewLong };
-                console.log(location)
-                let marker = new google.maps.Marker({
-                    position: location,
-                    map: map,
-                    title: brewery.name
-                });
-
-                marker.addListener("click", function () {
-                    //why wont this work? Find a way to empty all child nodes from a div, but not the text in the div itself, though current method works
-                    displayBeers.empty()
-                    console.log("click successful")
-                    console.log(this.title)
-                    $(`<div class = "brewclick" data-name="${this.title}">A clickable list of all the beers for a given brewery will go here when this brewery is clicked on. This brewery is named ${this.title}</div>`).appendTo(displayBeers)
-
-                })
+        // $.ajax({
+        //     url: queryURL,
+        //     method: "GET"
+        // }).then(function (response) {
+        //     console.log(response)
+        //     console.log(response[7].latitude)
+        //     console.log(response[7].longitude)
+        //     console.log(response.length)
 
 
-            }
 
-        })
+        // filter responses here using array of obs initialized outside into list of viable breweries
+
+        // use data-value to help with later on click functions
+
+        //Code to filter the map markers
+
+        // create series of arrays, each modified by input search parameters, if they are found using Object.values, or just manually by property name, then push to the new array, finally display the new array under the div. 
+
+        // Each div should be styled, have an identifying information data-name attribute, which can be used to bring up the information for the appropriate beers, after filtering these too
+
+        for (let brewery of breweriesDisplay) {
+            let location = brewery.position;
+            console.log(location)
+            let marker = new google.maps.Marker({
+                position: location,
+                map: map,
+                title: brewery.name
+            });
+
+            marker.addListener("click", function () {
+                //why wont this work? Find a way to empty all child nodes from a div, but not the text in the div itself, though current method works
+                displayBeers.empty()
+                console.log("click successful")
+                console.log(this.title)
+                $(`<div class = "brewclick" data-name="${this.title}">A clickable list of all the beers for a given brewery will go here when this brewery is clicked on. This brewery is named ${this.title}</div>`).appendTo(displayBeers)
+
+            })
+
+
+        }
+
+
 
 
     }
