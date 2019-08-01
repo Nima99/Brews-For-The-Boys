@@ -182,104 +182,105 @@ let breweriesCollection = [
         ]
     },
 
-            { name: "Peticolas Brewing Co",
-            info: "We’re honest, friendly, down-to-earth brewers delivering world class passion in a glass.",
-            url: "https://www.peticolasbrewing.com/beers",
-            position: { lat: 32.7967768686869, lng: -96.8303188181818 },
-            beers: [
-                {
-                    name: "HipsterAle",
-                    keywords: ["ipa"],
-                    style: "Blonde ale",
-                    abv: 5.6,
-                    abvRank: "medium",
-                    ibu: 25,
-                    ibuRank: "medium",
-                    info: "HIPster Ale is a blonde ale that presents as a classic ‘light beer’ – straw like color beneath a clean white head of foam. And easy drinking is the name of the game for this one. Lemondrop and Cascade hops play a unique background role in both flavor and aroma – present, but intentionally less noticeable. The effervescence brings a refreshing character to the beer and balances out an ever so slight bready finish. You may think it, but it’s not macro beer.."
-                },
-                {
-                    name: "Velvet Hammer",
-                    keywords: ["ipa"],
-                    style: "Dark beer",
-                    abv: 9,
-                    abvRank: "high",
-                    ibu: 85,
-                    ibuRank: "very high",
-                    info: "The Hammer is an imperial red ale that appears as a dark, ruby reddish-brown ale beneath a sheath of protective off-white foam. It is malt-forward with elements of caramel and the sweetness of light brown sugar, balanced nicely by a combination of floral hops and a noticeable alcohol bite. It’s a sturdy brew with a smooth character which belies both an inner strength and a slightly full body, along with a moderate bitterness to round out the taste."
-                },
-                {
-                    name: "Golden Opportunity",
-                    keywords: ["Kolsch"],
-                    style: "light craft beer",
-                    abv: 4.6,
-                    abvRank: "medium",
-                    ibu: 27,
-                    ibuRank: "very high",
-                    info: "In the spirit of a true session beer we present the Golden Opportunity, a beer modeled after the classic styles of Koln, Germany, but which deliberately lacks the enhanced fruitiness of the typical American interpretation. Straw-like in color with a dense white head, this medium-bodied brew has a light, pleasant malt aroma with a hint of sweetness and faint bitterness. It is clean, well-balanced and suitably carbonated for a crisp, refreshing feel."
-                },
-                {
-                    name: "sit down or i'll sit you down",
-                    keywords: ["ipa"],
-                    style: "Dark Beer",
-                    abv: 10,
-                    abvRank: "Very high",
-                    ibu: 90,
-                    ibuRank: "very high",
-                    info: "As for the beer itself, the intent is to exhibit the fresh and bright character of the hops. We dry hopped it with over a pound of hops per barrel of beer. It’s gold in color and the floral ester aroma is high. The hop bitterness is high, but not at all harsh. The hop flavor is high, fresh, and lively. Yet with all of our beers, it’s all about balance and this one is no exception. The malt character is fairly high and provides a tremendously full mouthfeel. Finally, the alcohol in this beer is intentionally present (and delicious)."
-                },
-                {
-                    name: "Too Soon",
-                    keywords: ["ipa"],
-                    style: "Indiana Pale ale",
-                    abv: 10,
-                    abvRank: "Very high",
-                    ibu: 75,
-                    ibuRank: "high",
-                    info: "TOO SOON is an IP…A brewed with a ‘back to basics’ approach. Rather than formulate a recipe using the newest and trendiest methods, we used the traditional methods and techniques that are the foundation for some of our earlier beers (e.g., Velvet Hammer, Royal Scandal, Sit Down). Our typical base two row pale malt is accentuated with a minimal amount of light crystal malt and we turned to three of our most tried and true hops…Centennial, Cascade, and Amarillo. The brewhouse hop regimen for TOO SOON mirrors that of the earlier referenced beers and three are dry hopped in the same manner as well. Will this beer turn out as well as Hammer, Scandal, and Sit Down? Does the beer name answer the question?"
-                },
-                {
-                    name: "COME AND TAKE IT",
-                    keywords: ["kolsch"],
-                    style: "Dark Beer",
-                    abv: 5,
-                    abvRank: "medium",
-                    ibu: 30,
-                    ibuRank: "medium",
-                    info: "Our Koslch serves as the basis for ‘Come and Take It’, but the similarities between the two beers end there due to an aggressive use of cascade hops that completely change this beer’s character. Although we’ve added nearly a pound and half of Cascade per barrel to a Tettnang hopped beer, the execution and manner of the Cascade addition in a cohesive and seamless manner is what ‘Come and Take It’ is all about. Tettnang imparts spicy and earthy characteristics while also subtly contributing fruity, floral, citrus notes; whereas Cascade is primarily classified as a fruity floral hop with a hint of spice. Emphasizing Tettnang early and Cascade hops late results in huge fruity citrus notes that dominate both Come and Take It’s aroma and flavor. The more you drink it, the more you’ll enjoy it. Weighing in at 5% ABV, we trust you’ll find this one refreshing beer."
-                },
-                {
-                    name: "GOOD CALL",
-                    keywords: ["ipa"],
-                    style: "summer ale",
-                    abv: 6.3,
-                    abvRank: "medium",
-                    ibu: 41,
-                    ibuRank: "medium",
-                    info: "The blending of hops create aromas of lemon peel, citrus and a light breadiness. The combination of ginger and citrusy hops creates a crisp bite that quickly fades into a round sweetness.  As carbonation is released on the palate, you’ll experience flavors of orange and pineapple while ginger provides a gentle spice in the background."
-                },
-                {
-                    name: "DON’T THINK IT – WON’T HAPPEN",
-                    keywords: ["ipa"],
-                    style: "hazy ipa",
-                    abv: 7.5,
-                    abvRank: "medium",
-                    ibu: 5,
-                    ibuRank: "medium",
-                    info: "Don’t Think it – Won’t Happen rounds itself out when the beer’s pungent aroma pairs with the flavors that come through.  Medium/Low bitterness and a light acidity balance flavors reminiscent of the same tropical and citrus fruits that came through in the aroma.  Residual malt sweetness adds the final touch, and the ending perception is a glass of fresh squeezed juice."
-                },
-                {
-                    name: "GRIN & TONIC",
-                    keywords: ["Other"],
-                    style: "hazy ipa",
-                    abv: 4,
-                    abvRank: "medium",
-                    ibu: 28,
-                    ibuRank: "medium",
-                    info: "GrIN is an experimental “cocktail beer” designed to mimic the flavors and experience of a gin and tonic. A golden ale base beer brewed with copious amounts of Juniper and Coriander sets the foundation for this concoction. We then blended the pungent beer with locally sourced tonic water and lime supplied by Oak Cliff Beverage Works.When the Golden Ale and tonic come together, a beautiful balance is achieved and a unique beer drinking experience is realized. If you think your mind’s playing tricks on you, have another. At 4% ABV, GrIN will allow you to have the gin and tonic experience without the repercussions of overindulging on the real thing."
-                }
-    
+    {
+        name: "Peticolas Brewing Co",
+        info: "We’re honest, friendly, down-to-earth brewers delivering world class passion in a glass.",
+        url: "https://www.peticolasbrewing.com/beers",
+        position: { lat: 32.7967768686869, lng: -96.8303188181818 },
+        beers: [
+            {
+                name: "HipsterAle",
+                keywords: "ipa",
+                style: "Blonde ale",
+                abv: 5.6,
+                abvRank: "medium",
+                ibu: 25,
+                ibuRank: "medium",
+                info: "HIPster Ale is a blonde ale that presents as a classic ‘light beer’ – straw like color beneath a clean white head of foam. And easy drinking is the name of the game for this one. Lemondrop and Cascade hops play a unique background role in both flavor and aroma – present, but intentionally less noticeable. The effervescence brings a refreshing character to the beer and balances out an ever so slight bready finish. You may think it, but it’s not macro beer.."
+            },
+            {
+                name: "Velvet Hammer",
+                keywords: "ipa",
+                style: "Dark beer",
+                abv: 9,
+                abvRank: "high",
+                ibu: 85,
+                ibuRank: "very high",
+                info: "The Hammer is an imperial red ale that appears as a dark, ruby reddish-brown ale beneath a sheath of protective off-white foam. It is malt-forward with elements of caramel and the sweetness of light brown sugar, balanced nicely by a combination of floral hops and a noticeable alcohol bite. It’s a sturdy brew with a smooth character which belies both an inner strength and a slightly full body, along with a moderate bitterness to round out the taste."
+            },
+            {
+                name: "Golden Opportunity",
+                keywords: ["Kolsch"],
+                style: "light craft beer",
+                abv: 4.6,
+                abvRank: "medium",
+                ibu: 27,
+                ibuRank: "very high",
+                info: "In the spirit of a true session beer we present the Golden Opportunity, a beer modeled after the classic styles of Koln, Germany, but which deliberately lacks the enhanced fruitiness of the typical American interpretation. Straw-like in color with a dense white head, this medium-bodied brew has a light, pleasant malt aroma with a hint of sweetness and faint bitterness. It is clean, well-balanced and suitably carbonated for a crisp, refreshing feel."
+            },
+            {
+                name: "sit down or i'll sit you down",
+                keywords: ["ipa"],
+                style: "Dark Beer",
+                abv: 10,
+                abvRank: "Very high",
+                ibu: 90,
+                ibuRank: "very high",
+                info: "As for the beer itself, the intent is to exhibit the fresh and bright character of the hops. We dry hopped it with over a pound of hops per barrel of beer. It’s gold in color and the floral ester aroma is high. The hop bitterness is high, but not at all harsh. The hop flavor is high, fresh, and lively. Yet with all of our beers, it’s all about balance and this one is no exception. The malt character is fairly high and provides a tremendously full mouthfeel. Finally, the alcohol in this beer is intentionally present (and delicious)."
+            },
+            {
+                name: "Too Soon",
+                keywords: ["ipa"],
+                style: "Indiana Pale ale",
+                abv: 10,
+                abvRank: "Very high",
+                ibu: 75,
+                ibuRank: "high",
+                info: "TOO SOON is an IP…A brewed with a ‘back to basics’ approach. Rather than formulate a recipe using the newest and trendiest methods, we used the traditional methods and techniques that are the foundation for some of our earlier beers (e.g., Velvet Hammer, Royal Scandal, Sit Down). Our typical base two row pale malt is accentuated with a minimal amount of light crystal malt and we turned to three of our most tried and true hops…Centennial, Cascade, and Amarillo. The brewhouse hop regimen for TOO SOON mirrors that of the earlier referenced beers and three are dry hopped in the same manner as well. Will this beer turn out as well as Hammer, Scandal, and Sit Down? Does the beer name answer the question?"
+            },
+            {
+                name: "COME AND TAKE IT",
+                keywords: "kolsch",
+                style: "Dark Beer",
+                abv: 5,
+                abvRank: "medium",
+                ibu: 30,
+                ibuRank: "medium",
+                info: "Our Koslch serves as the basis for ‘Come and Take It’, but the similarities between the two beers end there due to an aggressive use of cascade hops that completely change this beer’s character. Although we’ve added nearly a pound and half of Cascade per barrel to a Tettnang hopped beer, the execution and manner of the Cascade addition in a cohesive and seamless manner is what ‘Come and Take It’ is all about. Tettnang imparts spicy and earthy characteristics while also subtly contributing fruity, floral, citrus notes; whereas Cascade is primarily classified as a fruity floral hop with a hint of spice. Emphasizing Tettnang early and Cascade hops late results in huge fruity citrus notes that dominate both Come and Take It’s aroma and flavor. The more you drink it, the more you’ll enjoy it. Weighing in at 5% ABV, we trust you’ll find this one refreshing beer."
+            },
+            {
+                name: "GOOD CALL",
+                keywords: ["ipa"],
+                style: "summer ale",
+                abv: 6.3,
+                abvRank: "medium",
+                ibu: 41,
+                ibuRank: "medium",
+                info: "The blending of hops create aromas of lemon peel, citrus and a light breadiness. The combination of ginger and citrusy hops creates a crisp bite that quickly fades into a round sweetness.  As carbonation is released on the palate, you’ll experience flavors of orange and pineapple while ginger provides a gentle spice in the background."
+            },
+            {
+                name: "DON’T THINK IT – WON’T HAPPEN",
+                keywords: ["ipa"],
+                style: "hazy ipa",
+                abv: 7.5,
+                abvRank: "medium",
+                ibu: 5,
+                ibuRank: "medium",
+                info: "Don’t Think it – Won’t Happen rounds itself out when the beer’s pungent aroma pairs with the flavors that come through.  Medium/Low bitterness and a light acidity balance flavors reminiscent of the same tropical and citrus fruits that came through in the aroma.  Residual malt sweetness adds the final touch, and the ending perception is a glass of fresh squeezed juice."
+            },
+            {
+                name: "GRIN & TONIC",
+                keywords: ["Other"],
+                style: "hazy ipa",
+                abv: 4,
+                abvRank: "medium",
+                ibu: 28,
+                ibuRank: "medium",
+                info: "GrIN is an experimental “cocktail beer” designed to mimic the flavors and experience of a gin and tonic. A golden ale base beer brewed with copious amounts of Juniper and Coriander sets the foundation for this concoction. We then blended the pungent beer with locally sourced tonic water and lime supplied by Oak Cliff Beverage Works.When the Golden Ale and tonic come together, a beautiful balance is achieved and a unique beer drinking experience is realized. If you think your mind’s playing tricks on you, have another. At 4% ABV, GrIN will allow you to have the gin and tonic experience without the repercussions of overindulging on the real thing."
+            }
 
-            
+
+
         ]
     }
 ]
@@ -290,6 +291,8 @@ let breweriesCollection = [
 
 $("#submitem").on("click", function () {
     event.preventDefault()
+
+    breweriesDisplay.length = 0;
 
     ibu = $("#ibu").val().trim();
     abv = $("#abv").val().trim();
@@ -307,34 +310,28 @@ $("#submitem").on("click", function () {
     //give styles, abv, abu their user inputted values here
 
 
-
-
-
-
-
-
-
-
     for (let brewery of breweriesCollection) {
         for (let beer of brewery.beers) {
 
-            if (beer.ibuRank === ibu && beer.abvRank === abv && styleKeywords === beer.keywords) {
+            if (((beer.ibuRank === ibu) || (ibu === "unimportant")) && ((beer.abvRank === abv) || (abv === "unimportant")) && ((beer.keywords === styleKeywords) || (styleKeywords === "unimportant"))) {
+
+
                 if (!breweriesDisplay.includes(brewery)) {
                     breweriesDisplay.push(brewery)
                 }
 
-            // if (styleKeywords.every(function (element) {
+                // if (styleKeywords.every(function (element) {
 
-            //     if (beer.keywords.includes(element)) {
-            //         return true;
-            //     }
-            // })) 
-            // {
+                //     if (beer.keywords.includes(element)) {
+                //         return true;
+                //     }
+                // })) 
+                // {
 
-                }
             }
         }
-    
+    }
+
 
     console.log(breweriesDisplay)
 
@@ -367,9 +364,9 @@ $("#submitem").on("click", function () {
 
 function initMap() {
 
-    let central = { lat: 39.8283, lng: -98.5795 };
+    let central = { lat: 32.7767, lng: -96.7970 };
 
-    let zoomlevel = 4;
+    let zoomlevel = 10;
 
     // if (city || state) {
     //     zoomlevel = 10;
@@ -419,7 +416,6 @@ function initMap() {
             });
 
             marker.addListener("click", function () {
-                //why wont this work? Find a way to empty all child nodes from a div, but not the text in the div itself, though current method works
                 displayBeers.empty()
                 console.log("click successful")
                 console.log(this.title)
@@ -438,6 +434,30 @@ function initMap() {
 
 
 }
+
+$(document).on("click", ".brewclick", function () {
+
+    console.log("hullo")
+console.log($(this).attr("data-name"))
+
+
+
+
+    for (let brewery of breweriesDisplay) {
+
+        if ($(this).attr("data-name") === brewery.name)
+
+            for (let beer of brewery.beers) {
+
+            if(((beer.ibuRank === ibu) || (ibu === "unimportant")) && ((beer.abvRank === abv) || (abv === "unimportant")) && ((beer.keywords === styleKeywords) || (styleKeywords === "unimportant"))) {
+                $("<div>").html(beer.name).appendTo($(".brewclick"))
+
+            }
+            
+
+        }
+    }
+})
 
 
 //find a way to get coordinates of state or city and set it to map center
