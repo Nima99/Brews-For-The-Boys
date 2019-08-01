@@ -82,8 +82,8 @@ if (city || state) {
             {"pegasus city brewery": {info: "blahblah",
             beers: [
                 {
-                    name: "examplename", 
-
+                    name: "examplename",
+                    
                 }
 
             ]} }
