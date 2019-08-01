@@ -5,7 +5,7 @@ $(document).ready(function() {
     $('#old-enough').hide();
     $('#sorry').hide();
     $('#footer').hide();
-
+    
     
 });
 
@@ -19,6 +19,7 @@ $('#yesButton').on('click', function(){
     $('#sorry').hide();
     $('#old-enough').show();
     $('#footer').show();
+    $('#').show();
     
 });
 
