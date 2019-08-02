@@ -1,77 +1,6 @@
 
-//// BEGINNING OF DOCUMENT ASKS IF YOU ARE 21 //
-
-$(document).ready(function () {
-    $('#old-enough').hide();
-    $('#sorry').hide();
-    $('#footer').hide();
 
 
-});
-
-
-
-/// CLICK EVENTS FOR 21 JUMBOTRON
-// CLICK FUNCTION FOR WHEN NO IS CLICKED
-//CLICK FUNCTION FOR WHEN YES IS CLICKED -- Jumbotron disappears, and rest of the pages reappear
-$('#yesButton').on('click', function () {
-    $('#legal-age').hide();
-    $('#sorry').hide();
-    $('#old-enough').show();
-    $('#footer').show();
-
-});
-
-$('#noButton').on('click', function () {
-    $('#legal-age').hide();
-    $('#old-enough').hide();
-    $('#sorry').show();
-    $('#footer').hide();
-
-
-});
-
-
-
-
-
-//click start button -- needs to show questions, start timer, intake answers.
-//$('#yesButton').on('click', function(){
-//   $('#startBtn').hide();
-//   unHide(); 
-//   startTimer();
-//$('.results').hide();
-
-//});
-
-
-
-///////////////////////////////////////////////////////////////////
-//can ask for user i.d. here, and use it for central
-
-// let city = "Dallas";
-// let state = "Texas";
-let styleKeywords;
-let abv;
-let ibu;
-let queryURL = `https://api.openbrewerydb.org/breweries?by_state=texas&by_city=dallas&per_page=50`
-let displayBeers = $("#displaybeers");
-let breweriesDisplay = [];
-
-console.log(displayBeers);
-
-
-
-
-// ABV: low: up to and including 4%
-// medium: up to 7%
-//     high: 7-10%
-//     Very high: above 10%
-
-// IBU Scale: 	low: >=20
-//         medium: 21 - 50
-//     high: 51-80
-//     Very High: Above 80
 
 let breweriesCollection = [
     {
@@ -272,7 +201,7 @@ let breweriesCollection = [
             {
                 name: "Saint Louis Blanc",
                 keywords: "farmhouseale",
-               //also a belgian!
+                //also a belgian!
                 style: "Saison Farmhouse Ale",
                 abv: 7.5,
                 abvRank: "",
@@ -282,7 +211,7 @@ let breweriesCollection = [
             },
             {
                 name: "When the Wit Hits the Fan",
-                           //also a belgian!
+                //also a belgian!
                 keywords: "wheatbeer",
                 style: "Witbier",
                 abv: 5,
@@ -475,6 +404,137 @@ let breweriesCollection = [
     },
 
     {
+        //technically in Plano
+        name: "Unlawful Assembly Brewing Company",
+        info: "WELCOME TO UNLAWFUL ASSEMBLY BREWING CO. When we share a pint, we share memories, and we make new ones. We discover new music, new foods and new friends. We celebrate and we instigate. Unlawful Assembly was founded to promote the assembly of people, ingredients, and ideas—because great things happen when we get together over a great beer.",
+        url: "https://www.unlawfulassembly.com/taproom/",
+        position: { lat: 33.086425, lng: -96.825665 },
+        beers: [
+            {
+                name: "The Bandit",
+                keywords: "ipa",
+                style: "Brut IPA",
+                abv: 7,
+                abvRank: "",
+                ibu: 20,
+                ibuRank: "",
+                info: "Our rendition of this California original uses a traditional ale yeast to create a crisp and refreshing version of this emerging IPA style. Dryhopped with Lemondrop, this beer has a citrusy, spicy, and mint-like flavor and aroma that finishes extremely dry on the palate due to its light nature."
+            },
+            {
+                name: "Double Justice",
+                keywords: "ipa",
+                style: "Imperial IPA",
+                abv: 9.9,
+                abvRank: "",
+                ibu: 77,
+                ibuRank: "",
+                info: "This Imperial IPA has a slightly malty caramel flavor balanced by Amarillo, Mosaic, Citra, and Denali hops."
+            },
+            {
+                name: "The Antagonist",
+                keywords: "other",
+                style: "Amber Lager",
+                abv: 5.2,
+                abvRank: "",
+                ibu: 22,
+                ibuRank: "",
+                info: "Amber Lager - a medium-bodied lager with a toasty / caramel-like malt character. Dominated by a sweet malt flavor with medium hop bitterness followed by a dry finish. Traditional Marzen style."
+            },
+            {
+                name: "Blind Justice",
+                keywords: "ipa",
+                style: "West Coast IPA",
+                abv: 7,
+                abvRank: "",
+                ibu: 65,
+                ibuRank: "",
+                info: "Dry Hopped - West Coast style resinous & citrus character; huge hop aroma bursting with notes of citrus and tropical fruits. The malt character is understated, and finishes dry to let the layered hop flavors and aromas take center stage. Hops - Bravo for earthy spice character, Centennial for pine notes, Citra for citrus zest and Cascade for floral aroma are layered throughout the brewing process."
+            },
+            {
+                name: "Public Dissent",
+                keywords: "paleale",
+                style: "American Pale Ale ",
+                abv: 5.5,
+                abvRank: "",
+                ibu: 45,
+                ibuRank: "",
+                info: "Refreshingly crisp, grapefruit, and piney hop notes all share the floor in unison. Caramel undertones help this American pale ale stand against the mainstream"
+            },
+            {
+                name: "Smoke Screen",
+                keywords: "other",
+                style: "American Smoke Brown Ale",
+                abv: 5.7,
+                abvRank: "",
+                ibu: 25,
+                ibuRank: "",
+                info: "The unique flavor of this ale comes from the use of mesquite flour during the brew. Notes of cinnamon, tobacco, vanilla, and smokiness accents the nutty and caramel character from the malt."
+            },
+            {
+                name: "Peacemonger",
+                keywords: "pilsner",
+                style: "Continental Pilsner",
+                abv: 5.2,
+                abvRank: "",
+                ibu: 30,
+                ibuRank: "",
+                info: "Classic continental pilsner pulling influences from Europe; Flavor - Malty, biscuit sweetness is smooth, light-bodied, solid, and slightly sweet. The lemony, floral, spicy hops accent the clean malt bill nicely, and the high carbonation makes everything pop just a little. Finishes with just enough bitterness to make you want another drink"
+            },
+            {
+                name: "Deviant Behavior",
+                keywords: "wheatbeer",
+                //also a belgian
+                style: "Hefeweizen",
+                abv: 5.3,
+                abvRank: "",
+                ibu: 14,
+                ibuRank: "",
+                info: "A refreshing unfiltered wheat beer, spicy aroma and flavor compliments the orange peel, Indian coriander, and Belgian malt."
+            },
+            {
+                name: "Rebel Faction",
+                keywords: "farmhouseale",
+                style: "Traditional Wallonia Belgian Saison",
+                abv: 6.3,
+                abvRank: "",
+                ibu: 28,
+                ibuRank: "",
+                info: `The aroma is floral, herbal, savory and fruity with lemon and pear. Citric acid sharp and gritty in flavor with a solid resinous, cedar hop flavor and the familiar musty character.`
+            },
+            {
+                name: "Idol Time",
+                keywords: "wheatbeer",
+                style: "Passion Fruit Pineapple Wheat",
+                abv: 5.3,
+                abvRank: "",
+                ibu: 15,
+                ibuRank: "",
+                info: `In this unfiltered wheat ale, fermented with tart tropical fruits, we celebrate the times we can’t remember and the friends we won’t forget.`
+            },
+            {
+                name: "Idol Time 2",
+                keywords: "other",
+                style: "Agave Lime Golden Ale",
+                abv: 5.4,
+                abvRank: "",
+                ibu: 12,
+                ibuRank: "",
+                info: "Agave nectar is added in the kettle to create a distinctive sweetness that is accentuated by lime in this crisp refreshing golden ale."
+            },
+            {
+                name: "Black Sheep",
+                keywords: "stout",
+                style: "Oatmeal Stout",
+                abv: 5.9,
+                abvRank: "",
+                ibu: 18,
+                ibuRank: "",
+                info: "This stout uses generous amounts of flaked oats and dark malt to create a rich creamy mouthfeel with roast, chocolate, coffee, and caramel flavors"
+            }
+        ]
+    },
+
+    {
         name: "Peticolas Brewing Co",
         info: "We’re honest, friendly, down-to-earth brewers delivering world class passion in a glass.",
         url: "https://www.peticolasbrewing.com/beers",
@@ -580,6 +640,96 @@ let breweriesCollection = [
 
 
 
+
+
+
+
+
+//// BEGINNING OF DOCUMENT ASKS IF YOU ARE 21 //
+
+$(document).ready(function () {
+    $('#old-enough').hide();
+    $('#sorry').hide();
+    $('#footer').hide();
+
+
+});
+
+
+
+/// CLICK EVENTS FOR 21 JUMBOTRON
+// CLICK FUNCTION FOR WHEN NO IS CLICKED
+//CLICK FUNCTION FOR WHEN YES IS CLICKED -- Jumbotron disappears, and rest of the pages reappear
+$('#yesButton').on('click', function () {
+    $('#legal-age').hide();
+    $('#sorry').hide();
+    $('#old-enough').show();
+    $('#footer').show();
+
+});
+
+$('#noButton').on('click', function () {
+    $('#legal-age').hide();
+    $('#old-enough').hide();
+    $('#sorry').show();
+    $('#footer').hide();
+
+
+});
+
+
+
+
+
+//click start button -- needs to show questions, start timer, intake answers.
+//$('#yesButton').on('click', function(){
+//   $('#startBtn').hide();
+//   unHide(); 
+//   startTimer();
+//$('.results').hide();
+
+//});
+
+
+
+///////////////////////////////////////////////////////////////////
+//can ask for user i.d. here, and use it for central
+
+// let city = "Dallas";
+// let state = "Texas";
+let styleKeywords;
+let abv;
+let ibu;
+let queryURL = `https://api.openbrewerydb.org/breweries?by_state=texas&by_city=dallas&per_page=50`
+let displayBeers = $("#displaybeers");
+let breweriesDisplay = [];
+let brewClicked = false;
+
+console.log(displayBeers);
+
+
+
+
+// ABV: low: up to and including 4%
+// medium: up to 7%
+//     high: 7-10%
+//     Very high: above 10%
+
+// IBU Scale: 	low: >=20
+//         medium: 21 - 50
+//     high: 51-80
+//     Very High: Above 80
+
+
+
+
+//Warning, Very Large Array below
+
+
+
+
+
+
 // function changeRanks(arr) {
 //     for (let brewery of arr) {
 //         for (let beer of brewery.beers) {
@@ -597,6 +747,7 @@ let breweriesCollection = [
 $("#submitem").on("click", function () {
     event.preventDefault()
 
+    brewClicked = false;;
     breweriesDisplay.length = 0;
     displayBeers.empty()
 
@@ -651,7 +802,7 @@ $("#submitem").on("click", function () {
 
     // console.log(city)
     // console.log(state)
-    queryURL = `https://api.openbrewerydb.org/breweries?by_state=${state}&by_city=${city}&per_page=50`
+    // queryURL = `https://api.openbrewerydb.org/breweries?by_state=${state}&by_city=${city}&per_page=50`
     // console.log(queryURL)
 
 
@@ -673,7 +824,7 @@ function initMap() {
 
     let central = { lat: 32.7767, lng: -96.7970 };
 
-    let zoomlevel = 10;
+    let zoomlevel = 9;
 
     // if (city || state) {
     //     zoomlevel = 10;
@@ -739,25 +890,30 @@ function initMap() {
 
 $(document).on("click", ".brewclick", function () {
 
-    console.log("hullo")
-    console.log($(this).attr("data-name"))
+    if (brewClicked === false) {
+        brewClicked = true;
+
+        console.log("hullo")
+        console.log($(this).attr("data-name"))
 
 
 
 
-    for (let brewery of breweriesDisplay) {
+        for (let brewery of breweriesDisplay) {
 
-        if ($(this).attr("data-name") === brewery.name)
+            if ($(this).attr("data-name") === brewery.name)
 
-            for (let beer of brewery.beers) {
+                for (let beer of brewery.beers) {
 
-                if (((beer.ibuRank === ibu) || (ibu === "unimportant")) && ((beer.abvRank === abv) || (abv === "unimportant")) && ((beer.keywords === styleKeywords) || (styleKeywords === "unimportant"))) {
-                    $("<div>").html(beer.name).appendTo($(".brewclick"))
+                    if (((beer.ibuRank === ibu) || (ibu === "unimportant")) && ((beer.abvRank === abv) || (abv === "unimportant")) && ((beer.keywords === styleKeywords) || (styleKeywords === "unimportant"))) {
+                        $(`<div>`).html(beer.name).insertAfter($(".brewclick"))
+                        // $(`<btn class="btn btn.block">`).html(beer.name).insertAfter($(".brewclick"))
+
+                    }
+
 
                 }
-
-
-            }
+        }
     }
 })
 
