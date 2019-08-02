@@ -49,12 +49,12 @@ $('#noButton').on('click', function () {
 ///////////////////////////////////////////////////////////////////
 //can ask for user i.d. here, and use it for central
 
-// let city;
-// let state;
+// let city = "Dallas";
+// let state = "Texas";
 let styleKeywords;
 let abv;
 let ibu;
-let queryURL;
+let queryURL = `https://api.openbrewerydb.org/breweries?by_state=texas&by_city=dallas&per_page=50`
 let displayBeers = $("#displaybeers");
 let breweriesDisplay = [];
 
@@ -183,6 +183,298 @@ let breweriesCollection = [
     },
 
     {
+        name: "Steam Theory Brewing",
+        info: "Over time you will see how we have blended hard technology with innovative ideas that date back to the Victorian era and leverage them in the modern day. Our “Theory” is that we can then blend those concepts with our own in a way that will bring together our brewery, bar, kitchen and overall look and feel. It will be an immersive environment where people can enjoy food and beer that are not only intertwined in themselves, but also with a goal of educating folks on where we came from as an industry as well as where it will take us in the future. We want to be a place of learning, enjoyment, surprise and wonderment. Whether it be the beers, food, cocktails or atmosphere - we will ensure there will always be a synergy of the culinary arts in a way that will intrigue the senses.",
+        url: "https://steamtheorybrewing.com/our-mission",
+        position: { lat: 32.778463, lng: -96.830002 },
+        beers: [
+            {
+                name: "Equilibrium",
+                keywords: "redamberale",
+                style: "American Amber / Red",
+                abv: 6.7,
+                abvRank: "",
+                ibu: 42,
+                ibuRank: "",
+                info: "Medium hop bitterness, flavor and aroma - balance between hop bitterness and malt sweetness."
+            },
+            {
+                name: "Threat Level Midnight!",
+                keywords: "stout",
+                style: "American Stout",
+                abv: 7.1,
+                abvRank: "",
+                ibu: 55,
+                ibuRank: "",
+                info: "Full bodied beer with flavors of coffee, chocolate and caramel and has notes of fruit, citrus and a touch of bitterness."
+            },
+            {
+                name: "Things That Make You Go Mmmm",
+                keywords: "paleale",
+                style: "American Pale Ale",
+                abv: 5.9,
+                abvRank: "",
+                ibu: 38,
+                ibuRank: "",
+                info: "This beer has its roots in the early craft beer movement. It is hopped with Cascade and Centennial lending it flavors of citrus and pine. There is just a hint of sweetness and a crisp dry finish."
+            },
+            {
+                name: "Brutally Frank",
+                keywords: "ipa",
+                style: "IPA-Brut",
+                abv: 7.7,
+                abvRank: "",
+                ibu: 22,
+                ibuRank: "",
+                info: "Dry hopped with notes of pineapple, passion fruit and sage."
+            },
+            {
+                name: "The Summer of George",
+                keywords: "other",
+                style: "Cream Ale",
+                abv: 4.8,
+                abvRank: "",
+                ibu: 25,
+                ibuRank: "",
+                info: "Light and refreshing ale with a hint of corn sweetness."
+            },
+            {
+                name: "Hops Against Humanity",
+                keywords: "ipa",
+                style: "Dry Hopped IPA",
+                abv: 7.3,
+                abvRank: "",
+                ibu: 75,
+                ibuRank: "",
+                info: "A West Coast IPA showcasing hops from bittering to dry hopping."
+            },
+            {
+                name: "Monsters from the Id",
+                keywords: "porter",
+                style: "Imperial Baltic Porter",
+                abv: 9,
+                abvRank: "",
+                ibu: 30,
+                ibuRank: "",
+                info: "This beer has flavors of chocolate, toffee, toasted marshmallows and graham crackers. It is deceptively smooth with just a hint of warmth in the finish."
+            },
+            {
+                name: "Big Chungus",
+                keywords: "paleale",
+                //also a belgian!
+                style: "Dry Hopped IPA",
+                abv: 6.8,
+                abvRank: "",
+                ibu: 25,
+                ibuRank: "",
+                info: "This beer has notes of bready malt with just a hint of caramel. It has a touch of spice with a soft fruitiness and a dry finish."
+            },
+            {
+                name: "Saint Louis Blanc",
+                keywords: "farmhouseale",
+               //also a belgian!
+                style: "Saison Farmhouse Ale",
+                abv: 7.5,
+                abvRank: "",
+                ibu: 27,
+                ibuRank: "",
+                info: "Belgian Style Saison brewed with pale, wheat and rye malt. It is hopped with German Hallertau Blanc hops. It has flavors white grapes and spice."
+            },
+            {
+                name: "When the Wit Hits the Fan",
+                           //also a belgian!
+                keywords: "wheatbeer",
+                style: "Witbier",
+                abv: 5,
+                abvRank: "",
+                ibu: 16,
+                ibuRank: "",
+                info: "This Belgian style wheat beer is brewed with pilsner malt, unmalted wheat and a touch of oats. It has a hint of citrus and spice from sweet orange peel and coriander seed."
+            },
+            {
+                name: "Unhinged",
+                keywords: "ipa",
+                style: "Imperial IPA",
+                abv: 8.7,
+                abvRank: "",
+                ibu: 112,
+                ibuRank: "",
+                info: "An assertive IPA that has a well balanced blend of flavor and aroma hops with a strong backbone of malts."
+            },
+            {
+                name: "Mind the Gap",
+                keywords: "other",
+                style: "English Brown Ale",
+                abv: 5.4,
+                abvRank: "",
+                ibu: 18,
+                ibuRank: "",
+                info: "English Brown with traditional English malts, hops and yeast with notes of chocolate, hazelnut and toffee."
+            },
+            {
+                name: "Everybody Knows",
+                keywords: "other",
+                style: "English Pub Ale",
+                abv: 8,
+                abvRank: "",
+                ibu: 44,
+                ibuRank: "",
+                info: "Deep red English ale with notes of caramel and toffee and a hint of toasted malt. Kent Golding hops give it a fruity character."
+            },
+            {
+                name: "The Brew Bohemians",
+                keywords: "pilsner",
+                style: "Czech Pilsner",
+                abv: 6.2,
+                abvRank: "",
+                ibu: 41,
+                ibuRank: "",
+                info: "This Czech Pilsner is brewed with German Pilsner malt and Czech Saaz hops. It has a floral aroma with notes of spice and fresh mowed grass and a crisp finish."
+            },
+            {
+                name: "Arseways",
+                keywords: "other",
+                style: "Irish Red Ale",
+                abv: 5.5,
+                abvRank: "",
+                ibu: 30,
+                ibuRank: "",
+                info: "No information provided. You'll have to go check it out!"
+            }
+        ]
+    },
+
+    {
+        //technically in Mckinney
+        name: "Nine Band Brewing Company",
+        info: "TTexas born and bred, the Nine-Band brewmaster brings his award-winning experience to every one of our carefully crafted styles, each made with the highest quality ingredients available for the ultimate taste experience.",
+        url: "http://www.ninebandbrewing.com/beer/",
+        position: { lat: 33.156278, lng: -96.682365 },
+        beers: [
+            {
+                name: "Nine Band Pale Ale",
+                keywords: "paleale",
+                style: "Pale Ale",
+                abv: 6,
+                abvRank: "",
+                ibu: 47,
+                ibuRank: "",
+                info: "The nine-banded armadillo is the unofficial state mascot of Texas, and the namesake and official mascot of Nine-Band Brewing Company. On hot days you can often see one on the side of the highway enjoying a cold one. Nine-Band Pale Ale™, our flagship brew, is made with premium Liberty hops, giving this easy drinking ale just a bit of a spicy, citrusy kick."
+            },
+            {
+                name: "Cactus Cat Kolsch",
+                keywords: "kolsch",
+                style: "Classic German Kolsch",
+                abv: 5.2,
+                abvRank: "",
+                ibu: 12,
+                ibuRank: "",
+                info: "Legend tells of the cactus cat, covered in its cactusy spines, slashing the prickly pear cactus to open up pools of juice. The fearsome feline returns at the next full moon to drink the now fermented concoction. The caterwauling of the drunken beast can be heard even over the howls of the wind. Our Cactus Cat Kölsch™ is made in the classic German manner, light and crisp with grassy and biscuity notes. Prost!"
+            },
+            {
+                name: "Hoop Snake Hefeweizen",
+                keywords: "other",
+                style: "Hefeweizen",
+                abv: 5.3,
+                abvRank: "",
+                ibu: 7,
+                ibuRank: "",
+                info: "According to the folks out west, the crafty hoop snake would circle up, bite its own tail, and roll out across the plains to the nearest saloon. Like the hoop snake, our Hoop Snake Hefeweizen™ has a tart bite of its own. And with hints of banana and cloves, this rich and creamy ale will soon become legendary in its own right."
+            },
+            {
+                name: "Toad Choker Barley Wine",
+                keywords: "other",
+                style: "Barley Wine",
+                abv: 10.6,
+                abvRank: "",
+                ibu: 87,
+                ibuRank: "",
+                info: "When the rainclouds boil up out west, and lightning makes the coyotes’ hair stand on end, we know we’re in for an all-powerful, gully-washing, toad-choker downpour. So too our thunderously bold and complex specialty brew, Toad Choker Barley Wine™, with its deep, earthy tones of coffee and caramel, will wash across your parched throat and rumble deep into your bones."
+            },
+            {
+                name: "The Badge Honey Blonde",
+                keywords: "other",
+                style: "Honey Blonde",
+                abv: 5.2,
+                abvRank: "",
+                ibu: 8,
+                ibuRank: "",
+                info: "From the time before Texas was a state, men donned badges to bring law to the west and establish peace and safety for settlers. Now police, fire, and EMS all have badges identifying them as servants for the public good. Here is our salute to them, with a light body and a hint of sweetness from local honey used to brew our honey blonde. “The Badge”, a beer for men and women of honor."
+            },
+            {
+                name: "Blue Lacy Brown Ale",
+                keywords: "other",
+                style: "Brown Ale",
+                abv: 6.1,
+                abvRank: "",
+                ibu: 23,
+                ibuRank: "",
+                info: "We didn’t make a blue beer, but a nice balanced brown ale is our tip of the hat to the energetic, dedicated, loyal breed that is the State Dog of Texas. What they live for and happen to be very good at is hunting, tracking and herding. Rumor has it these incredibly smart dogs like to lap up a bowl of “Blue Lacy Brown Ale” when they kick back and call it a day."
+            },
+            {
+                name: "Hellwind IPA",
+                keywords: "ipa",
+                style: "West Coast IPA",
+                abv: 7.6,
+                abvRank: "",
+                ibu: 63,
+                ibuRank: "",
+                info: "From the land where storms are born, comes the “Hellwind”. The vortex of air reaching from the ground to the clouds blends together two row and a light caramel malt with an ample amount of Cascade hops to give this “old school” style West Coast IPA a well-balanced flavor sure to calm the strongest winds."
+            },
+            {
+                name: "28th State Stout",
+                keywords: "stout",
+                style: "Hefeweizen",
+                abv: 5.6,
+                abvRank: "",
+                ibu: 23,
+                ibuRank: "",
+                info: "Offering up flavor as big as Texas, our brewers use oatmeal and flaked barley to give this brew a smooth creaminess and rich body. Adding a specialty malt for every flag that has flown above our soil, the dark roasted flavors highlighted by chocolate malt give this stout a taste as deep as our heritage."
+            },
+            {
+                name: "Dubble Vizion Hazy IPA",
+                keywords: "ipa",
+                style: "Imperial IPA",
+                abv: 6.3,
+                abvRank: "",
+                ibu: 28,
+                ibuRank: "",
+                info: `The ancient rolling plains formed by the sea floor long ago, give rise to mankind's legacy and a new dominant mammal wearing armor for protection from the sun's radiation.The Nine Banded armadillo sports unique glasses in an effort to see in color, allowing him to see into the rhizomes of all flowering hops. This vision, often referred to as "Dubble Vizion" by the futuristic mammalian brewers, gave them the ability to select the finest and fruitiest flowers. The Futuristic Mammalian Brewers used only the finest 2row, barley and wheat with a splash of oats to give their hazy creation the look of "the nectar of the gods".And it was good.`
+            },
+            {
+                name: "13 Gold",
+                keywords: "other",
+                style: "Lager",
+                abv: 4.3,
+                abvRank: "",
+                ibu: 8,
+                ibuRank: "",
+                info: `Coming straight down the middle is our American light Lager honoring Ivan "Pudge" Rodriguez's record 13 Gold Gloves for a catcher. This lager pours a light gold, mimicking the 13 Gold Glove trophies he has earned over his remarkable 21-year career. Enjoy this refreshing brew while you're behind home plate, tailgating at the ballpark, or lifting your trophy!`
+            },
+            {
+                name: "June Bug Summer Wheat",
+                keywords: "wheatbeer",
+                style: "Summer Wheat Beer",
+                abv: 5.3,
+                abvRank: "",
+                ibu: 14,
+                ibuRank: "",
+                info: "Come summer evenings on any back porch across Texas, the June bugs come calling. According to the bug experts, they’re attracted to the light. And the warm, citrusy glow of our June Bug Summer Wheat™. This light, crisp, refreshing brew is perfect on a warm summer evening, a hot summer day, or any other day for that matter."
+            },
+            {
+                name: "Ghost Cow Oktoberfest",
+                keywords: "other",
+                style: "Märzenbier",
+                abv: 5.9,
+                abvRank: "",
+                ibu: 18,
+                ibuRank: "",
+                info: "On the darkest night, on a desolate back road in South Texas, the ghost cow comes out to graze and make its stand smack dab in the middle of the road – a full-blown apparition on the center stripe. Our full-bodied, assertive Ghost Cow Oktoberfest™, a classic Märzenbier, pays a rich, malty tribute to this otherworldly bovine, lest it decide to haunt our street too."
+            }
+        ]
+    },
+
+    {
         name: "Peticolas Brewing Co",
         info: "We’re honest, friendly, down-to-earth brewers delivering world class passion in a glass.",
         url: "https://www.peticolasbrewing.com/beers",
@@ -210,7 +502,7 @@ let breweriesCollection = [
             },
             {
                 name: "Golden Opportunity",
-                keywords: ["Kolsch"],
+                keywords: "Kolsch",
                 style: "light craft beer",
                 abv: 4.6,
                 abvRank: "medium",
@@ -220,7 +512,7 @@ let breweriesCollection = [
             },
             {
                 name: "sit down or i'll sit you down",
-                keywords: ["ipa"],
+                keywords: "ipa",
                 style: "Dark Beer",
                 abv: 10,
                 abvRank: "Very high",
@@ -230,7 +522,7 @@ let breweriesCollection = [
             },
             {
                 name: "Too Soon",
-                keywords: ["ipa"],
+                keywords: "ipa",
                 style: "Indiana Pale ale",
                 abv: 10,
                 abvRank: "Very high",
@@ -250,7 +542,7 @@ let breweriesCollection = [
             },
             {
                 name: "GOOD CALL",
-                keywords: ["ipa"],
+                keywords: "ipa",
                 style: "summer ale",
                 abv: 6.3,
                 abvRank: "medium",
@@ -260,7 +552,7 @@ let breweriesCollection = [
             },
             {
                 name: "DON’T THINK IT – WON’T HAPPEN",
-                keywords: ["ipa"],
+                keywords: "ipa",
                 style: "hazy ipa",
                 abv: 7.5,
                 abvRank: "medium",
@@ -270,7 +562,7 @@ let breweriesCollection = [
             },
             {
                 name: "GRIN & TONIC",
-                keywords: ["Other"],
+                keywords: "Other",
                 style: "hazy ipa",
                 abv: 4,
                 abvRank: "medium",
@@ -288,11 +580,26 @@ let breweriesCollection = [
 
 
 
+// function changeRanks(arr) {
+//     for (let brewery of arr) {
+//         for (let beer of brewery.beers) {
+//             if (4 < abv < 7) {
+//                 beer.abvRank = medium;
+//             }
+
+//         }
+//     }
+// }
+
+
+
 
 $("#submitem").on("click", function () {
     event.preventDefault()
 
     breweriesDisplay.length = 0;
+    displayBeers.empty()
+
 
     ibu = $("#ibu").val().trim();
     abv = $("#abv").val().trim();
@@ -344,7 +651,7 @@ $("#submitem").on("click", function () {
 
     // console.log(city)
     // console.log(state)
-    // queryURL = `https://api.openbrewerydb.org/breweries?by_state=${state}&by_city=${city}&per_page=50`
+    queryURL = `https://api.openbrewerydb.org/breweries?by_state=${state}&by_city=${city}&per_page=50`
     // console.log(queryURL)
 
 
@@ -383,16 +690,11 @@ function initMap() {
 
 
 
+
+
     if (abv || ibu) {
 
-        // $.ajax({
-        //     url: queryURL,
-        //     method: "GET"
-        // }).then(function (response) {
-        //     console.log(response)
-        //     console.log(response[7].latitude)
-        //     console.log(response[7].longitude)
-        //     console.log(response.length)
+
 
 
 
@@ -438,7 +740,7 @@ function initMap() {
 $(document).on("click", ".brewclick", function () {
 
     console.log("hullo")
-console.log($(this).attr("data-name"))
+    console.log($(this).attr("data-name"))
 
 
 
@@ -449,16 +751,26 @@ console.log($(this).attr("data-name"))
 
             for (let beer of brewery.beers) {
 
-            if(((beer.ibuRank === ibu) || (ibu === "unimportant")) && ((beer.abvRank === abv) || (abv === "unimportant")) && ((beer.keywords === styleKeywords) || (styleKeywords === "unimportant"))) {
-                $("<div>").html(beer.name).appendTo($(".brewclick"))
+                if (((beer.ibuRank === ibu) || (ibu === "unimportant")) && ((beer.abvRank === abv) || (abv === "unimportant")) && ((beer.keywords === styleKeywords) || (styleKeywords === "unimportant"))) {
+                    $("<div>").html(beer.name).appendTo($(".brewclick"))
+
+                }
+
 
             }
-            
-
-        }
     }
 })
 
+
+$.ajax({
+    url: queryURL,
+    method: "GET"
+}).then(function (response) {
+    console.log(response)
+    console.log(response[7].latitude)
+    console.log(response[7].longitude)
+    console.log(response.length)
+})
 
 //find a way to get coordinates of state or city and set it to map center
 //add identifying info to the map markers, then create a click handler to display the proper info
