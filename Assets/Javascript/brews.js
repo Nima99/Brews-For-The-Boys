@@ -1,5 +1,6 @@
 
 
+//Warning, Very Large Array below
 
 
 let breweriesCollection = [
@@ -638,6 +639,16 @@ let breweriesCollection = [
 ]
 
 
+// function changeRanks(arr) {
+//     for (let brewery of arr) {
+//         for (let beer of brewery.beers) {
+//             if (4 < abv < 7) {
+//                 beer.abvRank = medium;
+//             }
+
+//         }
+//     }
+// }
 
 
 
@@ -723,23 +734,8 @@ console.log(displayBeers);
 
 
 
-//Warning, Very Large Array below
 
 
-
-
-
-
-// function changeRanks(arr) {
-//     for (let brewery of arr) {
-//         for (let beer of brewery.beers) {
-//             if (4 < abv < 7) {
-//                 beer.abvRank = medium;
-//             }
-
-//         }
-//     }
-// }
 
 
 
@@ -837,9 +833,7 @@ function initMap() {
 
 
 
-
-
-
+        service = new google.maps.places.PlacesService(map);
 
 
 
@@ -860,19 +854,75 @@ function initMap() {
         // Each div should be styled, have an identifying information data-name attribute, which can be used to bring up the information for the appropriate beers, after filtering these too
 
         for (let brewery of breweriesDisplay) {
+
+            let storedResults;
+
             let location = brewery.position;
-            console.log(location)
+
             let marker = new google.maps.Marker({
                 position: location,
                 map: map,
-                title: brewery.name
+                title: brewery.name,
             });
+
+
+
+            //googleplaces call
+
+            let request = {
+                query: brewery.name,
+                fields: ["place_id",'geometry'],
+                locationBias: {radius: 30, center: central}
+              };
+              
+              
+              service.findPlaceFromQuery(request, function(results, status) {
+                if (status === google.maps.places.PlacesServiceStatus.OK) {
+                //   for (var i = 0; i < results.length; i++) {
+                //     // createMarker(results[i]);
+                //     console.log(results[0].place_id)
+                //     console.log(results)
+                //   }
+                
+                //   map.setCenter(results[0].geometry.location);
+            }
+
+
+            //add inside if 
+                
+                let requestDetailed = {
+                    placeId: results[0].place_id,
+                    fields: ['geometry', "photo", "formatted_address", "formatted_phone_number", "rating" ]
+                    // fields: ['geometry', "opening_hours", "photo", "formatted_address", "formatted_phone_number", "icon", "rating", "review", "user_ratings_total","price_level", "website" ]
+                }
+    
+                service.getDetails(requestDetailed, function (place, status) {
+                    if (status == google.maps.places.PlacesServiceStatus.OK) {
+                        console.log(place)
+                        console.log(place.geometry.location.lat())
+                        console.log(place.rating)
+                        storedResults = place
+                        marker.dataFromPlaces = storedResults;
+                      }
+    
+                })
+    
+              });
+
+
+            console.log(storedResults)
+            console.log(location)
+
+            // marker.dataFromPlaces = storedResults.rating Ask TA's why this didn't work/loaded before the call to googleplaces ???????????
+
+
+            
 
             marker.addListener("click", function () {
                 displayBeers.empty()
                 console.log("click successful")
                 console.log(this.title)
-                $(`<div class = "brewclick" data-name="${this.title}">A clickable list of all the beers for a given brewery will go here when this brewery is clicked on. This brewery is named ${this.title}</div>`).appendTo(displayBeers)
+                $(`<div class = "brewclick" data-name="${this.title}">A clickable list of all the beers for a given brewery will go here when this brewery is clicked on. This brewery is named ${this.title} This brewery's rating is ${this.dataFromPlaces.rating}</div>`).appendTo(displayBeers)
 
             })
 
