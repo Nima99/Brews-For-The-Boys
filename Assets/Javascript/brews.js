@@ -425,24 +425,16 @@ $("#submitem").on("click", function () {
 
 
 
-    for (let brewery of breweriesCollection) {
+  for (let brewery of breweriesCollection) {
         for (let beer of brewery.beers) {
 
-            if (styleKeywords.every(function (element){
-
-                    if (beer.keywords.includes(element)) {
-                        return true;
-                }
-            })) {
-                if (beer.ibuRank === ibu && beer.abvRank === abv) { 
-                    if (!breweriesDisplay.includes(brewery)) {
-                        breweriesDisplay.push(brewery)
-                    }
+            if (beer.ibuRank === ibu && beer.abvRank === abv && styleKeywords === beer.keywords) {
+                if (!breweriesDisplay.includes(brewery)) {
+                    breweriesDisplay.push(brewery)
                 }
             }
         }
     }
-
     console.log(breweriesDisplay)
 
 
@@ -526,11 +518,7 @@ function initMap() {
                 let brewLong = parseFloat(brewery.longitude)
                 let location = { lat: brewLat, lng: brewLong };
                 console.log(location)
-                places.forEach(function(place) {
-                    if (!place.geometry) {
-                      console.log("Returned place contains no geometry");
-                      return;
-                    }
+                
                 var icon = {
                       url: place.icon,
                       size: new google.maps.Size(71, 71),
@@ -542,7 +530,7 @@ function initMap() {
                     position: place.location,
                     map: map,
                     icon: icon,
-                    title: brewery.name
+                    title: name
                     
                 });
 //-------------------------------------------------------------------------------------------------------------------
@@ -616,9 +604,9 @@ function initMap() {
                 })
 
 
-                })
-        }
+                }
         })
+        }
     
 
 
@@ -626,7 +614,7 @@ function initMap() {
 
 
 
-}
+
 
 
 //find a way to get coordinates of state or city and set it to map center
