@@ -466,25 +466,28 @@ $("#submitem").on("click", function () {
 
 function initMap() {
 
-    let central = { lat: 39.8283, lng: -98.5795 };
+    let central = { lat: 32.7767, lng: -96.7970 };
 
-    let zoomlevel = 4;
+    let zoomlevel = 9;
 
     // if (city || state) {
     //     zoomlevel = 10;
     // } else {
     //     zoomlevel = 4;
     // }
-    
+
     let map = new google.maps.Map(
-        document.getElementById('map'), { zoom: zoomlevel, center: central })
+        document.getElementById('map'), { zoom: zoomlevel, center: central });
+
+
+
+        service = new google.maps.places.PlacesService(map);
        
         
         var infowindow = new google.maps.InfoWindow({
             content: document.getElementById('info-content')
     });
-      var places = new google.maps.places.PlacesService(map);
-
+      
 
 
 
@@ -500,8 +503,57 @@ function initMap() {
             console.log(response[7].latitude)
             console.log(response[7].longitude)
             console.log(response.length)
+            for (let brewery of breweriesDisplay) {
+
+                let storedResults;
+    
+                let location = brewery.position;
+                
+                let marker = new google.maps.Marker({
+                    position: place.location,
+                    map: map,
+                    title: brewery.name
+                    
+                });
+            let request = {
+                query: brewery.name,
+                fields: ["place_id",'geometry'],
+                locationBias: {radius: 30, center: central}
+              };
+              
+              
+              service.findPlaceFromQuery(request, function(results, status) {
+                if (status === google.maps.places.PlacesServiceStatus.OK) {
+                //   for (var i = 0; i < results.length; i++) {
+                //     // createMarker(results[i]);
+                //     console.log(results[0].place_id)
+                //     console.log(results)
+                //   }
+                
+                //   map.setCenter(results[0].geometry.location);
+            }
 
 
+            //add inside if 
+                
+                let requestDetailed = {
+                    placeId: results[0].place_id,
+                    fields: ['geometry', "photo", "formatted_address", "formatted_phone_number", "rating" ]
+                    // fields: ['geometry', "opening_hours", "photo", "formatted_address", "formatted_phone_number", "icon", "rating", "review", "user_ratings_total","price_level", "website" ]
+                }
+    
+                service.getDetails(requestDetailed, function (place, status) {
+                    if (status == google.maps.places.PlacesServiceStatus.OK) {
+                        console.log(place)
+                        console.log(place.geometry.location.lat())
+                        console.log(place.rating)
+                        storedResults = place
+                        marker.dataFromPlaces = storedResults;
+                      }
+    
+                })
+    
+              });
 
             // filter responses here using array of obs initialized outside into list of viable breweries
 
@@ -513,36 +565,13 @@ function initMap() {
 
             // Each div should be styled, have an identifying information data-name attribute, which can be used to bring up the information for the appropriate beers, after filtering these too
             
-            for (let brewery of response) {
-                let brewLat = parseFloat(brewery.latitude)
-                let brewLong = parseFloat(brewery.longitude)
-                let location = { lat: brewLat, lng: brewLong };
-                console.log(location)
-                
-                var icon = {
-                    url: place.icon,
-                    size: new google.maps.Size(71, 71),
-                    origin: new google.maps.Point(0, 0),
-                    anchor: new google.maps.Point(17, 34),
-                    scaledSize: new google.maps.Size(25, 25)
-                    };
-                let marker = new google.maps.Marker({
-                    position: place.location,
-                    map: map,
-                    icon: icon,
-                    title: name
-                    
-                });
+           
 //-------------------------------------------------------------------------------------------------------------------
         
          
-         places.getDetails({placeId: marker.placeResult.place_id},
-         function(place, status) {
-          if (status !== google.maps.places.PlacesServiceStatus.OK) {
-            return;
-          }
          
-        });
+         
+    
         function buildIWContent(place) {
             document.getElementById('iw-icon').innerHTML = '<img class="brewIcon" ' +
                 'src="' + place.icon + '"/>';
