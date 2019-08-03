@@ -639,16 +639,16 @@ let breweriesCollection = [
 ]
 
 
-// function changeRanks(arr) {
-//     for (let brewery of arr) {
-//         for (let beer of brewery.beers) {
-//             if (4 < abv < 7) {
-//                 beer.abvRank = medium;
-//             }
+function changeRanks(arr) {
+    for (let brewery of arr) {
+        for (let beer of brewery.beers) {
+            if (4 < abv < 7) {
+                beer.abvRank = "medium";
+            }
 
-//         }
-//     }
-// }
+        }
+    }
+}
 
 
 
