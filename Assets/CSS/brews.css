@@ -13,7 +13,6 @@
     
 }
 
-#subitem
 
 
 #jumboCara {
@@ -24,8 +23,8 @@
 }
 
 #map {
-    width: 100%;
-    height: 400px;
+    width: 50%;
+    height: 250px;
 }
 
 #formsection {

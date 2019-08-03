@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Us! </title>
+     <!-- This links to the jQuery Library -->
+     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+     <!--- Bootstrap -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+     <!-----Link CSS --->
+</head>
+<body>
+<!--Navigation-->
+   
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            
+            <a class="nav-link active" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./beerquiz.html">Beer Fun!</a>
+            
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="./moreinfo.html">More Information</a>
+          </li>
+        </ul>
+
+<!---body of page -->
+    <h1>Brewery and Beer Finder (IPA API)</h1>
+   <h2>Team Members</h2> <p>Raven Gates, Diego Garcia, Nick Haer, Nima Akhaveissy </p>
+   <h2>Motivation:</h2> <p>Our goal is to make it easier to find beers that fit certain specifications, and to provide information, as well as linking to the breweries that serve beers meeting specifications.
+   </p>
+   <h2>Project Proposal:</h2> 
+    <p> Brewery finder is a website dedicated to helping people find local breweries where they can drink the kinds of beer they like. It offers a form where users can input beer attributes they enjoy, and then locates breweries that have beers matching the description on a map. Clicking on the brewery lists the matching beers, with details for each individual beer and relevant stories/details, like price and rating. 
+        Show breweries where beers that meet the search criteria are stocked
+        Name, ratings and details for each beer
+        Find more information about the beer, such as reviews, how the texture/taste is like, information on the crafting of the beer.
+        Potential Additions: Information or functionality regarding either the beers, beer type, or breweries, along with tips on how to select successfully, or even suggesting related options from a beer that a user specifically selects as their favorite.
+        </p>
+        <p>Prospective Design:
+                Form page, with input for specifications like abv( a range), type (IPA, stout, etc.), and price, along with a miles radius.
+                After submitting, offers users a choice between map view and list view. 
+                The list view has a list of breweries that have beers meeting specifications, along with their distance from your location. Clicking on these breweries will display a dropdown list of matching beers, with brief bios. Clicking on one will open up a longer, but still brief information section.
+                The map view has a map of breweries. Clicking on one will open up the brewery and its beers to the right, where each beer has a short bio. Clicking on one will open up a more extensive bio, similar to with the list view.
+                Potentially (Reach goal): A subscription section where users can subscribe to be sent information when a brewery in their radius updates their selection to include a beer that fits the users specifications.
+                </p>
+                
+ <h2>Technologies Used:</h2>
+
+        <p> Google maps API, used to display the map, and markers on the map.
+         Open Brewery API (possibly to discard). Used to find the breweries in Dallas, their lat/long coordinates, their website url, and other information.
+         Google-places API business and times
+         Plan to use Hover.css
+        </p>
+
+        <h2>Directions for Future Functionality:</h2>
+               <p> Potentially (Reach goal): A subscription section where users can subscribe to be sent information when a brewery in their radius updates their selection to include a beer that fits the users specifications.
+                Map view vs. list view for the breweries display, one using map markers and the other displaying a complete list of each matching brewery
+                A more extensive information section, and more parameters, as well as more specific search terms.
+                Shows recent searches in general of what people have searched for. </p>
+   
+
+ <!------------------------------------------------ Footer -->
+                <div id= footer>
+              <footer class="page-footer p-3 bg-dark text-white">
+                
+              
+                  <!-- Footer Links -->
+                  <div class="container">
+                
+                    <!-- Grid row-->
+                    <div class="row text-center d-flex justify-content-center pt-5">
+                
+                      <!-- Grid column -->
+                      <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                          <a href="#!">HOME</a>
+                        </h6>
+                      </div>
+                      <!-- Grid column -->
+                
+                      <!-- Grid column -->
+                      <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                          <a href="#!">BEER FUN</a>
+                        </h6>
+                      </div>
+                      <!-- Grid column -->
+                
+                      <!-- Grid column -->
+                      <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                          <a href="#!">ABOUT US</a>
+                        </h6>
+                      </div>
+                      <!-- Grid column -->
+                
+                      <!-- Grid column -->
+                      <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                          <a href="#!">MORE INFO</a>
+                        </h6>
+                      </div>
+                       
+                      <!-- Grid column -->
+                      <div class="col-md-8">
+                        <p>Drink Responsibly!</p>
+                      </div>
+                      <!-- Grid column -->
+                
+                    </div>
+                   
+                
+                  <!-- Copyright -->
+                  <div class="footer-copyright text-center py-3">© 2018 Copyright:
+                    Group Project 1 </a>
+                  </div>
+                  <!-- Copyright -->
+                
+                </footer>
+              </div><!-- Footer Div------------------------------------------ -->
+              
+</body>
+</html>
