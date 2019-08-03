@@ -1,0 +1,20 @@
+h1 {
+    color: darkslategrey;
+    font-weight: bolder
+}
+
+h2 {
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+p3 {
+    color:gray;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#carousel {
+    height: 20px;
+}
