@@ -45,25 +45,28 @@
   <!------------Nav Bar -------------------------->
   <div id="old-enough">
 
-    <ul class="nav justify-content-end bg-dark ">
-      <li class="nav-item">
-        <a class="nav-link active text-white" href="./index.html">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-white" href="./beerquiz.html">Beer Fun!</a>
 
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-white" href="./aboutus.html">About Us</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-white" href="./moreinfo.html">More Information</a>
-      </li>
-    </ul>
+   
+      <ul class="nav justify-content-end bg-dark ">
+        <li class="nav-item">       
+          <a class="nav-link active text-white" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="./beerquiz.html">Help Picking Your Beer!</a>
+          
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="./aboutus.html">About Us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" href="./moreinfo.html">Contact Us!</a>
+        </li>
+      </ul>
+           
+<!------------------------------------Jumbotron Carasole-------------------------->
+<div class="bd-example">
+    <div id="carousel" class="carousel slide" data-ride="carousel">
 
-    <!------------------------------------Jumbotron Carasole-------------------------->
-    <div class="bd-example">
-      <div id="carousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carousel" data-slide-to="0" class="active"></li>
           <li data-target="#carousel" data-slide-to="1"></li>
@@ -111,6 +114,7 @@
     <h3>BEERS NEAR ME</h3>
     <div class="container">
       <div class="row">
+
 
         <div class="col-6">
           <div id="map"></div>
@@ -160,6 +164,7 @@
     </div>
 
 
+
     <!--------------------Imput ss-------------------------------->
     <div>
       <form id="formsection">
@@ -194,6 +199,7 @@
           </select>
         </div>
 
+
         <label for="abv">ABV</label>
         <select id="abv" class="form-control" class="form-control">
           <option value="low">Low: Up to and including 4%</option>
@@ -203,6 +209,7 @@
           <option value="unimportant">Not an Important Factor For Me</option>
         </select>
     </div>
+
 
     <button id="submitem">Submit</button>
     </form>
@@ -215,48 +222,46 @@
     <footer class="page-footer p-3 bg-dark text-white">
 
 
-      <!-- Footer Links -->
-      <div class="container">
 
-        <!-- Grid row-->
-        <div class="row text-center d-flex justify-content-center pt-5">
 
-          <!-- Grid column -->
-          <div class="col-md-2">
-            <h6 class="text-uppercase font-weight-bold">
-              <a href="#!">HOME</a>
-            </h6>
-          </div>
-          <!-- Grid column -->
 
-          <!-- Grid column -->
-          <div class="col-md-2">
-            <h6 class="text-uppercase font-weight-bold">
-              <a href="#!">BEER FUN</a>
-            </h6>
-          </div>
-          <!-- Grid column -->
 
-          <!-- Grid column -->
-          <div class="col-md-2">
-            <h6 class="text-uppercase font-weight-bold">
-              <a href="#!">ABOUT US</a>
-            </h6>
-          </div>
-          <!-- Grid column -->
+    <!-- Footer Links -->
+    <div class="container">
+  
+      <!-- Grid row-->
+      <div class="row text-center d-flex justify-content-center pt-5">
+  
+        <!-- Grid column -->
+        <div class="col-md-2">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="#!">HOME</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-2">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="#!">HELP PICKING YOUR!</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-2">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="#!">ABOUT US</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-2">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="#!">CONTACT US!</a>
+          </h6>
 
-          <!-- Grid column -->
-          <div class="col-md-2">
-            <h6 class="text-uppercase font-weight-bold">
-              <a href="#!">MORE INFO</a>
-            </h6>
-          </div>
-
-          <!-- Grid column -->
-          <div class="col-md-8">
-            <p>Drink Responsibly!</p>
-          </div>
-          <!-- Grid column -->
 
         </div>
 
@@ -271,11 +276,13 @@
   </div><!-- Footer Div------------------------------------------ -->
 
 
+
   <!--old enough div ends-->
   </div>
 
 
   <!-- ABV Carousel -->
+
 
   <!-- <div class="container">
   <div class="row">
@@ -315,10 +322,12 @@
             <span class="sr-only">Next</span>  
           </a>
 
+
     </div>
       
     
       </div>
+
   </div>
   
 </div> -->
@@ -328,9 +337,19 @@
 
   <script src="./Assets/Javascript/brews.js"></script>
 
+
   <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSwZ9eE8eDmGB7gufa5vI2RLBE9PU3rXg&libraries=places&callback=initMap">
     </script>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <script src="./Assets/Javascript/brews.js"></script>
+
+
 
 
 
