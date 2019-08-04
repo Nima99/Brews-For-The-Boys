@@ -178,7 +178,7 @@ let breweriesCollection = [
 
     {
         name: "Steam Theory Brewing",
-        info: "Over time you will see how we have blended hard technology with innovative ideas that date back to the Victorian era and leverage them in the modern day. Our “Theory” is that we can then blend those concepts with our own in a way that will bring together our brewery, bar, kitchen and overall look and feel. It will be an immersive environment where people can enjoy food and beer that are not only intertwined in themselves, but also with a goal of educating folks on where we came from as an industry as well as where it will take us in the future. We want to be a place of learning, enjoyment, surprise and wonderment. Whether it be the beers, food, cocktails or atmosphere - we will ensure there will always be a synergy of the culinary arts in a way that will intrigue the senses.",
+        info: "We want to be a place of learning, enjoyment, surprise and wonderment. Whether it be the beers, food, cocktails or atmosphere - we will ensure there will always be a synergy of the culinary arts in a way that will intrigue the senses.",
         url: "https://steamtheorybrewing.com/our-mission",
         position: { lat: 32.778463, lng: -96.830002 },
         beers: [
@@ -341,7 +341,7 @@ let breweriesCollection = [
     {
         //technically in Mckinney
         name: "Nine Band Brewing Company",
-        info: "TTexas born and bred, the Nine-Band brewmaster brings his award-winning experience to every one of our carefully crafted styles, each made with the highest quality ingredients available for the ultimate taste experience.",
+        info: "Texas born and bred, the Nine-Band brewmaster brings his award-winning experience to every one of our carefully crafted styles, each made with the highest quality ingredients available for the ultimate taste experience.",
         url: "http://www.ninebandbrewing.com/beer/",
         position: { lat: 33.156278, lng: -96.682365 },
         beers: [
@@ -806,7 +806,7 @@ let breweriesCollection = [
 },
 {       
        name: "Raspberry Tart",
-       keywords: ["Sour Saison"],
+       keywords: "other",
        style: "Sour Saison with Raspberry",
        abv:8.8,
        abvRank: "high",
@@ -843,7 +843,7 @@ let breweriesCollection = [
 
 {
 name: "Braindead Brewing",
-info: "",
+info: "We're kinda like the hip hop duo Black Star... but instead of making awesome rap, we make ridiculously good beer and food.",
 url: "http://braindeadbrewing.com/",
 position: { lat: 32.7838067, lng: -96.7854202 },
 beers: [
@@ -1183,7 +1183,7 @@ beers: [
 function changeRanks(arr) {
     for (let brewery of arr) {
         for (let beer of brewery.beers) {
-            if (4 < abv < 7) {
+            if (4 < beer.abv < 7) {
                 beer.abvRank = "medium";
             }
 
@@ -1236,7 +1236,7 @@ $("#submitem").on("click", function () {
     $('#results').show();
 
 
-    brewClicked = false;;
+    brewClicked = false;
     breweriesDisplay.length = 0;
     displayBeers.empty()
 
@@ -1313,7 +1313,7 @@ function initMap() {
 
     let central = { lat: 32.7767, lng: -96.7970 };
 
-    let zoomlevel = 9;
+    let zoomlevel = 8;
 
     // if (city || state) {
     //     zoomlevel = 10;
@@ -1415,8 +1415,41 @@ function initMap() {
                 displayBeers.empty()
                 console.log("click successful")
                 console.log(this.title)
-                $(`<div class = "brewclick" data-name="${this.title}">A clickable list of all the beers for a given brewery will go here when this brewery is clicked on. This brewery is named ${this.title} This brewery's rating is ${this.dataFromPlaces.rating}</div>`).appendTo(displayBeers)
+                brewClicked = false;
+                // if ((this).dataFromPlaces.photos[0] !== undefined)
+                // let firstPhoto = this.dataFromPlaces.photos[0].getUrl()
+                // console.log(this.dataFromPlaces.photos[0].getUrl())
 
+                
+                let imgSrc;
+                let phoneNum;
+                let brewAddress;
+
+
+                if (this.dataFromPlaces) {
+                    console.log(this.dataFromPlaces)
+                    imgSrc = this.dataFromPlaces.photos[0].getUrl()
+                    phoneNum = this.dataFromPlaces.formatted_phone_number
+                    brewAddress = this.dataFromPlaces.formatted_address
+                }
+
+                $(`<div id = "first" class="card" style="width: 18rem;"></div>`).appendTo(displayBeers)
+                $(`<img id= "second" src="${(imgSrc || "https://s19316.pcdn.co/wp-content/uploads/2019/03/DSC09507-600px-600x338.jpg")}" class="card-img-top" alt="Sorry-No Posted 
+                Pictures">`).appendTo($("#first"))
+                $(`<div id="third" class="card-body"></div>`).insertAfter($("#second"))
+                $(`<h5 id="fourth" class="card-title">${brewery.name}</h5>`).appendTo($("#third"))
+                $(`<p class="card-text">${brewery.info}</p>`).appendTo($("#third"))
+                $(`<p class="card-text">Phone Number: ${(phoneNum || "Sorry, no phone number listed.")}</p>`).appendTo($("#third"))
+                $(`<p class="card-text">${(brewAddress || "Sorry, no address listed")}</p>`).appendTo($("#third"))
+                $(`<a target="_blank" href="${brewery.url}" class="btn btn-primary">Check Out Their Website!</a>`).appendTo($("#third"))
+                $(`<a href="#" id="addmargin" data-name="${brewery.name}" class="btn btn-info brewclick">Show Matching Beers!</a>`).appendTo($("#third"))
+
+
+
+
+
+                // $(`<div class = "brewclick" data-name="${this.title}">A clickable list of all the beers for a given brewery will go here when this brewery is clicked on. This brewery is named ${this.title} This brewery's rating is ${this.dataFromPlaces.rating}</div>`).appendTo(displayBeers)
+                
             })
 
 
@@ -1433,8 +1466,12 @@ function initMap() {
 
 $(document).on("click", ".brewclick", function () {
 
+
+
     if (brewClicked === false) {
         brewClicked = true;
+
+        event.preventDefault()
 
         console.log("hullo")
         console.log($(this).attr("data-name"))
