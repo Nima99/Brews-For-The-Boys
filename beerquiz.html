@@ -11,94 +11,189 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <!-----Link CSS --->
+   <!-----Link CSS --->
+   <link rel="stylesheet" href="./Assets/CSS/beerhelp.css">
 </head>
 <body>
 <!--Navigation-->
   
-       <ul class="nav justify-content-end">
-         <li class="nav-item">
-           
-           <a class="nav-link active" href="./index.html">Home</a>
-         </li>
-         <li class="nav-item">
-           <a class="nav-link" href="./beerquiz.html">Beer Fun!</a>
-           
-         </li>
-         <li class="nav-item">
-           <a class="nav-link" href="./aboutus.html">About Us</a>
-         </li>
-         <li class="nav-item">
-             <a class="nav-link" href="./moreinfo.html">More Information</a>
-         </li>
-       </ul>
-<body>
-
-
-    <h1> Beer Fun</h1>
-    <p> insert beer quiz quiz to find what beer you may perfer if having a hard time deciding </p>
-    <p>insert fun random trivia about beer</p>
-    <p>insert quiz to see how much you know about beer</p>
+<ul class="nav justify-content-end bg-dark ">
+  <li class="nav-item">       
+    <a class="nav-link active text-white" href="./index.html">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-white" href="./beerquiz.html">Help Picking Your Beer!</a>
     
-<!------------------------------------------------ Footer -->
-<div id= footer>
-        <footer class="page-footer p-3 bg-dark text-white">
-          
-        
-            <!-- Footer Links -->
-            <div class="container">
-          
-              <!-- Grid row-->
-              <div class="row text-center d-flex justify-content-center pt-5">
-          
-                <!-- Grid column -->
-                <div class="col-md-2">
-                  <h6 class="text-uppercase font-weight-bold">
-                    <a href="#!">HOME</a>
-                  </h6>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-white" href="./aboutus.html">About Us</a>
+  </li>
+  <li class="nav-item">
+      <a class="nav-link text-white" href="./moreinfo.html">Contact Us!</a>
+  </li>
+</ul>
+
+<!---------------------------------------------------------- Let us Help -->
+<div class="media">
+    <img src="./Assets/Images/chosebeer.jpeg" class="mr-3" alt="...">
+    <div class="media-body">
+      <h1 class="mt-0">Need help finding the perfect beer for you?</h1>
+      <h2>No worries! We're here to help! </h2>
+
+      <p3>Below you will find information about IBU, ABV, and 
+      other helpful tips and quizes to match
+      you with your perfect beer! </p3>
+
+    </div>
+  </div>
+
+
+
+
+
+    <!--------------------------------------------------------------------------------------------------Card Divs----------------------->
+    <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <!----->
+              <div class="container">
+                  <div class="row">
+     <!-------------------------------------------------FIRST CAROUSEL DIV---------------------------------------------> 
+        <div class="col-12">
+                        <div id="abvcarousel" class="carousel slide carousel-fade" data-ride="carousel" interval="False">
+                            
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="./Assets/Images/style of beer.jpg" class="d-block h-50 w-100" alt="">
+                              <div class="carousel-caption d-none d-md-block">
+                                
+                              </div>
+
+                           <!---->     </div>
+                            
+                      <!---->        </div>
+                                        
+          <!---->      </div>                    
+           <!---->     </div>
+               <!---->  </div>                  
+             <!---->  </div>
+  <!--End of 1st Carousel Div ---->
+
+ 
+              <h5 class="card-title">Know More About ABV </h5>
+              <p class="card-text">ABV aka alcohol by volume, is the standard measurement, used worldwide, to assess the strength of a particular beer.
+                  The ABV scale is simple in the fact that the higher the ABV, the more alcohol that beer contains. 
+                   Lighter beers range from 4-4.5% ABV, with percentages getting higher with heavier styles of beer.</p>
+              <a href="file:///C:/Users/raven/Desktop/project-1/index.html" class="btn btn-primary">I'm ready to find my beer!</a>
+            <!---->    </div>
+          <!---->    </div>
+         <!---->   </div>                 
+
+
+ <!------------------------------------------------------SECOND CARD DIV ------------------------------------>
+ <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+   <div class="container">
+    <div class="row">
+      <div class="col-12">
+          <div id="ibucarousel" class="carousel slide carousel-fade" data-ride="carousel" interval="False">
+              
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./Assets/Images/ibu scale.jpg" class="d-block h-50 w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Light Beer is ok</h5>
                 </div>
-                <!-- Grid column -->
-          
-                <!-- Grid column -->
-                <div class="col-md-2">
-                  <h6 class="text-uppercase font-weight-bold">
-                    <a href="#!">BEER FUN</a>
-                  </h6>
-                </div>
-                <!-- Grid column -->
-          
-                <!-- Grid column -->
-                <div class="col-md-2">
-                  <h6 class="text-uppercase font-weight-bold">
-                    <a href="#!">ABOUT US</a>
-                  </h6>
-                </div>
-                <!-- Grid column -->
-          
-                <!-- Grid column -->
-                <div class="col-md-2">
-                  <h6 class="text-uppercase font-weight-bold">
-                    <a href="#!">MORE INFO</a>
-                  </h6>
-                </div>
-                 
-                <!-- Grid column -->
-                <div class="col-md-8">
-                  <p>Drink Responsibly!</p>
-                </div>
-                <!-- Grid column -->
-          
               </div>
-             
-          
-            <!-- Copyright -->
-            <div class="footer-copyright text-center py-3">© 2018 Copyright:
-              Group Project 1 </a>
+      <!---->  </div>  
+     <!---->    </div>
+     <!---->   </div>
+    
+  </div> <!------------------------------------------------------End of 2nd Carasel Div -->    
+ 
+ <!---End of 2nd Carousel Div -->
+              <h5 class="card-title">Know More about IBU</h5>
+              <p class="card-text"> An IBU is a unit of measure of the bitterness of beer, which comes from hops.
+                  The more hoppy the beer, the higher the IBU. A beer's IBU is derived from a complicated formula 
+                  and is typically way below 100, with blonde ales rating around 15 to 30 IBUs and stouts, like Guinness, going up to 60 IBUs.</p>
+              <a href="file:///C:/Users/raven/Desktop/project-1/index.html#" class="btn btn-primary">I'm ready to find my beer!</a>
+    <!---->  </div>
+    <!---->   </div>
+    <!---->    </div>
+         
+     <!---->  </div> 
+  </div><!-------------------------------------------------------------END OF CARDS---------------------------------------------->
+
+<!--Empty Div-->
+<div class ="container col-md-2">
+
+
+</div>
+  
+
+    
+  <!-------------------------FOOTER----------------------------------------->
+  <!-- Footer -->
+  <div id= footer>
+      <footer class="page-footer p-3 bg-dark text-white">
+        
+      
+          <!-- Footer Links -->
+          <div class="container">
+        
+            <!-- Grid row-->
+            <div class="row text-center d-flex justify-content-center pt-5">
+        
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!">HOME</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+        
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!">HELP PICKING YOUR BEER!</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+        
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!">ABOUT US</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+        
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!">CONTACT US!</a>
+                </h6>
+              </div>
+               
+              <!-- Grid column -->
+              <div class="col-md-8">
+                <p>Drink Responsibly!</p>
+              </div>
+              <!-- Grid column -->
+        
             </div>
-            <!-- Copyright -->
-          
-          </footer>
-        </div><!-- Footer Div------------------------------------------ -->
+           
+        
+          <!-- Copyright -->
+          <div class="footer-copyright text-center py-3">© 2018 Copyright:
+            Group Project 1 </a>
+          </div>
+          <!-- Copyright -->
+        
+        </footer>
+      </div>
         
 </body>
 </html>
