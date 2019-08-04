@@ -873,6 +873,149 @@ let breweriesCollection = [
                 ibuRank: "medium",
                 info: "Started from the bottom fermentation, now we're here. The ultimate warm weather beer, pairs well with everything."
 
+
+
+}]
+
+},
+
+{
+        name: "Community Beer Co.",
+        info: "",
+        url: "https://www.communitybeer.com/",
+        position: { lat: 32.7917789589184, lng: -96.8165879157057 },
+        beers: [
+            {
+                name: "Citrus Slice ",
+                keywords: "ipa",
+                style: "India Pale Ale w/ Citrus Peel",
+                abv: 7,
+                abvRank: "high",
+                ibu: 50,
+                ibuRank: "medium",
+                info: "We've taken premium Citra hops and expertly blended them with fresh lemon & orange peel.  This results in an explosively delicious citrus-forward India Pale Ale bursting with tropical flavors & aromas."
+            },
+            {
+                name: "Mosaic IPA",
+                keywords: "ipa",
+                style: "India Pale Ale",
+                abv: 8.6,
+                abvRank: "high",
+                ibu: 85,
+                ibuRank: "high",
+                info: "Mosaic IPA is an extremely well-balanced brew that showcases its unique hop aroma and flavor.​ This beer gets its name from a new hop variety named “Mosaic,” which is predominantly where the immense, raw hop aroma and flavor is derived."
+            },
+            {
+                name: "Texas Lager",
+                keywords: "lager",
+                style: "Texas Lager",
+                abv: 4,
+                abvRank: "low",
+                ibu: 12,
+                ibuRank: "low",
+                info: "his crisp, light-bodied lager was specially brewed for all Texans to enjoy. "
+            },
+            {
+                name: "Public Ale",
+                keywords: "paleale",
+                style: "Extra Special Bitter",
+                abv: 5.5,
+                abvRank: "medium",
+                ibu: 38,
+                ibuRank: "medium",
+                info: "Public Ale's name is an ode to a sessionable style that not only has been commonly found in English public houses for centuries, but can be enjoyed today by everyone within our Community."
+            },
+            {
+                name: "Community Witbier",
+                keywords: "belgian",
+                style: "Belgian Style While Ale ",
+                abv: 5.2,
+                abvRank: "medium",
+                ibu: 18,
+                ibuRank: "low",
+                info: "We brew it traditionally using unmalted wheat as our base and lightly spice the kettle with freshly ground sweet and bitter orange peel and coriander seed. "
+            },
+            {
+                name: "Silly Gose",
+                keywords: "other",
+                style: "Fruited Gose",
+                abv: 5,
+                abvRank: "medium",
+                ibu: 1,
+                ibuRank: "low",
+                info: "It's a 1,000 year old German- style sour wheat ale brewed with sea salt and coriander."
+            },
+
+            {
+                name: "Turn Up the Jams",
+                keywords: "ipa",
+                style: "American styled IPA",
+                abv: 6.2,
+                abvRank: "medium",
+                ibu: 33,
+                ibuRank: "medium",
+                info: "Slightly tart & totally groovy IPA loaded with citrus and berry characteristics thanks to a far out amount of American & New Zealand hops."
+            },
+            {
+                name: "Berliner Berry",
+                keywords: "other",
+                style: "Fruited Sour",
+                abv: 3.5,
+                abvRank: "low",
+                ibu: 5,
+                ibuRank: "low",
+                info: "The result is a vibrant ruby-colored beer that's beautifully complex and simply refreshing.  It's a new take on an old-world beer style and a perfect companion to kicking off summertime beer drinking in Texas!"
+            },
+            {
+                name: "Yessir",
+                keywords: "paleale",
+                style: "Fruited Sour",
+                abv: 5.2,
+                abvRank: "medium",
+                ibu: 32,
+                ibuRank: "medium",
+                info: "ositively pale and refreshing with a deliciously unique hop character showcasing Eureka, Lemondrop and Citra hops.  This is our take on classic American-style Pale Ales but with brand new, intriguing hop varieties that stand out from the crowd."
+            },
+            {
+                name: "Snicker Doodle Ale",
+                keywords: "paleale",
+                style: "English styled pale ale.",
+                abv: 5.2,
+                abvRank: "medium",
+                ibu: 15,
+                ibuRank: "low",
+                info: "We use heirloom English Marris Otter malted barley to lend a distinctly bready and crackery malt-forward flavor.  Finally we infuse freshly pureed vanilla beans and whole cinnamon sticks into the brew to create an amazing blend of flavors and aromas that will leave you craving that next bite...er sip!"
+            },
+            {
+                name: "Legion",
+                keywords: "stout",
+                style: "Russian Imperial Stout",
+                abv: 9.9,
+                abvRank: "high",
+                ibu: 70,
+                ibuRank: "high",
+                info: "Lacking the intensely bitter, burnt character of many stouts, we think it’s roasty in all the right places, with a velvety mouthfeel and smooth finish."
+            },
+            {
+                name: "Funnel Cake Ale",
+                keywords: "paleale",
+                style: "English Summer Ale",
+                abv: 4.2,
+                abvRank: "low",
+                ibu: 15,
+                ibuRank: "low",
+                info: "This ale won the Big Tex Choice Awards competition for Most Creative entry!"
+            },
+            {
+                name: "Funnel Cake Ale",
+                keywords: "paleale",
+                style: "English Summer Ale",
+                abv: 4.2,
+                abvRank: "low",
+                ibu: 15,
+                ibuRank: "low",
+                info: "This ale won the Big Tex Choice Awards competition for Most Creative entry!"
+
             },
             {
                 name: "HAPPINESS COMES FROM WITHIN (CORE BEER)",
@@ -1178,11 +1321,13 @@ let breweriesCollection = [
                 ibuRank: "high",
                 info: "An Imperial Wheat Porter aged in Woodford Reserve and Stranahan's barrels. Unlike most barrel-aged offerings, Hammer of the Gods was designed from the ground up to be whiskey barrel aged. The inclusion of wheat adds a soft pie-crust character to a big, milk-chocolaty wake up call for your mouth."
 
+
             }]
 
 
-    }]
+        }]
 
+   
 
 
 
