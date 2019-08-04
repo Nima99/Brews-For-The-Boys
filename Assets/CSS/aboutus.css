@@ -1,0 +1,27 @@
+h1 {
+    color: darkslategrey;
+    font-weight: bolder
+}
+
+.jumbotron{
+    text-align: center;
+ 
+    
+}
+
+p{
+    color:gray;
+    font-weight: bold;
+}
+
+#motivation {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: gray;
+    font-weight: bold;
+
+   
+}
