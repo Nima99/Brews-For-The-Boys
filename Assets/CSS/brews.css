@@ -27,8 +27,8 @@
 }
 
 #map {
-    width: 50%;
-    height: 250px;
+    width: 100%;
+    height: 350px;
 }
 
 #formsection {
@@ -39,6 +39,14 @@
     top: 75%;
     left: 25%;
 
+}
+
+.card-text {
+  font-size: .75rem;
+}
+
+#addmargin {
+  margin-top: 25px;
 }
 
 /* below added from hover.css library*/
