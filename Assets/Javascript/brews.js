@@ -1049,6 +1049,7 @@ let breweriesCollection = [
 
             },
             {
+
                 name: "FOREIGN EXPORT STOUT (CORE BEER)",
                 keywords: "Stout",
                 style: "Oatmean Extra Stout",
@@ -1531,6 +1532,11 @@ function initMap() {
                     //   map.setCenter(results[0].geometry.location);
                 }
 
+
+
+
+                    //   map.setCenter(results[0].geometry.location);
+                }
 
                 //add inside if 
 
