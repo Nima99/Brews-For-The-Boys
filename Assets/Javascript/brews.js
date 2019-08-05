@@ -1997,6 +1997,8 @@ function initMap() {
 
 
 
+
+
             //googleplaces call
             console.log(brewery.name)
             let request = {
@@ -2021,6 +2023,29 @@ function initMap() {
                     console.log(status)
                     return 0;
                 }
+
+
+                let infowindow = new google.maps.InfoWindow();
+
+
+            
+                marker.addListener("mouseover", function () {
+                    let contentString = 
+                    `<p id="firstHeading" class="firstHeading"><b>Name:</b> ${brewery.name}</p>
+                    <div id="bodyContent">
+                    <p><b>Address:</b> ${this.dataFromPlaces[0].formatted_address}</p>
+                    <p><b>Rating:</b> ${this.dataFromPlaces[0].rating}/5 Stars</p>`;
+    
+    
+                    infowindow.setContent(contentString)
+                    infowindow.open(map, marker);
+    
+    
+                })
+    
+                marker.addListener('mouseout', function() {
+                    infowindow.close(map, marker);
+                });
 
 
                 //add inside if 
