@@ -49,6 +49,32 @@
   margin-top: 25px;
 }
 
+
+#infowindow-content .title {
+  font-weight: bold;
+}
+
+#infowindow-content {
+  display: none;
+}
+
+#map #infowindow-content {
+  display: inline;
+}
+
+.arrangefont {
+  font-size: .75rem;
+  color: white;
+  text-align: left;
+}
+
+.fitin {
+  height: 500px;
+}
+
+#submitem {
+  margin-top: 50px;
+}
 /* below added from hover.css library*/
 
 /* for 21 or older?  yes button */
