@@ -618,8 +618,8 @@ let breweriesCollection = [
             },
             {
                 name: "Velvet Hammer",
-                keywords: "ipa",
-                style: "Dark beer",
+                keywords: "redamberale",
+                style: "Imperial Red Ale",
                 abv: 9,
                 abvRank: "high",
                 ibu: 85,
@@ -628,8 +628,8 @@ let breweriesCollection = [
             },
             {
                 name: "Golden Opportunity",
-                keywords: "Kolsch",
-                style: "light craft beer",
+                keywords: "kolsch",
+                style: "light Kolsch",
                 abv: 4.6,
                 abvRank: "medium",
                 ibu: 27,
@@ -637,24 +637,25 @@ let breweriesCollection = [
                 info: "In the spirit of a true session beer we present the Golden Opportunity, a beer modeled after the classic styles of Koln, Germany, but which deliberately lacks the enhanced fruitiness of the typical American interpretation. Straw-like in color with a dense white head, this medium-bodied brew has a light, pleasant malt aroma with a hint of sweetness and faint bitterness. It is clean, well-balanced and suitably carbonated for a crisp, refreshing feel."
             },
             {
-                name: "sit down or i'll sit you down",
+                name: "Sit Down or I'll Sit You Down",
                 keywords: "ipa",
-                style: "Dark Beer",
+                style: "Imperial IPA",
                 abv: 10,
                 abvRank: "Very high",
                 ibu: 90,
                 ibuRank: "very high",
-                info: "As for the beer itself, the intent is to exhibit the fresh and bright character of the hops. We dry hopped it with over a pound of hops per barrel of beer. It’s gold in color and the floral ester aroma is high. The hop bitterness is high, but not at all harsh. The hop flavor is high, fresh, and lively. Yet with all of our beers, it’s all about balance and this one is no exception. The malt character is fairly high and provides a tremendously full mouthfeel. Finally, the alcohol in this beer is intentionally present (and delicious)."
+                info: `It’s gold in color and the floral ester aroma is high. The hop bitterness is high, but not at all harsh. The hop flavor is high, fresh, and lively. Yet with all of our beers, it’s all about balance and this one is no exception. The malt character is fairly high and provides a tremendously full mouthfeel. Finally, the alcohol in this beer is intentionally present (and delicious).
+                This may very well be our best beer. Definitely the beer or choice for our employees.`
             },
             {
                 name: "Too Soon",
                 keywords: "ipa",
-                style: "Indiana Pale ale",
+                style: "Indian Pale ale",
                 abv: 10,
                 abvRank: "Very high",
                 ibu: 75,
                 ibuRank: "high",
-                info: "TOO SOON is an IP…A brewed with a ‘back to basics’ approach. Rather than formulate a recipe using the newest and trendiest methods, we used the traditional methods and techniques that are the foundation for some of our earlier beers (e.g., Velvet Hammer, Royal Scandal, Sit Down). Our typical base two row pale malt is accentuated with a minimal amount of light crystal malt and we turned to three of our most tried and true hops…Centennial, Cascade, and Amarillo. The brewhouse hop regimen for TOO SOON mirrors that of the earlier referenced beers and three are dry hopped in the same manner as well. Will this beer turn out as well as Hammer, Scandal, and Sit Down? Does the beer name answer the question?"
+                info: `TOO SOON is an IP…A brewed with a ‘back to basics’ approach. Rather than formulate a recipe using the newest and trendiest methods, we used the traditional methods and techniques that are the foundation for some of our earlier beers (e.g., Velvet Hammer, Royal Scandal, Sit Down)`
             },
             {
                 name: "COME AND TAKE IT",
@@ -664,7 +665,7 @@ let breweriesCollection = [
                 abvRank: "medium",
                 ibu: 30,
                 ibuRank: "medium",
-                info: "Our Koslch serves as the basis for ‘Come and Take It’, but the similarities between the two beers end there due to an aggressive use of cascade hops that completely change this beer’s character. Although we’ve added nearly a pound and half of Cascade per barrel to a Tettnang hopped beer, the execution and manner of the Cascade addition in a cohesive and seamless manner is what ‘Come and Take It’ is all about. Tettnang imparts spicy and earthy characteristics while also subtly contributing fruity, floral, citrus notes; whereas Cascade is primarily classified as a fruity floral hop with a hint of spice. Emphasizing Tettnang early and Cascade hops late results in huge fruity citrus notes that dominate both Come and Take It’s aroma and flavor. The more you drink it, the more you’ll enjoy it. Weighing in at 5% ABV, we trust you’ll find this one refreshing beer."
+                info: "Emphasizing Tettnang early and Cascade hops late results in huge fruity citrus notes that dominate both Come and Take It’s aroma and flavor. The more you drink it, the more you’ll enjoy it. Weighing in at 5% ABV, we trust you’ll find this one refreshing beer."
             },
             {
                 name: "GOOD CALL",
@@ -688,13 +689,13 @@ let breweriesCollection = [
             },
             {
                 name: "GRIN & TONIC",
-                keywords: "Other",
-                style: "hazy ipa",
+                keywords: "other",
+                style: "Hazy Ipa",
                 abv: 4,
                 abvRank: "medium",
                 ibu: 28,
                 ibuRank: "medium",
-                info: "GrIN is an experimental “cocktail beer” designed to mimic the flavors and experience of a gin and tonic. A golden ale base beer brewed with copious amounts of Juniper and Coriander sets the foundation for this concoction. We then blended the pungent beer with locally sourced tonic water and lime supplied by Oak Cliff Beverage Works.When the Golden Ale and tonic come together, a beautiful balance is achieved and a unique beer drinking experience is realized. If you think your mind’s playing tricks on you, have another. At 4% ABV, GrIN will allow you to have the gin and tonic experience without the repercussions of overindulging on the real thing."
+                info: `GrIN is an experimental “cocktail beer” designed to mimic the flavors and experience of a gin and tonic. A golden ale base beer brewed with copious amounts of Juniper and Coriander sets the foundation for this concoction. We then blended the pungent beer with locally sourced tonic water and lime supplied by Oak Cliff Beverage Works. When the Golden Ale and tonic come together, a beautiful balance is achieved and a unique beer drinking experience is realized.`
             }
 
         ]
@@ -742,7 +743,7 @@ let breweriesCollection = [
             },
             {
                 name: "Public Ale",
-                keywords: "paleale",
+                keywords: "other",
                 style: "Extra Special Bitter",
                 abv: 5.5,
                 abvRank: "medium",
@@ -803,7 +804,7 @@ let breweriesCollection = [
             },
             {
                 name: "Snicker Doodle Ale",
-                keywords: "paleale",
+                keywords: "other",
                 style: "English styled pale ale.",
                 abv: 5.2,
                 abvRank: "medium",
@@ -823,18 +824,26 @@ let breweriesCollection = [
             },
             {
                 name: "Funnel Cake Ale",
-                keywords: "paleale",
+                keywords: "other",
                 style: "English Summer Ale",
                 abv: 4.2,
                 abvRank: "low",
                 ibu: 15,
                 ibuRank: "low",
                 info: "This ale won the Big Tex Choice Awards competition for Most Creative entry!"
-            },
+            }
+        ]},
+
+            {
+            name: "Braindead Brewing",
+            info: `We're kinda like the hip hop duo Black Star... but instead of making awesome rap, we make ridiculously good beer and food.`,
+            url: "http://braindeadbrewing.com/#menus",
+            position: { lat: 32.7838357, lng: -96.7853974 },
+            beers: [
             {
                 name: "HAPPINESS COMES FROM WITHIN (CORE BEER)",
                 keywords: "ipa",
-                style: "hazey ipa",
+                style: "Hazey IPA",
                 abv: 6.7,
                 abvRank: "medium",
                 ibu: 30,
@@ -859,12 +868,12 @@ let breweriesCollection = [
                 abvRank: "medium",
                 ibu: 16,
                 ibuRank: "low",
-                info: "not available"
+                info: "Sorry, no info available!"
 
             },
             {
                 name: "FOREIGN EXPORT STOUT (CORE BEER)",
-                keywords: "Stout",
+                keywords: "stout",
                 style: "Oatmean Extra Stout",
                 abv: 6.6,
                 abvRank: "medium",
@@ -924,7 +933,7 @@ let breweriesCollection = [
             },
             {
                 name: "THE PIPER AT THE GATES OF DAWN",
-                keywords: "Ale",
+                keywords: "other",
                 style: "Coffee Scotch Ale",
                 abv: 7,
                 abvRank: "high",
@@ -934,7 +943,7 @@ let breweriesCollection = [
             },
             {
                 name: "PRIVATE SNACKS: 4TH ANNIVERSARY",
-                keywords: "Stout",
+                keywords: "stout",
                 style: "Golden Imperial Stout",
                 abv: 11,
                 abvRank: "high",
@@ -944,8 +953,8 @@ let breweriesCollection = [
             },
             {
                 name: "SOMETHING SEXY",
-                keywords: "Stout",
-                style: "Stout",
+                keywords: "stout",
+                style: "Stout w/Sea Salt, Caramel, Cocoa Nibs",
                 abv: 8,
                 abvRank: "high",
                 ibu: 54,
@@ -954,8 +963,8 @@ let breweriesCollection = [
             },
             {
                 name: "WATCHFUL PROTECTOR",
-                keywords: "Stout",
-                style: "Stout",
+                keywords: "stout",
+                style: "Wheat Whiskey Barrel Aged Stout",
                 abv: 15.5,
                 abvRank: "very high",
                 ibu: 88,
@@ -964,8 +973,8 @@ let breweriesCollection = [
             },
             {
                 name: "ORDINARY BITTER",
-                keywords: "Pale Ale",
-                style: "Dry Hopped American Pale Ale",
+                keywords: "paleale",
+                style: "English Ordinary Bitter Ale",
                 abv: 4.1,
                 abvRank: "low",
                 ibu: 25,
@@ -984,7 +993,7 @@ let breweriesCollection = [
             },
             {
                 name: "LOVE CULT",
-                keywords: "Pale Ale",
+                keywords: "paleale",
                 style: "Pale Ale New England",
                 abv: 4.7,
                 abvRank: "low",
@@ -994,7 +1003,7 @@ let breweriesCollection = [
             },
             {
                 name: "ORTHODOX IMPOSTER",
-                keywords: "Belgian Blonde",
+                keywords: "belgian",
                 style: "Belgian Blonde",
                 abv: 6.2,
                 abvRank: "low",
@@ -1004,8 +1013,8 @@ let breweriesCollection = [
             },
             {
                 name: "WE ARE YOUR OVERLORDS",
-                keywords: "Pale Ale",
-                style: "Dry Hopped American Pale Ale",
+                keywords: "other",
+                style: "Texas Brown Ale aged in Heaven Hill Bourbon Barrels",
                 abv: 11.4,
                 abvRank: "very high",
                 ibu: 70,
@@ -1014,13 +1023,13 @@ let breweriesCollection = [
             },
             {
                 name: "MAIN ST. KOLSCH",
-                keywords: "Kolsch",
+                keywords: "kolsch",
                 style: "Kolsch",
                 abv: 4.9,
                 abvRank: "low",
                 ibu: 24,
                 ibuRank: "medium",
-                info: "Golden, malty and refreshing."
+                info: "Golden, malty and refreshing. It's the perfect treat on a warm spring day."
             },
             {
                 name: "APPALLINGLY IRONIC OUTCOME",
@@ -1045,8 +1054,8 @@ let breweriesCollection = [
             },
             {
                 name: "IDLE PLAYTHINGS",
-                keywords: "Belgian Golden Strong",
-                style: "Belgian Golden Strong",
+                keywords: "belgian",
+                style: "Belgian Strong Golden Ale",
                 abv: 8.5,
                 abvRank: "high",
                 ibu: 26,
@@ -1056,7 +1065,7 @@ let breweriesCollection = [
 
             {
                 name: "GEISTBIER",
-                keywords: "Altbier",
+                keywords: "other",
                 style: "Altbier",
                 abv: 10.6,
                 abvRank: "high",
@@ -1067,7 +1076,7 @@ let breweriesCollection = [
             {
                 name: "FROG IPA",
                 keywords: "ipa",
-                style: "smash ipa",
+                style: "SMaSH IPA",
                 abv: 6 - 8,
                 abvRank: "high",
                 ibu: 50 - 99,
@@ -1076,7 +1085,7 @@ let breweriesCollection = [
             },
             {
                 name: "BEÓR TUNNE",
-                keywords: "Ale",
+                keywords: "other",
                 style: "Olde Ale",
                 abv: 10,
                 abvRank: "high",
@@ -1086,7 +1095,7 @@ let breweriesCollection = [
             },
             {
                 name: "MEMORY HOLE",
-                keywords: "Barleywine",
+                keywords: "other",
                 style: "American Barleywine",
                 abv: 10.9,
                 abvRank: "high",
@@ -1096,7 +1105,7 @@ let breweriesCollection = [
             },
             {
                 name: "GOLDEN LADDER",
-                keywords: "Lager",
+                keywords: "other",
                 style: "Apple Brandy-barrel aged Mega Helles Lager",
                 abv: 14.4,
                 abvRank: "very high",
@@ -1106,8 +1115,8 @@ let breweriesCollection = [
             },
             {
                 name: "SPEARMINT OF DESTINY",
-                keywords: "Stout",
-                style: "Stout",
+                keywords: "stout",
+                style: "Export Stout aged in Whitherspoon Bourbon Barrels w/Spearmint and Cocoa Nibs",
                 abv: 9.1,
                 abvRank: "high",
                 ibu: 43,
@@ -1116,7 +1125,7 @@ let breweriesCollection = [
             },
             {
                 name: "DARTH LAMBICUS",
-                keywords: "Ale",
+                keywords: "belgian",
                 style: "Oak Bourbon Barrel Aged Belgian Dark Fruited Strong Ale",
                 abv: 8.8,
                 abvRank: "high",
@@ -1127,13 +1136,13 @@ let breweriesCollection = [
 
             {
                 name: "HAMMER OF THE GODS",
-                keywords: "Pale Ale",
+                keywords: "wheatbeer",
                 style: "Dry Hopped American Pale Ale",
                 abv: 11.1,
                 abvRank: "very high",
                 ibu: 65,
                 ibuRank: "high",
-                info: "An Imperial Wheat Porter aged in Woodford Reserve and Stranahan's barrels. Unlike most barrel-aged offerings, Hammer of the Gods was designed from the ground up to be whiskey barrel aged. The inclusion of wheat adds a soft pie-crust character to a big, milk-chocolaty wake up call for your mouth."
+                info: `An Imperial Wheat Porter aged in Woodford Reserve and Stranahan's barrels. Unlike most barrel-aged offerings, Hammer of the Gods was designed from the ground up to be whiskey barrel aged. The inclusion of wheat adds a soft pie-crust character to a big, milk-chocolaty wake up call for your mouth.Available in bottles at the brewery.`
 
 
             }]
@@ -1519,7 +1528,7 @@ let breweriesCollection = [
 
             {
                 name: `Lakewood Lager`,
-                keywords: `lager`,
+                keywords: `other`,
                 style: `Vienna-Style Lager`,
                 abv: 4.6,
                 abvRank: "medium",
@@ -1530,7 +1539,7 @@ let breweriesCollection = [
 
             {
                 name: `Lemonale`,
-                keywords: `ale`,
+                keywords: `other`,
                 style: `Golden Ale with Lemons`,
                 abv: 4.7,
                 abvRank: "medium",
@@ -1551,49 +1560,79 @@ let breweriesCollection = [
             name: "Dallas Blonde",
             keywords: "wheatbeer",
             style: "American Blonde",
-            abv: "N/A",
+            abv: 5.2,
             abvRank: "high",
-            ibu: "N/A",
+            ibu: 23,
             ibuRank: "medium",
             info: "In a town famous for its bottled blondes, we’ve reset the bar. This shimmering, golden ale combines citrusy and floral American hops with Pale, Vienna and Wheat malts. It’s a beautifully balanced, sessionable brew. Guaranteed to deliver more fun—go blonde."
         },
         {
             name: "Deep Ellum IPA",
             keywords: "ipa",
-            style: "Light",
-            abv: "N/A",
+            style: "IPA ",
+            abv: 7,
             abvRank: "high",
-            ibu: "N/A",
+            ibu: 70,
             ibuRank: "medium",
             info: "For an IPA to bear our hometown name, it better be potent. So we loaded it with our favorite American hops for a bitter punch. And with some over-the-top tropical fruit, citrus, pine and floral aromas and flavors, you’ve got one big Texas IPA, deserving of the Deep Ellum name."
         },
         {
             name: "Deep Ellum Lager",
-            keywords: "wildale",
+            keywords: "other",
             style: "Throwback American",
-            abv: "N/A",
+            abv: 4.8,
             abvRank: "high",
-            ibu: "N/A",
+            ibu: 20,
             ibuRank: "medium",
             info: "Our throwback to great show beer. Inspired by soft pilsner malt, we use rye malt for flavor and spice it up with hops from the Czech Republic. Distinct light body, earthy, and floral aroma that will leave you thirsting for an encore."
+        },
+        {
+            name: "Easy Peasy IPA",
+            keywords: "ipa",
+            style: "Session IPA",
+            abv: 5.8,
+            abvRank: "high",
+            ibu: 23,
+            ibuRank: "medium",
+            info: "If there was ever an IPA made for summer, Easy Peasy is it! Brewed with tangerine and lemon peel, and Pacific Northwest aroma hops, this is one easy-drinking IPA that will leave you thirsting for more year-round."
+        },
+        {
+            name: "Play Date",
+            keywords: "other",
+            style: "American Sour Blonde",
+            abv: 5.4,
+            abvRank: "high",
+            ibu: 9,
+            ibuRank: "medium",
+            info: "A juicy ale with notes of sun-kissed fruit, lemon, citrus, and melon. Dallas Blonde fermented to dryness with medjool dates; the earthy tea presence of the dates plays well with acidity to create an ale that is truly free-spirited and unique in character."
+        },
+        {
+            name: "Neato Bandito",
+            keywords: "other",
+            style: "Imperial Mexican-Style Lager",
+            abv: 6,
+            abvRank: "high",
+            ibu: 10,
+            ibuRank: "medium",
+            info: "Our interpretation of a Mexican-style lager, Neato Bandito is a high-flying session lager brewed with corn. Light in color, but big in flavor, Neato Bandito wants you to enjoy all of your summertime activities with a punch!"
         },
         {
             name: "Local Legend",
             keywords: "stout",
             style: "Sweet Milk",
-            abv: "N/A",
+            abv: 5.8,
             abvRank: "high",
-            ibu: "N/A",
+            ibu: 23,
             ibuRank: "medium",
             info: "A sessionable Sweet Milk Stout, Local Legend is the perfect balance of roasted barley and milk sugar for a subtly sweet, silky brew. This Legend is definitely one for the books."
         },
         {
-            name: "Dream Cruiser",
+            name: "Dream Crusher",
             keywords: "paleale",
             style: "Double Rye",
-            abv: "N/A",
+            abv: 9.5,
             abvRank: "high",
-            ibu: "N/A",
+            ibu: 100,
             ibuRank: "medium",
             info: "Citrusy, piney, floral and fruity hops are at least a third of the reason we got ourselves into this whole brewing adventure. We’ve taken the IPA to its Event Horizon. Get the picture? It’s hoppy!"
         }]
@@ -1606,7 +1645,7 @@ let breweriesCollection = [
         position: { lat: 32.7793491, lng: -96.830624167423 },
         beers: [{
             name: "El Grito",
-            keywords: "wildale",
+            keywords: "pilsner",
             style: "Light",
             abv: 4.4,
             abvRank: "low",
@@ -1616,7 +1655,7 @@ let breweriesCollection = [
         },
         {
             name: "Local BUzz",
-            keywords: "wildale",
+            keywords: "other",
             style: "Honey Rye Golden",
             abv: 5.2,
             abvRank: "medium",
@@ -1638,12 +1677,12 @@ let breweriesCollection = [
     },
     {
         name: "Noble Rey Brewing Company",
-        info: "Or out of Chris Rigoulot's parents garage years ago, whichever sounds cooler & less depressing. Noble Rey Brewing was formed all the way back in 2012, when the founder, Chris Rigoulot, had an idea to start a brewery where he could make the beers the way he wanted to, where his employees wouldn’t just be a number, and where creativity would be rewarded. ",
+        info: "Noble Rey Brewing was formed all the way back in 2012, when the founder, Chris Rigoulot, had an idea to start a brewery where he could make the beers the way he wanted to, where his employees wouldn’t just be a number, and where creativity would be rewarded.In 2019, the company was bought from Chris and has new owners that strive to carry on the beers and the kick ass cans of Noble Rey.   We hope to respect Noble Rey's past and maintain our place in the Texas Craft Beer Industry!!We pride ourselves on treating our customers like our friends, our employees as family, and our beer as a tasty work of art.",
         url: "http://www.noblereybrewing.com",
         position: { lat: 32.7999840454545, lng: -96.8395214545454 },
         beers: [{
             name: "Off The Leash",
-            keywords: "wildale",
+            keywords: "redamberale",
             style: "Texas Red",
             abv: 6.0,
             abvRank: "medium",
@@ -1683,7 +1722,7 @@ let breweriesCollection = [
         },
         {
             name: "Baracus",
-            keywords: "wildale",
+            keywords: "other",
             style: "Brown",
             abv: 6.1,
             abvRank: "medium",
@@ -1759,10 +1798,12 @@ let breweriesCollection = [
 function changeRanks(arr) {
     for (let brewery of arr) {
         for (let beer of brewery.beers) {
+
             if (beer.abv < 5) {
                 beer.abvRank = "low"
+
             }
-            else if (5 <= beer.abv < 8) {
+            else if (5 <= beer.abv && beer.abv < 8) {
                 beer.abvRank = "medium";
             }
             else if (8 <= beer.abv) {
@@ -1775,7 +1816,7 @@ function changeRanks(arr) {
             if (beer.ibu < 30) {
                 beer.ibuRank = "low";
             }
-            else if (30 <= beer.ibu < 70) {
+            else if (30 <= beer.ibu && beer.ibu < 70) {
                 beer.ibuRank = "medium";
             }
             else if (70 <= beer.ibu) {
@@ -1836,6 +1877,8 @@ $("#submitem").on("click", function () {
     brewClicked = false;
     breweriesDisplay.length = 0;
     displayBeers.empty()
+    $("#indicators").empty()
+    beersList.empty()
 
 
     ibu = $("#ibu").val().trim();
@@ -2082,6 +2125,8 @@ function initMap() {
 
 
             marker.addListener("click", function () {
+                $("#indicators").empty()
+                beersList.empty()
                 displayBeers.empty()
                 // buildIWContent(this.dataFromPlaces);
                 console.log("click successful")
@@ -2105,7 +2150,7 @@ function initMap() {
                     imgSrc = (this.dataFromPlaces[0].photos[0].getUrl())
                     // priceLevel = this.dataFromPlaces.formatted_phone_number
                     brewAddress = this.dataFromPlaces[0].formatted_address
-                    rating = this.dataFromPlaces[0].rating
+                    rating = this.dataFromPlaces[0].rating + "/5 Stars"
                 } else {
                     console.log("boom")
                 }
@@ -2116,7 +2161,7 @@ function initMap() {
                 $(`<div id="third" class="card-body"></div>`).insertAfter($("#second"))
                 $(`<h5 id="fourth" class="card-title">${brewery.name}</h5>`).appendTo($("#third"))
                 $(`<p class="card-text">${brewery.info}</p>`).appendTo($("#third"))
-                $(`<p class="card-text"><b>Rating</b>: ${(rating + "/5 stars" || "Sorry, no rating listed.")}</p>`).appendTo($("#third"))
+                $(`<p class="card-text"><b>Rating</b>: ${(rating || "Sorry, no rating listed.")}</p>`).appendTo($("#third"))
                 $(`<p class="card-text"><b>Address</b>: ${(brewAddress || "Sorry, no address listed")}</p>`).appendTo($("#third"))
                 $(`<a target="_blank" href="${brewery.url}" class="btn btn-primary">Check Out Their Website!</a>`).appendTo($("#third"))
                 $(`<button id="addmargin" data-name="${brewery.name}" class="btn btn-info brewclick">Show Matching Beers!</button>`).appendTo($("#third"))
@@ -2182,9 +2227,9 @@ $(document).on("click", ".brewclick", function () {
                         }
 
                         if (counter === 0) {
-                            $(`<div id = "${counter}" class="carousel-item active fitin"></div>`).appendTo(beersList)
+                            $(`<div id = "${counter}" class="carousel-item active align-content-center fitin"></div>`).appendTo(beersList)
                         } else {
-                            $(`<div id = "${counter}" class="carousel-item fitin"></div>`).appendTo(beersList)
+                            $(`<div id = "${counter}" class="carousel-item align-content-center fitin"></div>`).appendTo(beersList)
                         }
                         // $("#one").appendTo(beersList)
                         $(`<img class="d-block w-100 fitin" src="https://ak7.picdn.net/shutterstock/videos/28193857/thumb/1.jpg" alt="Oh No! Where's the beer?">`).appendTo($(`#${counter}`))
