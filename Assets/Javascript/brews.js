@@ -701,153 +701,6 @@ let breweriesCollection = [
     },
 
     {
-        name: "On Rotation",
-        info: "On Rotation’s “craft beer laboratory” feel was designed to appeal to all levels of craft beer enthusiast, from the experienced craft beer drinker or homebrewer to those just starting their journey into craft beer.",
-        url: "https://on-rotation.com",
-        position: { lat: 32.8109335, lng: -96.731396 },
-        beers: [
-            {
-                name: "Jalapeno Saison",
-                keywords: "Saison",
-                style: "Chili Saison",
-                abv: 8.1,
-                abvRank: "high",
-                ibu: 25,
-                ibuRank: "medium",
-                info: "Never fear. The spice is here. This dry, chili saison's bark is worse than its bite with a strong jalapeño nose balanced by a tortilla chip breadiness and a dry finish."
-            },
-
-
-            {
-                name: "Cafe Au Lait",
-                keywords: ["stout"],
-                style: "Chicory Coffee Milk",
-                abv: 6.6,
-                abvRank: "medium",
-                ibu: 45,
-                ibuRank: "medium",
-                info: "Based on a New Orleans café au lait, this milk stout is big on black coffee flavor with a pleasant bitterness from subtle, spicy hops and a generous addition of cold brew coffee and chicory."
-            },
-            {
-                name: "Zero Poms Given",
-                keywords: ["ipa"],
-                style: "American",
-                abv: 6,
-                abvRank: "medium",
-                ibu: 0,
-                ibuRank: "low",
-                info: "Brewed with no hops in the boil, this zero IBU IPA dry hopped with Vic Secret and Huell Melon fermented on a very aggressive yeast strain known for a honey-like aroma and notes of overripe mango. "
-
-            },
-            {
-                name: "Heimdall's Vision",
-                keywords: ["ipa"],
-                style: "New England",
-                abv: 8,
-                abvRank: "high",
-                ibu: 19,
-                ibuRank: "low",
-                info: "This all-seeing protector of a hazy IPA features Citra, Huell Melon, and Pacifica hops, which impart notes of citrus, lime, honeydew melon, and strawberry."
-            },
-            {
-                name: "Bigger Bam Boom",
-                keywords: ["stout"],
-                style: "Rye Whiskey Barrel-Aged Imperial Brown Sugar Oatmeal",
-                abv: 11.8,
-                abvRank: "very high",
-                ibu: 36,
-                ibuRank: "medium",
-                info: "Aged for more than 10 months in a rye whiskey barrel, this bigger, badder batch of Big Bam Boom is a real maneater."
-            },
-            {
-                name: "Hot to Coco",
-                keywords: ["American Porter"],
-                style: "American Porter with Coconut & Chipotle Peppers",
-                abv: 6.4,
-                abvRank: "low",
-                ibu: 39,
-                ibuRank: "medium",
-                info: "Infused with toasted coconut and dried chipotle peppers, this American porter plays both sides of the sweet and spicy."
-            },
-            {
-                name: "I Understand NOTHING",
-                keywords: ["ipa"],
-                style: "sour",
-                abv: 6.7,
-                abvRank: "low",
-                ibu: 31,
-                ibuRank: "medium",
-                info: "Michael Scott doesn't get this beer. Light in body and with Citra hops in the boil, we added lactose (milk sugar) to this mixed culture sour IPA to add a subtly sweet, smooth quality."
-
-            },
-            {
-                name: "Belgain Conspiracy",
-                keywords: ["pale ale"],
-                style: "belgian",
-                abv: 7.6,
-                abvRank: "high",
-                ibu: 26,
-                ibuRank: "medium",
-                info: "Naruto run, don't walk, to this beer. Copper in color with an aromatic and simple grain base, this Belgian pale ale features a prominent malt backbone with a light dose of Idaho #7 hops, which provide a nice citrus character with some background earthiness."
-            },
-            {
-                name: "Last Stand of the Warriors Three",
-                keywords: ["ipa"],
-                style: "new england",
-                abv: 8,
-                abvRank: "high",
-                ibu: 19,
-                ibuRank: "low",
-                info: "Brewed in honor of Asgardians Fandral, Hogun, and Volstagg, this hazy IPA, like its sister brew Heimdall's Vision, features Citra, Huell Melon, and Pacifica hops"
-            },
-            {
-                name: "I Woke Up Like This ",
-                keywords: ["Witbier"],
-                style: "Witbier",
-                abv: 8,
-                abvRank: "high",
-                ibu: 11,
-                ibuRank: "low",
-                info: "Roll out of bed and enjoy this Mimosa Wit. Brewed with primarily wheat and all Citra hops, it's weighty in body with a major citrus note."
-            },
-            {
-                name: "Raspberry Tart",
-                keywords: "other",
-                style: "Sour Saison with Raspberry",
-                abv: 8.8,
-                abvRank: "high",
-                ibu: 33,
-                ibuRank: "medium",
-                info: "This wheat-heavy saison is kettle-soured to crisp, tart perfection then hopped exclusively with Belma hops and fermented on a clean, French saison yeast."
-            },
-
-            {
-                name: "Never Jaded",
-                keywords: ["Dry-Hopped Saison"],
-                style: "Dry-Hopped Saison",
-                abv: 7.9,
-                abvRank: "high",
-                ibu: 24,
-                ibuRank: "medium",
-                info: "Dry hopped exclusively with New Zealand Pacific Jade hops, known for their soft, subtle bitterness, this light and crisp saison is full of fresh lemon with a pleasant bready aroma and a dry, citrus twist to the finish."
-
-            },
-
-            {
-                name: "Cryo Treatment ",
-                keywords: ["ipa"],
-                style: "Imperial / Double",
-                abv: 9.6,
-                abvRank: "high",
-                ibu: 101,
-                ibuRank: "very high",
-                info: "With 101 IBUs, this dry-hopped double IPA featuring Simcoe, Ekuanot, Sticklebract, and Simcoe Cryo hops will put ice in your veins. "
-
-            }]
-
-    },
-
-    {
         name: "Community Beer Co.",
         info: `For centuries, beer has brought people together, transcending identity or class. We at Community we believe that it can be a integral part of influencing
         local culture and creating memorable experiences.
@@ -879,7 +732,7 @@ let breweriesCollection = [
             },
             {
                 name: "Texas Lager",
-                keywords: "lager",
+                keywords: "other",
                 style: "Texas Lager",
                 abv: 4,
                 abvRank: "low",
@@ -990,7 +843,7 @@ let breweriesCollection = [
             },
             {
                 name: "CERVEZA OSCURA (CORE BEER)",
-                keywords: "Lager",
+                keywords: "other",
                 style: "Mexican Dark Lager",
                 abv: 4.7,
                 abvRank: "medium",
@@ -1000,7 +853,7 @@ let breweriesCollection = [
             },
             {
                 name: "BASKET CATCH",
-                keywords: "Pale Ale",
+                keywords: "paleale",
                 style: "Dry Hopped American Pale Ale",
                 abv: 4.7,
                 abvRank: "medium",
@@ -1021,7 +874,7 @@ let breweriesCollection = [
             },
             {
                 name: "GIVEN TO RYE",
-                keywords: "Brown Ale",
+                keywords: "other",
                 style: "American Rye Brown Ale",
                 abv: 4.9,
                 abvRank: "medium",
@@ -1031,7 +884,7 @@ let breweriesCollection = [
             },
             {
                 name: "TIBRADDEN STOUT",
-                keywords: "Stout",
+                keywords: "stout",
                 style: "Stout-Irish Dry ",
                 abv: 8.8,
                 abvRank: "high",
@@ -1041,7 +894,7 @@ let breweriesCollection = [
             },
             {
                 name: "RIGHT IN MY WHEELHOUSE",
-                keywords: "Pilsner",
+                keywords: "pilsner",
                 style: "Tropical Style Pilsner",
                 abv: 4.5,
                 abvRank: "low",
@@ -1051,7 +904,7 @@ let breweriesCollection = [
             },
             {
                 name: "RISKY CLIQUE",
-                keywords: "Ale",
+                keywords: "other",
                 style: "Dry Hopped Sour Ale",
                 abv: 7,
                 abvRank: "high",
@@ -1061,7 +914,7 @@ let breweriesCollection = [
             },
             {
                 name: "AGAVE WHEAT",
-                keywords: "Pale Ale",
+                keywords: "paleale",
                 style: "Dry Hopped American Pale Ale",
                 abv: 5.8,
                 abvRank: "medium",
@@ -1305,8 +1158,10 @@ let breweriesCollection = [
                 name: `Black Pepper Pils`,
                 keywords: `pilsner`,
                 style: `95% German Pilsner and 5% British Rye`,
-                ibu: `N/A`,
                 abv: 5.5,
+                abvRank: "very high",
+                ibu: `N/A`,
+                ibuRank: "high",
                 info: `A crisp and slightly spicy base of 95% German Bohemian Pilsner and 5% British Rye. Spiced in boil six different botanicals. Fermented with a dry English yeast strain.`
             },
 
@@ -1314,8 +1169,10 @@ let breweriesCollection = [
                 name: `OAK CLIFF ALE`,
                 keywords: `paleale`,
                 style: `Lil Blonde and Lil English pale`,
-                ibu: `N/A`,
                 abv: 5.5,
+                abvRank: "very high",
+                ibu: `N/A`,
+                ibuRank: "high",
                 info: `A little bit of a blonde and a little bit of a English pale, very easy drinking.`
             },
 
@@ -1323,8 +1180,10 @@ let breweriesCollection = [
                 name: `UNDERDOG IPA`,
                 keywords: `ipa`,
                 style: `IPA`,
-                ibu: `N/A`,
                 abv: 7.2,
+                abvRank: "very high",
+                ibu: `N/A`,
+                ibuRank: "high",
                 info: `High on flavor and aroma low on bitterness, hop bill includes columbus, el dorado, zythos, azaca, green bullet and mosaic lupulin powder, it's a litty hazy.`
             },
 
@@ -1332,8 +1191,10 @@ let breweriesCollection = [
                 name: `HOSTEL CEREAL`,
                 keywords: `ipa`,
                 style: `Tart Ale`,
-                ibu: `N/A`,
                 abv: 8,
+                abvRank: "very high",
+                ibu: `N/A`,
+                ibuRank: "high",
                 info: `By guest brewer Barrett Tillman of Blackman Brewing, a tart ale inspired by gypsy brewer Barrett Tillmans travels, with his own blend of yeast and bacteria`
             },
 
@@ -1341,8 +1202,10 @@ let breweriesCollection = [
                 name: `BYZANTIUM 4th Anniversary (2018)`,
                 keywords: `other`,
                 style: `English Strong Dark Ale`,
-                ibu: `N/A`,
                 abv: 11,
+                abvRank: "very high",
+                ibu: `N/A`,
+                ibuRank: "high",
                 info: `Our 4th anniversary release, an english strong dark ale conditioned on driedorganic turkish figs, rich and earthy`
             },
 
@@ -1350,8 +1213,10 @@ let breweriesCollection = [
                 name: `HAZELNATOR`,
                 keywords: `ipa`,
                 style: `Hazy IPA`,
-                ibu: `N/A`,
                 abv: 8,
+                abvRank: "very high",
+                ibu: `N/A`,
+                ibuRank: "high",
                 info: `A IPA of the hazy variety, inspired by the new england craze sweeping the nation. el dorado & lotus hops, 40% oats. JUICE.`
             }
 
@@ -1370,8 +1235,9 @@ let breweriesCollection = [
                 name: `BIG THICKET`,
                 keywords: `ipa`,
                 style: "",
-                ibu: 17,
                 abv: 5.2,
+                abvRank: "very high",
+                ibu: 17,
                 info: `USING A SIMPLE MALT BILL OF GERMAN PILSNER WITH A TOUCH OF WHEAT, THIS EXCEPTIONALLY SMOOTH BLONDE ALE IS CRISP, LIGHT AND EASY-DRINKING. WITH NOTES OF HONEY FROM THE MALT AND A HINT OF FLORAL HOP FLAVORS FROM LATE ADDITIONS OF CASCADE, THIS IS THE PERFECT BEER FOR A SUMMER AFTERNOON ON THE PORCH.`
             },
 
@@ -1379,8 +1245,9 @@ let breweriesCollection = [
                 name: `IPO IPA`,
                 keywords: `ipa`,
                 style: `NEW ENGLAND STYLE IPA `,
-                ibu: 50,
                 abv: 6.8,
+                abvRank: "very high",
+                ibu: 50,
                 info: `THE EIGTH ROUND OF OUR ROTATING NEW ENGLAND-STYLE IPA IS SIMPLY THE BEST VERSION YET.  A SILKY SMOOTH BODY AND PLENTY OF HAZE IS CREATED BY A HEAVY DOZE OF OATS AND WHEAT. WITH A PERFECTLY ROUNDED BITTERNESS AND A SWEET MALT PROFILE, THIS BEER IS INCREDIBLY REFRESHING. THIS BATCH IS 3X DRY-HOPPED WITH STRATA, MOSAIC, IDAHO 7 AND SABRO HOPS.  IT'S PRETTY MUCH A HOP FRUIT SMOOTHIE.  EXPECT BIG AROMAS OF PASSION FRUIT, MANGO AND CANDIED PINEAPPLE.`
             },
 
@@ -1388,8 +1255,9 @@ let breweriesCollection = [
                 name: `WHITE ROCK IPA`,
                 keywords: `ipa`,
                 style: `IPA`,
-                ibu: 60,
                 abv: 7.4,
+                abvRank: "very high",
+                ibu: 60,
                 info: `THIS IPA IS A BIT DIFFERENT FROM OUR IPO IPA IN THAT IT IS MORE OF A WEST COAST STYLE IPA. WE USE THREE OF OUR FAVORITE HOPS (SIMCOE, CITRA AND AMARILLO) IN THE WHIRLPOOL AND A HUGE DRY HOP OF THE SAME VARIETIES CREATING A FLAVOR BURST OF RIPE STONEFRUIT, PINE AND FRESH ORANGES. THE BITTERNESS, AS WITH ALL OF OUR BEERS, IS KEPT QUITE LOW FOR THE STYLE SO THAT YOU CAN DRINK MORE THAN ONE WITHOUT OVERWHELMING YOUR PALATE. THERE IS A VERY LIGHT MALT BACKBONE TO KEEP THIS BEER IN BALANCE, BUT IN THE END IT'S ALL ABOUT THE HOPS BABY.`
             },
 
@@ -1397,8 +1265,9 @@ let breweriesCollection = [
                 name: `URBAN PARAKEET`,
                 keywords: `ipa`,
                 style: `AMERICAN IPA`,
-                ibu: 40,
                 abv: 6.7,
+                abvRank: "very high",
+                ibu: 40,
                 info: `A MODERN TAKE ON THE CLASSIC AMERICAN STYLE. WE USE A BASE OF PALE AND MUNICH MALTS WITH A BIT OF HONEY MALT FOR LIGHT SWEETNESS. THE POP OF FRUIT-FORWARD AMERICAN HOPS COMES FROM DRY HOP ADDITIONS OF MOSAIC AND SIMCOE. WE GET STRONG NOTES OF CITRUS FRUIT AND PINE THAT ARE SUPPORTED BY JUST ENOUGH BITTERNESS TO BALANCE OUT THE MALT SWEETNESS.`
             },
 
@@ -1406,8 +1275,9 @@ let breweriesCollection = [
                 name: `DAVE'S PERFECT PILS`,
                 keywords: `pilsner`,
                 style: `CZECH STYLE PILSNER`,
-                ibu: 24,
                 abv: 4.8,
+                abvRank: "very high",
+                ibu: 24,
                 info: `THIS IS A CLASSIC CZECH STYLE PILSNER USING CZECH PILSNER MALT AND CZECH SAAZ HOPS.  IT IS CRISP WITH LIGHT BREADY MALT NOTES THAT ARE BALANCED BY THE FLORAL HOPS.`
             },
 
@@ -1415,8 +1285,9 @@ let breweriesCollection = [
                 name: `CAPSIZED KAYAK HONEY WHEAT ALE`,
                 keywords: "other",
                 style: `Honey Wheat Ale`,
-                ibu: 20,
                 abv: 7.8,
+                abvRank: "very high",
+                ibu: 20,
                 info: `WE USED 10 LBS PER BARREL OF LOCAL  HONEY, FRESH ZEST OF LEMON AND ORANGE, WHOLE CHAMOMILE FLOWERS, AND INDIAN CORIANDER TO CREATE A TRULY UNIQUE BEER. THERE ISN'T ANYTHING QUITE LIKE IT. IT'S FLORAL, CITRUSY, AND VERY LIGHTLY SWEET WITH TOP NOTES OF HONEY AND ORANGE ZEST. SHE'S VERY SMOOTH AND A REAL CROWD PLEASER, BUT BE CAREFUL...DRINK TOO MANY AND YOU MIGHT TUMP YOUR KAYAK.`
             },
 
@@ -1424,8 +1295,9 @@ let breweriesCollection = [
                 name: `BONNIE BARGE`,
                 keywords: `other`,
                 style: `Brown Ale`,
-                ibu: 20,
                 abv: 5.6,
+                abvRank: "very high",
+                ibu: 20,
                 info: `WE PARTNERED WITH OUR FRIENDS AT WHITE ROCK COFFEE TO BRING YOU THIS COMPLEX, DELIGHTFUL ENGLISHSTYLE BROWN ALE. USING MARIS OTTER AS THE BASE MALT, THIS BREW HAS NOTES REMINISCENT OF GRAHAM CRACKERS. CARAMEL AND CHOCOLATE MALTS ADD SLIGHT SWEETNESS, COCOA FLAVORS AND A RICH MALT CHARACTER. THE COFFEE IS OF ETHIOPIAN DESCENT AND IMPARTS NOTES OF CRANBERRIES, BLUEBERRIES AND ROASTED NUTS THAT PLAY WELL WITH THE SLIGHTLY FRUITY ENGLISH YEAST CHARACTER. THIS IS A TRULY UNIQUE BEER THAT WILL KEEP YOU BUZZED IN MORE WAYS THAN ONE.`
             },
 
@@ -1433,8 +1305,9 @@ let breweriesCollection = [
                 name: `WEIZ ASS BASS`,
                 keywords: `wheatbeer`,
                 style: `GERMAN STYLE HEFEWEIZEN`,
-                ibu: 13,
                 abv: 4.8,
+                abvRank: "very high",
+                ibu: 13,
                 info: `OUR TAKE ON THIS CLASSIC WHEAT BEER STYLE REMAINS TRUE TO FORM. A BALANCE OF BANANA AND CLOVE ESTERS ARE FORMED BY THE YEAST DURING FERMENTATION ALONG WITH CITRUSY NOTES OF FRESH APRICOT. WE USED A TON OF WHEAT WHICH LEAVES THE BODY EXTREMELY SMOOTH AND GIVES NOTES OF FRESHLY BAKED BREAD IN THE BACKGROUND. LOW BITTERNESS AND A LIGHT FLAVOR PROFILE MAKE THIS THE PERFECT BEER FOR SUMMER.`
             },
 
@@ -1442,8 +1315,9 @@ let breweriesCollection = [
                 name: `PILOT SERIES: BELGIAN BRUT `,
                 keywords: `belgian`,
                 style: `Belgian Brut`,
-                ibu: 25,
                 abv: 10.5,
+                abvRank: "very high",
+                ibu: 25,
                 info: `THIS IS A SMASH BEER, MEANING SINGLE MALT AND SINGLE HOP. WHILE GERMAN PILSNER MALT LENDS A SUBTLE HONEY LIKE SWEETNESS, A NEW AMERICAN HOP CALLED LORAL SHINES THROUGH WITH A VIBRANT FLORAL AROMA AND FLAVORS OF LEMONGRASS. IT'S NAMED "BRUT" BECAUSE WE USED A SPECIAL ENZYME THAT DRIES OUT THE BEER COMPLETELY TO ZERO RESIDUAL SUGAR. DRY, CRISP, AND BRIGHT WITH A LIGHT BELGIAN SPICE CHARACTER.`
             }
 
@@ -1604,9 +1478,9 @@ let breweriesCollection = [
     },
     {
         name: "Lakewood Brewing",
-        info: "",
-        url: "https://www.communitybeer.com/",
-        position: { lat: 32.7917789589184, lng: -96.8165879157057 },
+        info: "Here at Lakewood, we strive to create the highest quality beers by developing new and exciting styles while staying true to the art and precision of craft brewing. We handcraft small batch beers that are full of unique, exciting flavors and reflect the timelessness, creativity, and energetic fun that makes Lakewood less of a place and more of a feeling. It’s where we brewed our first beer, where my family calls home, and where Lakewood Brewing Company was born. ",
+        url: "https://lakewoodbrewing.com/year-round/",
+        position: { lat: 32.8899616, lng: -96.6797659 },
         beers: [
 
 
@@ -1882,18 +1756,38 @@ let breweriesCollection = [
 
 
 
-// function changeRanks(arr) {
-//     for (let brewery of arr) {
-//         for (let beer of brewery.beers) {
-//             if (abv < )
-//             if (4 < beer.abv < 7) {
-//                 beer.abvRank = "medium";
-//             } else if (7 <)
+function changeRanks(arr) {
+    for (let brewery of arr) {
+        for (let beer of brewery.beers) {
+            if (beer.abv < 5) {
+                beer.abvRank = "low"
+            }
+            else if (5 <= beer.abv < 8) {
+                beer.abvRank = "medium";
+            }
+            else if (8 <= beer.abv) {
+                beer.abvRank = "high";
+            } else {
+                beer.abvRank = "unknown";
+            }
 
-//         }
-//     }
-// }
 
+            if (beer.ibu < 30) {
+                beer.ibuRank = "low";
+            }
+            else if (30 <= beer.ibu < 70) {
+                beer.ibuRank = "medium";
+            }
+            else if (70 <= beer.ibu) {
+                beer.ibuRank = "high";
+            } else {
+                beer.ibuRank = "unknown"
+            }
+        }
+    }
+}
+
+changeRanks(breweriesCollection)
 
 
 
@@ -2263,15 +2157,16 @@ $(document).on("click", ".brewclick", function () {
                         }
 
                         if (counter === 0) {
-                            $(`<div id = "${counter}" class="carousel-item active"></div>`).appendTo(beersList)
+                            $(`<div id = "${counter}" class="carousel-item active fitin"></div>`).appendTo(beersList)
                         } else {
-                            $(`<div id = "${counter}" class="carousel-item"></div>`).appendTo(beersList)
+                            $(`<div id = "${counter}" class="carousel-item fitin"></div>`).appendTo(beersList)
                         }
                         // $("#one").appendTo(beersList)
                         $(`<img class="d-block w-100" src="https://ak7.picdn.net/shutterstock/videos/28193857/thumb/1.jpg" alt="Oh No! Where's the beer?">`).appendTo($(`#${counter}`))
                         $(`<div id="${counter - 100}" class="carousel-caption d-none d-md-block"></div>`).appendTo($(`#${counter}`))
-                        $(`<h5>${beer.style}</h5>`).appendTo($(`#${counter - 100}`))
-                        $(`<p id="smallify">${beer.info}</p>`).appendTo($(`#${counter - 100}`))
+                        $(`<h5>${beer.name}: ${beer.style}</h5>`).appendTo($(`#${counter - 100}`))
+                        $(`<p class="smallify">${beer.info}</p>`).appendTo($(`#${counter - 100}`))
+                        $(`<p class="smallify">ABV: ${beer.abv} IBU: ${beer.ibu}</p>`).appendTo($(`#${counter - 100}`))
 
                         counter++;
 
