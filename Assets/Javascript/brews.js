@@ -847,38 +847,6 @@ let breweriesCollection = [
 
     },
 
-    {
-        name: "Braindead Brewing",
-        info: "We're kinda like the hip hop duo Black Star... but instead of making awesome rap, we make ridiculously good beer and food.",
-        url: "http://braindeadbrewing.com/",
-        position: { lat: 32.7838067, lng: -96.7854202 },
-        beers: [
-            {
-                name: "Gritz",
-                keywords: "blonde ale",
-                style: "Pre-prohibition Cream Ale ",
-                abv: 4.4,
-                abvRank: "low",
-                ibu: 23,
-                ibuRank: "medium",
-                info: "An approachable yet obscure light blonde ale style descended from old world golden lagers."
-            },
-            {
-                name: "HONEY LAGER (CORE BEER)",
-                keywords: "American Lager",
-                style: " American Lager with Texas Wildflower Honey ",
-                abv: 5.6,
-                abvRank: "medium",
-                ibu: 25,
-                ibuRank: "medium",
-                info: "Started from the bottom fermentation, now we're here. The ultimate warm weather beer, pairs well with everything."
-
-
-
-}]
-
-},
-
 {
         name: "Community Beer Co.",
         info: "",
@@ -1005,17 +973,6 @@ let breweriesCollection = [
                 ibu: 15,
                 ibuRank: "low",
                 info: "This ale won the Big Tex Choice Awards competition for Most Creative entry!"
-            },
-            {
-                name: "Funnel Cake Ale",
-                keywords: "paleale",
-                style: "English Summer Ale",
-                abv: 4.2,
-                abvRank: "low",
-                ibu: 15,
-                ibuRank: "low",
-                info: "This ale won the Big Tex Choice Awards competition for Most Creative entry!"
-
             },
             {
                 name: "HAPPINESS COMES FROM WITHIN (CORE BEER)",
@@ -1325,7 +1282,271 @@ let breweriesCollection = [
             }]
 
 
-        }]
+        },
+        
+        // Pelticolas Brewing company--
+        // small brewpub--
+        // The malai Kitchen--
+        // Westlake Brewing Company bad site
+        // White Rock Alehouse & Brewery--
+        // On Rotation Brewery--
+        
+        Small Brewpub
+        
+        name: `Black Pepper Pils`
+        keywords: `pilsner`
+        Type/Style (specific): 95% German Pilsner and 5% BRitish Rye
+        ibu: `N/A`
+        abv:5.5
+        info:`A crisp and slightly spicy base of 95% German Bohemian Pilsner and 5% British Rye. Spiced in boil six different botanicals. Fermented with a dry English yeast strain.`
+        
+        name:`OAK CLIFF ALE`
+        keywords: `ipa`
+        Type/Style (specific):lil blonde and lil English pale 
+        ibu:`N/A`
+        abv:5.5%
+        info:`A little bit of a blonde and a little bit of a English pale, very easy drinking.`
+        
+        name:`UNDERDOG IPA` 
+        keywords: `ipa`
+        Type/Style (specific):IPA
+        ibu: `N/A`
+        abv:7.2%
+        info:`High on flavor and aroma low on bitterness, hop bill includes columbus, el dorado, zythos, azaca, green bullet and mosaic lupulin powder, it's a litty hazy.`
+        
+        name: `HOSTEL CEREAL`
+        keywords: `ipa`
+        Type/Style (specific): tart ale
+        ibu: `N/A`
+        abv:8%
+        info:`By guest brewer Barrett Tillman of Blackman Brewing, a tart ale inspired by gypsy brewer Barrett Tillmans travels, with his own blend of yeast and bacteria`
+        
+        name: `BYZANTIUM 4th Anniversary (2018)`
+        keywords: (basic):
+        Type/Style (specific):
+        ibu:`N/A`
+        abv:11%
+        info: O`ur 4th anniversary release, an english strong dark ale conditioned on driedorganic turkish figs, rich and earthy`
+        
+        name: `HAZELNATOR`
+        keywords: `ipa`
+        Type/Style (specific): Hazy ipa
+        ibu: `N/A`
+        abv:8%
+        info:`A IPA of the hazy variety, inspired by the new england craze sweeping the nation. el dorado & lotus hops, 40% oats. JUICE.`
+        
+        
+        
+        
+        
+        
+        White Rock Alehouse & Brewery
+        
+        
+        name: `BIG THICKET`
+        keywords: `ipa`
+        Type/Style (specific):
+        ibu:17
+        abv:5.2
+        info:`USING A SIMPLE MALT BILL OF GERMAN PILSNER WITH A TOUCH OF WHEAT, THIS EXCEPTIONALLY SMOOTH BLONDE ALE IS CRISP, LIGHT AND EASY-DRINKING. WITH NOTES OF HONEY FROM THE MALT AND A HINT OF FLORAL HOP FLAVORS FROM LATE ADDITIONS OF CASCADE, THIS IS THE PERFECT BEER FOR A SUMMER AFTERNOON ON THE PORCH.`
+        
+        name: `IPO IPA`
+        keywords: `ipa`
+        Type/Style (specific):NEW ENGLAND STYLE 
+        ibu:50, 
+        abv:6.8,
+        info:`THE EIGTH ROUND OF OUR ROTATING NEW ENGLAND-STYLE IPA IS SIMPLY THE BEST VERSION YET.  A SILKY SMOOTH BODY AND PLENTY OF HAZE IS CREATED BY A HEAVY DOZE OF OATS AND WHEAT. WITH A PERFECTLY ROUNDED BITTERNESS AND A SWEET MALT PROFILE, THIS BEER IS INCREDIBLY REFRESHING. THIS BATCH IS 3X DRY-HOPPED WITH STRATA, MOSAIC, IDAHO 7 AND SABRO HOPS.  IT'S PRETTY MUCH A HOP FRUIT SMOOTHIE.  EXPECT BIG AROMAS OF PASSION FRUIT, MANGO AND CANDIED PINEAPPLE.`
+        
+        name: `WHITE ROCK IPA`
+        keywords: `ipa`
+        Type/Style `IPA`
+        ibu:60
+        abv:7.4
+        info:`THIS IPA IS A BIT DIFFERENT FROM OUR IPO IPA IN THAT IT IS MORE OF A WEST COAST STYLE IPA. WE USE THREE OF OUR FAVORITE HOPS (SIMCOE, CITRA AND AMARILLO) IN THE WHIRLPOOL AND A HUGE DRY HOP OF THE SAME VARIETIES CREATING A FLAVOR BURST OF RIPE STONEFRUIT, PINE AND FRESH ORANGES. THE BITTERNESS, AS WITH ALL OF OUR BEERS, IS KEPT QUITE LOW FOR THE STYLE SO THAT YOU CAN DRINK MORE THAN ONE WITHOUT OVERWHELMING YOUR PALATE. THERE IS A VERY LIGHT MALT BACKBONE TO KEEP THIS BEER IN BALANCE, BUT IN THE END IT'S ALL ABOUT THE HOPS BABY.`
+        
+        name:`URBAN PARAKEET`
+        keywords: `ipa`
+        Type/Style (specific):AMERICAN IPA
+        ibu:40,
+        abv:6.7,
+        info:`A MODERN TAKE ON THE CLASSIC AMERICAN STYLE. WE USE A BASE OF PALE AND MUNICH MALTS WITH A BIT OF HONEY MALT FOR LIGHT SWEETNESS. THE POP OF FRUIT-FORWARD AMERICAN HOPS COMES FROM DRY HOP ADDITIONS OF MOSAIC AND SIMCOE. WE GET STRONG NOTES OF CITRUS FRUIT AND PINE THAT ARE SUPPORTED BY JUST ENOUGH BITTERNESS TO BALANCE OUT THE MALT SWEETNESS.`
+        
+        name:`DAVE'S PERFECT PILS`
+        keywords: `pilsner`
+        Type/Style (specific):CZECH STYLE PILSNER
+        ibu:24
+        abv:4.8
+        info:`THIS IS A CLASSIC CZECH STYLE PILSNER USING CZECH PILSNER MALT AND CZECH SAAZ HOPS.  IT IS CRISP WITH LIGHT BREADY MALT NOTES THAT ARE BALANCED BY THE FLORAL HOPS.`
+        
+        name:`CAPSIZED KAYAK HONEY WHEAT ALE`
+        keywords: "other"
+        Type/Style `Honey Wheat Ale`
+        ibu:20
+        abv:7.8
+        info:`WE USED 10 LBS PER BARREL OF LOCAL  HONEY, FRESH ZEST OF LEMON AND ORANGE, WHOLE CHAMOMILE FLOWERS, AND INDIAN CORIANDER TO CREATE A TRULY UNIQUE BEER. THERE ISN'T ANYTHING QUITE LIKE IT. IT'S FLORAL, CITRUSY, AND VERY LIGHTLY SWEET WITH TOP NOTES OF HONEY AND ORANGE ZEST. SHE'S VERY SMOOTH AND A REAL CROWD PLEASER, BUT BE CAREFUL...DRINK TOO MANY AND YOU MIGHT TUMP YOUR KAYAK.`
+        
+        name:`BONNIE BARGE`
+        keywords: `other`
+        Type/Style: `Brown Ale`
+        ibu:20 
+        abv:5.6
+        info:`WE PARTNERED WITH OUR FRIENDS AT WHITE ROCK COFFEE TO BRING YOU THIS COMPLEX, DELIGHTFUL ENGLISHSTYLE BROWN ALE. USING MARIS OTTER AS THE BASE MALT, THIS BREW HAS NOTES REMINISCENT OF GRAHAM CRACKERS. CARAMEL AND CHOCOLATE MALTS ADD SLIGHT SWEETNESS, COCOA FLAVORS AND A RICH MALT CHARACTER. THE COFFEE IS OF ETHIOPIAN DESCENT AND IMPARTS NOTES OF CRANBERRIES, BLUEBERRIES AND ROASTED NUTS THAT PLAY WELL WITH THE SLIGHTLY FRUITY ENGLISH YEAST CHARACTER. THIS IS A TRULY UNIQUE BEER THAT WILL KEEP YOU BUZZED IN MORE WAYS THAN ONE.`
+        
+        name:`WEIZ ASS BASS`
+        keywords: `wheatbeer`
+        Type/Style: `GERMAN STYLE HEFEWEIZEN`
+        ibu:13 
+        abv:4.8
+        info:`OUR TAKE ON THIS CLASSIC WHEAT BEER STYLE REMAINS TRUE TO FORM. A BALANCE OF BANANA AND CLOVE ESTERS ARE FORMED BY THE YEAST DURING FERMENTATION ALONG WITH CITRUSY NOTES OF FRESH APRICOT. WE USED A TON OF WHEAT WHICH LEAVES THE BODY EXTREMELY SMOOTH AND GIVES NOTES OF FRESHLY BAKED BREAD IN THE BACKGROUND. LOW BITTERNESS AND A LIGHT FLAVOR PROFILE MAKE THIS THE PERFECT BEER FOR SUMMER.`
+        
+        name:`PILOT SERIES: BELGIAN BRUT `
+        keywords: `belgian`
+        Type/Style `Belgian Brut`
+        ibu:25
+        abv:10.5
+        info:`THIS IS A SMASH BEER, MEANING SINGLE MALT AND SINGLE HOP. WHILE GERMAN PILSNER MALT LENDS A SUBTLE HONEY LIKE SWEETNESS, A NEW AMERICAN HOP CALLED LORAL SHINES THROUGH WITH A VIBRANT FLORAL AROMA AND FLAVORS OF LEMONGRASS. IT'S NAMED "BRUT" BECAUSE WE USED A SPECIAL ENZYME THAT DRIES OUT THE BEER COMPLETELY TO ZERO RESIDUAL SUGAR. DRY, CRISP, AND BRIGHT WITH A LIGHT BELGIAN SPICE CHARACTER.`
+        
+        on-rotations
+        
+        name: `Jalapeno Saison`
+        keywords: `other`
+        Type/Style:`Chili Saison`
+        ibu:25
+        abv:8.1
+        info:`Never fear. The spice is here. This dry, "chili" saison's bark is worse than its bite with a strong jalapeÒo nose balanced by a tortilla chip breadiness and a dry finish. The slight heat provides the rich experience of a jalapeÒo, hopefully without sending you running for a glass of milk.`
+        
+        name: `Tangerine Cream`
+        keywords: `other`
+        Type/Style `Cream Ale with Tangerines`
+        ibu: 16
+        abv:6.7
+        info:`This smooth cream ale bursts with sweet citrus "Dreamsicle" flavor thanks to a hefty helping of tangerines and hints of vanilla. It's incredibly easy-drinking and just a dreamy beer all around.`
+        
+        name:`Fire Pils `
+        keywords: `pilsner`
+        Type/Style `German Pilsner`
+        ibu:24
+        abv:5.8
+        info:`This simple, clean pilsner takes its name from the firework, believed to be invented by the Chinese. A Chinese document from 1040 demonstrated how to craft a "fire pill" from gunpowder and paper. The loud "bang" produced by this "pill" was supposed to scare off evil spirits. And this pilsner will certainly scare off a bad time. Delightfully refreshing, this beer is best enjoyed on a hot Texas evening under the stars (or the fireworks). It's light and crisp with just a touch of bitterness at the end of each sip to keep you coming back for more.`
+         
+        name:`Cafe Au Lait `
+        keywords: `stout`
+        Type/Style `Chicory Coffee Milk Stout`
+        ibu:45
+        abv:6.6
+        info:`Based on a New Orleans cafÈ au lait, this milk stout is big on black coffee flavor with a pleasant bitterness from subtle, spicy hops and a generous addition of cold brew coffee and chicory.`
+        
+        name:`Heimdall's Vision`
+        keywords: `ipa`
+        Type/Style `New England IPA`
+        ibu:19
+        abv:8
+        info:`This all-seeing protector of a hazy IPA features Citra, Huell Melon, and Pacifica hops, which impart notes of citrus, lime, honeydew melon, and strawberry. Fermenting on Hornindal Kveik yeast, aromas of fresh pineapple, mango, and tangerine add even more Bifrost magic to each sip.`
+         
+        name:`Raspberry Tart`
+        keywords: `other`
+        Type/Style: `Sour Saison with Raspberries`
+        ibu:33
+        abv:8.8
+        info:`This wheat-heavy saison is kettle-soured to crisp, tart perfection then hopped exclusively with Belma hops and fermented on a clean, French saison yeast. Dosed with raspberry puree, this dry, fruity treat pours with a beautiful, red hue, Belma driven aromas of strawberry, melon, and grapefruit, and a berry tart finish.`
+         
+        name:`Never Jaded`
+        keywords: `other`
+        Type/Style: `Dry-Hopped Saison`
+        ibu:24
+        abv:7.9
+        info`:Dry hopped exclusively with New Zealand Pacific Jade hops, known for their soft, subtle bitterness, this light and crisp saison is full of fresh lemon with a pleasant bready aroma and a dry, citrus twist to the finish. Hop aromas of spicy black pepper blend with the slight saison spice throughout. Never jaded, this beer is a perfect example of our love of saisons and how they interact with hops.`
+         
+        name:`Cryo Treatment`
+        keywords: `ipa`
+        Type/Style: `Imperial IPA`
+        ibu:101
+        abv:9.6
+        info:`With 101 IBUs, this dry-hopped double IPA featuring Simcoe, Ekuanot, Sticklebract, and Simcoe Cryo hops will put ice in your veins. Heavy on the late additions, the hops bring out notes of pine, lemon, cedar, passion fruit, berry, papaya, and earthy citrus and are supported by a hint of sweetness and a smooth bitterness. This fountain of youth will get your blood pumping again like no low IBU IPA can do.`
+         
+        name:`I Woke Up Like This`
+        keywords: "wheatbeer"
+        Type/Style: `Witbier`
+        ibu:11
+        abv:8
+        info:`Roll out of bed and enjoy this "Mimosa Wit." Brewed with primarily wheat and all Citra hops, it's weighty in body with a major citrus note. A heavy-handed pour of fresh-pressed orange juice completes this mimosa package. It's hard to imagine people have to put themselves together in the morning, you know? Some of us just glow.`
+         
+        name: `Bigger Bam Boom`
+        keywords: `stout`
+        Type/Style: `Rye Whiskey Barrel-Aged Imperial Brown Sugar Oatmeal Stout`
+        ibu:36
+        abv:11.8
+        info:`Aged for more than 10 months in a rye whiskey barrel, this bigger, badder batch of Big Bam Boom is a real maneater. It's "hauling oats" viscous with a rich caramel from the brown sugar and a layer of vanilla. The rye, whiskey, and oak undertones come through more prominently as it warms. Watch out boy, she'll chew you up.`
+         
+        name: `Hot to Coco`
+        keywords: (basic):Porter
+        Type/Style (specific):American Porter with Coconut & Chipotle Peppers
+        ibu:39
+        abv:6.4
+        info: `Infused with toasted coconut and dried chipotle peppers, this American porter plays both sides of the sweet and spicy. Roasted notes of coffee and chocolate greet you on the first sip followed by a coconut sweetness before a little kick of chipotle spice that tickles the palate.`
+         
+        name: `I Understand Nothing!`
+        keywords: (basic):IPA
+        Type/Style (specific):sour
+        ibu:31
+        abv:6.7
+        info:
+        
+        name: `Last Stand of the Warriors Three`
+        keywords: (basic):IPA
+        Type/Style (specific):New England
+        ibu:19
+        abv:8
+        info: `Brewed in honor of Asgardians Fandral, Hogun, and Volstagg, this hazy IPA, like its sister brew Heimdall's Vision, features Citra, Huell Melon, and Pacifica hops. Fruity citrus and lime with background aromas of honeydew and strawberry give way to the influence of Voss Kveik yeast, a strain known for powerful orange-citrus aromas and supercharging fruity hop notes.`
+         
+        Lakewood Brewing
+        
+        name: `The Temptress `
+        keywords: (basic):Stout
+        Type/Style (specific):Imperial milk stout
+        ibu:21
+        abv:9.1
+        info: `Va-va-voom! The Temptress is seduction in a glass. Curvy in all the right places, this Imperial Milk Stout pours with a thick, milk chocolate head. Chocolate and caramel malt give it a rich and complex body while the lower carbonation gives the beer a silky mouth feel. Sheís voluptuous, with a soft alcohol warmth that grows deeper with every sip. Take your time with her and sheíll reward you.`
+        
+        name:`Lakewood IPA`
+        keywords: (basic):IPA
+        Type/Style (specific):American
+        ibu:29
+        abv:7
+        info: `All hail the glorious hop! This luminary of lupulin packs a wallop of flavor and aroma in a tiny package. Our intense love for these little flowers is why we created a highly drinkable beer that perfectly showcases their incredible versatility. Rather than brew a bitter bomb, our balanced American India Pale Ale bursts with tropical flavors like grapefruit, papaya, and tangerine from a blend of Mosaic, Citra, Mandarina Bavaria, and Bravo hops. This everyday IPA is bold without being brash.`
+        
+        name: `All Call`
+        keywords: (basic):Kolsch
+        Type/Style (specific):
+        ibu:43
+        abv:5.2
+        info: `If you stop by our taproom, chances are you'll run into the law. That's because we've become a favorite all call destination for our community's finest, local police and firefighters, when they're out of uniform. Naturally, they inspired a beer fit for heroes. All Call Kˆlsch is refreshingly light, courageous, and serves as a summons for both new and veteran craft beer drinkers alike. It's a beer that brings people together. A portion of the proceeds of All Call benefits the Guns & Hoses Foundation of North Texas, a non-profit organization providing aid to families of fallen first responders.`
+        
+        name: `Lakewood Lager`
+        keywords: (basic):larger
+        Type/Style (specific):Vienna-Style Lager
+        ibu:63
+        abv:4.6
+        info:`Lakewood is more than a place. It's a state of mind. Old blends with new. Traditions hook up with fresh ideas. It's the same with our Lakewood Lager. We've taken old world Vienna-Style lager and reintroduced it to beer lovers. Subtle caramel aromas, a coppery pour and a light malty sweetness paired with noble hop bitterness set this beer apart. In with the old, in with the new.`
+        
+        name: `Lemonale`
+        keywords: (basic):Ale
+        Type/Style (specific): Golden Ale with lemons
+        ibu:42,
+        abv:4.7,
+        info: `Here's a little something from our brighter side. This refreshing ale, crafted with a twist of lemon, loves any shindig, from beach to brunch to dive bar. Life's great, squeeze it!`
+        
+        
+        
+        
+        
+    
+    
+    
+    
+    
+    ]
+
 
    
 
@@ -1396,9 +1617,9 @@ $("#submitem").on("click", function () {
     abv = $("#abv").val().trim();
     styleKeywords = $("#stylekeywords").val().trim();
 
-    console.log(ibu)
-    console.log(abv)
-    console.log(styleKeywords)
+    // console.log(ibu)
+    // console.log(abv)
+    // console.log(styleKeywords)
 
 
     // city = $("#city").val().trim()
@@ -1431,7 +1652,7 @@ $("#submitem").on("click", function () {
     }
 
 
-    console.log(breweriesDisplay)
+    // console.log(breweriesDisplay)
 
 
 
@@ -1481,6 +1702,8 @@ function initMap() {
 
 
 
+
+
     if (abv || ibu) {
 
 
@@ -1497,11 +1720,53 @@ function initMap() {
 
         // Each div should be styled, have an identifying information data-name attribute, which can be used to bring up the information for the appropriate beers, after filtering these too
 
-        for (let brewery of breweriesDisplay) {
+        // for (let brewery of breweriesDisplay)
 
-            let storedResults;
 
-            let location = brewery.position;
+
+        //to prevent exceeding requests limit, I'll bet there's a better way to do this?
+
+
+
+
+        console.log(breweriesDisplay.length)
+        let countUp = 0
+        function makeAll () {
+            
+            for (i = countUp; i < countUp + 5; i++) {
+                if (i < breweriesDisplay.length) {
+                    makeMap()
+                }
+                
+            }
+        
+            countUp += 5;
+            console.log(countUp)
+        
+            if (countUp < breweriesDisplay.length) {
+                setTimeout( makeAll, 1750)
+            } else {
+                return 1;
+            }
+        
+        
+        }
+        
+        makeAll()
+
+        
+        // setTimeout(() => console.log("Hold Up"))
+
+
+
+
+        function makeMap() {
+
+        let brewery = breweriesDisplay[i];
+
+        console.log(brewery)
+
+        let location = brewery.position;
 
             let marker = new google.maps.Marker({
                 position: location,
@@ -1512,16 +1777,18 @@ function initMap() {
 
 
             //googleplaces call
-
+            console.log(brewery.name)
             let request = {
                 query: brewery.name,
-                fields: ["place_id", 'geometry'],
-                locationBias: { radius: 30, center: central }
+                fields: ["photo", "rating"],
+                locationBias: { radius: 50, center: central }
             };
 
 
             service.findPlaceFromQuery(request, function (results, status) {
                 if (status === google.maps.places.PlacesServiceStatus.OK) {
+                    console.log(results)
+                    marker.dataFromPlaces = results;
                     //   for (var i = 0; i < results.length; i++) {
                     //     // createMarker(results[i]);
                     //     console.log(results[0].place_id)
@@ -1529,59 +1796,72 @@ function initMap() {
                     //   }
 
                     //   map.setCenter(results[0].geometry.location);
+                } else {
+                    console.log(status)
+                    return 0;
                 }
 
 
                 //add inside if 
 
-                let requestDetailed = {
-                    placeId: results[0].place_id,
-                    fields: ['geometry', "photo", "formatted_address", "formatted_phone_number", "rating"]
-                    // fields: ['geometry', "opening_hours", "photo", "formatted_address", "formatted_phone_number", "icon", "rating", "review", "user_ratings_total","price_level", "website" ]
-                }
+                // let requestDetailed = {
+                //     placeId: results[0].place_id,
+                //     fields: ['geometry', "photo", "formatted_address", "formatted_phone_number", "rating"]
+                //     // fields: ['geometry', "photo", "formatted_address", "formatted_phone_number", "rating"]
+                //     // fields: ['geometry', "opening_hours", "photo", "formatted_address", "formatted_phone_number", "icon", "rating", "review", "user_ratings_total","price_level", "website" ]
+                // }
 
-                service.getDetails(requestDetailed, function (place, status) {
-                    if (status == google.maps.places.PlacesServiceStatus.OK) {
-                        console.log(place)
-                        console.log(place.geometry.location.lat())
-                        console.log(place.rating)
-                        storedResults = place
-                        marker.dataFromPlaces = storedResults;
-                    }
+                // service.getDetails(requestDetailed, function (place, status) {
+                //     if (status == google.maps.places.PlacesServiceStatus.OK) {
+                //         // console.log(place)
+                //         // console.log(place.geometry.location.lat())
+                //         // console.log(place.rating)
+                //         marker.dataFromPlaces = place;
+                //         console.log(marker.dataFromPlaces)
+                //     } else {
+                //         console.log("oh no...")
+                //         console.log(status)
+                //     }
 
-                })
+                // })
 
             });
 
 
-            console.log(storedResults)
-            console.log(location)
-
-            // marker.dataFromPlaces = storedResults.rating Ask TA's why this didn't work/loaded before the call to googleplaces ???????????
+            // console.log(storedResults)
+            console.log(marker.dataFromPlaces)
+            // console.log(location)
 
 
 
 
             marker.addListener("click", function () {
                 displayBeers.empty()
+                // buildIWContent(this.dataFromPlaces);
                 console.log("click successful")
                 console.log(this.title)
                 brewClicked = false;
                 // if ((this).dataFromPlaces.photos[0] !== undefined)
                 // let firstPhoto = this.dataFromPlaces.photos[0].getUrl()
                 // console.log(this.dataFromPlaces.photos[0].getUrl())
+            
+
 
 
                 let imgSrc;
                 let phoneNum;
                 let brewAddress;
+                let rating;
 
-
+                console.log(this.dataFromPlaces)
                 if (this.dataFromPlaces) {
                     console.log(this.dataFromPlaces)
-                    imgSrc = this.dataFromPlaces.photos[0].getUrl()
-                    phoneNum = this.dataFromPlaces.formatted_phone_number
-                    brewAddress = this.dataFromPlaces.formatted_address
+                    imgSrc = (this.dataFromPlaces[0].photos[0].getUrl())
+                    // phoneNum = this.dataFromPlaces.formatted_phone_number
+                    // brewAddress = this.dataFromPlaces.formatted_address
+                    rating = this.dataFromPlaces[0].rating
+                } else {
+                    console.log("boom")
                 }
 
                 $(`<div id = "first" class="card" style="width: 18rem;"></div>`).appendTo(displayBeers)
@@ -1590,8 +1870,8 @@ function initMap() {
                 $(`<div id="third" class="card-body"></div>`).insertAfter($("#second"))
                 $(`<h5 id="fourth" class="card-title">${brewery.name}</h5>`).appendTo($("#third"))
                 $(`<p class="card-text">${brewery.info}</p>`).appendTo($("#third"))
-                $(`<p class="card-text">Phone Number: ${(phoneNum || "Sorry, no phone number listed.")}</p>`).appendTo($("#third"))
-                $(`<p class="card-text">Address: ${(brewAddress || "Sorry, no address listed")}</p>`).appendTo($("#third"))
+                $(`<p class="card-text"><b>Phone Number</b>: ${(rating || "Sorry, no phone number listed.")}</p>`).appendTo($("#third"))
+                $(`<p class="card-text"><b>Address</b>: ${(brewAddress || "Sorry, no address listed")}</p>`).appendTo($("#third"))
                 $(`<a target="_blank" href="${brewery.url}" class="btn btn-primary">Check Out Their Website!</a>`).appendTo($("#third"))
                 $(`<button id="addmargin" data-name="${brewery.name}" class="btn btn-info brewclick">Show Matching Beers!</button>`).appendTo($("#third"))
 
@@ -1631,6 +1911,8 @@ $(document).on("click", ".brewclick", function () {
         console.log($(this).attr("data-name"))
 
 
+
+        
 
 
         for (let brewery of breweriesDisplay) {
@@ -1688,15 +1970,15 @@ $(document).on("click", ".brewclick", function () {
 })
 
 
-$.ajax({
-    url: queryURL,
-    method: "GET"
-}).then(function (response) {
-    console.log(response)
-    console.log(response[7].latitude)
-    console.log(response[7].longitude)
-    console.log(response.length)
-})
+// $.ajax({
+//     url: queryURL,
+//     method: "GET"
+// }).then(function (response) {
+//     console.log(response)
+//     console.log(response[7].latitude)
+//     console.log(response[7].longitude)
+//     console.log(response.length)
+// })
 
 //find a way to get coordinates of state or city and set it to map center
 //add identifying info to the map markers, then create a click handler to display the proper info
