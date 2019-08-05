@@ -2162,11 +2162,11 @@ $(document).on("click", ".brewclick", function () {
                             $(`<div id = "${counter}" class="carousel-item fitin"></div>`).appendTo(beersList)
                         }
                         // $("#one").appendTo(beersList)
-                        $(`<img class="d-block w-100" src="https://ak7.picdn.net/shutterstock/videos/28193857/thumb/1.jpg" alt="Oh No! Where's the beer?">`).appendTo($(`#${counter}`))
-                        $(`<div id="${counter - 100}" class="carousel-caption d-none d-md-block"></div>`).appendTo($(`#${counter}`))
+                        $(`<img class="d-block w-100 fitin" src="https://ak7.picdn.net/shutterstock/videos/28193857/thumb/1.jpg" alt="Oh No! Where's the beer?">`).appendTo($(`#${counter}`))
+                        $(`<div id="${counter - 100}" class="carousel-caption d-none d-md-block arrangefont"></div>`).appendTo($(`#${counter}`))
                         $(`<h5>${beer.name}: ${beer.style}</h5>`).appendTo($(`#${counter - 100}`))
-                        $(`<p class="smallify">${beer.info}</p>`).appendTo($(`#${counter - 100}`))
-                        $(`<p class="smallify">ABV: ${beer.abv} IBU: ${beer.ibu}</p>`).appendTo($(`#${counter - 100}`))
+                        $(`<p >${beer.info}</p>`).appendTo($(`#${counter - 100}`))
+                        $(`<p >ABV: ${beer.abv} IBU: ${beer.ibu}</p>`).appendTo($(`#${counter - 100}`))
 
                         counter++;
 

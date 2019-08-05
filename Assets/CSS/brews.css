@@ -62,7 +62,7 @@
   display: inline;
 }
 
-.smallify {
+.arrangefont {
   font-size: .75rem;
   color: white;
   text-align: left;
@@ -70,7 +70,6 @@
 
 .fitin {
   height: 500px;
-  overflow: visible;
 }
 /* below added from hover.css library*/
 
