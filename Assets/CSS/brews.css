@@ -62,6 +62,11 @@
   display: inline;
 }
 
+#smallify {
+  font-size: .75rem;
+  color: white;
+  text-align: left;
+}
 /* below added from hover.css library*/
 
 /* for 21 or older?  yes button */
