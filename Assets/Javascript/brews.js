@@ -2275,4 +2275,4 @@ $(document).on("click", ".brewclick", function () {
 //find a way to get coordinates of state or city and set it to map center
 //add identifying info to the map markers, then create a click handler to display the proper info
 //create informational opbjects for all included breweries
-//think on how to style/display info
+//think on how to style/display info 
