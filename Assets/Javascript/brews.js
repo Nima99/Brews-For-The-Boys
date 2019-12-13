@@ -1907,16 +1907,21 @@ $("#submitem").on("click", function () {
                     breweriesDisplay.push(brewery)
                 }
 
-                // if (styleKeywords.every(function (element) {
-
-                //     if (beer.keywords.includes(element)) {
-                //         return true;
-                //     }
-                // })) 
-                // {
-
             }
         }
+    }
+
+    console.log(breweriesDisplay.length)
+    if (breweriesDisplay.length === 0) {
+
+        console.log("muppet")
+
+        $(`<div id = "first" class="card" style="width: 18rem;"></div>`).appendTo(displayBeers)
+        $(`<img id= "second" src="${("https://cdn.craftbeer.com/wp-content/uploads/Beer-Brewpub-Crowd-1200.jpg")}" class="card-img-top" alt="Sorry-No Posted 
+        Pictures">`).appendTo($("#first"))
+        $(`<div id="third" class="card-body"></div>`).insertAfter($("#second"))
+        $(`<h5 id="fourth" class="card-title">Oh no! No beers fit that description.</h5>`).appendTo($("#third"))
+        $(`<p class="card-text">Try again to find your new favorite brew.</p>`).appendTo($("#third"))
     }
 
 
