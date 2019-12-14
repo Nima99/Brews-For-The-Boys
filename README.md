@@ -12,6 +12,10 @@ Check out this project deployed [here](https://nima99.github.io/project-1/)
 
 <img src="./Assets/Images/Brweries Project.png" alt="finding an ipa on the map" width="400"/>
 
+## Website
+
+https://nima99.github.io/The-Brewers/
+
 ## Technology-Used
 
 * Google Apis
