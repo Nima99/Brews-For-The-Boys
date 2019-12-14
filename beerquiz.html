@@ -19,6 +19,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
   <!-----Link CSS --->
   <link rel="stylesheet" href="./Assets/CSS/beerhelp.css">
 </head>
@@ -54,29 +55,22 @@
   <!-- carousel o beer -->
 
 
-  <div id="beer-info-carousel" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#beer-info-carousel" data-slide-to="0" class="active"></li>
-      <li data-target="#beer-info-carousel" data-slide-to="1"></li>
-    </ol>
+  <div id="beer-info-carousel" class="carousel slide" pause="hover">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img class="d-block w-100" src="./Assets/Images/style of Beer.jpg" alt="First slide">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>ABV Guide</h5>
-        </div>
         <div class="card beer-info-card">
           <div class="card-body">
             <h5 class="card-title ">Learn About ABV</h5>
-            <p class="card-text">ABV aka alcohol by volume, is the standard measurement, used worldwide, to assess the
+            <p class="card-text beer-info-text">ABV aka alcohol by volume, is the standard measurement, used worldwide, to assess the
               strength of a particular beer.
               The ABV scale is simple in the fact that the higher the ABV, the more alcohol that beer contains. For
               example, a beer with an abv of 5 is 5% alcohol.
             </p>
             <ul>
-              <li>Light beers range from 3% to just over 4% abv, and are extremely common. They are a bit more rare in craft beers, however.</li>
-              <li>A Medium beer will have roughly between 5% and 8% abv. These have a bit more bite, and often include IPAs and stouts. Many craft beers fall in this range.</li>
-              <li>A high abv beer is roughly above 8%, with 13% usually seen as the ceiling for abv in beer. However, some rare brews reach as high as 32% abv!</li>
+              <li class="beer-info-text">Light beers range from 3% to just over 4% abv, and are extremely common. These are a bit more rare in craft beers, however.</li>
+              <li class="beer-info-text">A Medium beer will have roughly between 5% and 8% abv. These have a bit more bite, and often include IPAs and stouts. Many craft beers fall in this range.</li>
+              <li class="beer-info-text">A high abv beer is roughly above 8%, with 13% usually seen as the ceiling for abv in beer. However, some rare brews reach as high as 32% abv!</li>
             </ul>
             <a href="https://www.thespruceeats.com/alcohol-by-volume-353204" target="blank" class="btn btn-primary">More info</a>
           </div>
@@ -84,18 +78,16 @@
       </div>
       <div class="carousel-item">
         <img class="d-block w-100" src="./Assets/Images/ibu scale.jpg" alt="Second slide">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>IBU Scale</h5>
-        </div>
         <div class="card beer-info-card">
           <div class="card-body">
-            <h5 class="card-title ">Learn About ABV</h5>
-            <p class="card-text">ABV aka alcohol by volume, is the standard measurement, used worldwide, to assess the
-              strength of a particular beer.
-              The ABV scale is simple in the fact that the higher the ABV, the more alcohol that beer contains A beer
-              with an abv of 5 is 5% alcohol.
-              Light beers range from 3 to just over 4 abv.</p>
-            <a href="https://www.thespruceeats.com/alcohol-by-volume-353204" target="blank" class="btn btn-primary">More
+            <h5 class="card-title ">Learn About IBU</h5>
+            <p class="card-text beer-info-text">IBU aka international bitterness units, is a standardized way of determining the bitterness of a beer.This bitterness is defined by the concentration of bittering chemicals in beer, largely hops and malt.</p>
+              <ul>
+                <li class="beer-info-text">A less bitter beer tends to have roughly less than 30 IBU, and is great for those that prefer sweet tastes.</li>
+                <li class="beer-info-text">A Medium beer will have an IBU of about 30-70. Most stouts will fall in here.</li>
+                <li class="beer-info-text">A High IBU beer tends to have above 70 IBU, and is a good fit for lovers of the depth a bitter taste. A close approximation would be high cacao chocolate. Most beers in this category will be IPAs</li>
+              </ul>
+            <a href="https://www.thebrewenthusiast.com/ibus" target="blank" class="btn btn-primary">More
               Info</a>
           </div>
         </div>

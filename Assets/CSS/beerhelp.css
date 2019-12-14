@@ -22,9 +22,36 @@ p3 {
 #beer-info-carousel {
     width: 35%;
     margin: 0 auto;
-    background: black;
 }
 
 .beer-info-card {
     width: 100%;
+}
+
+
+.beer-info-text {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* .carousel-control-prev-icon
+.carousel-control-next-icon {
+visibility: hidden;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: black;
+} */
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
 }
