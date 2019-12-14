@@ -18,3 +18,13 @@ p3 {
 #carousel {
     height: 20px;
 }
+
+#beer-info-carousel {
+    width: 35%;
+    margin: 0 auto;
+    background: black;
+}
+
+.beer-info-card {
+    width: 100%;
+}
