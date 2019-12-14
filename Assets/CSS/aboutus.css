@@ -22,6 +22,16 @@ p{
 h2 {
     color: gray;
     font-weight: bold;
+}
 
-   
+#diego-pic {
+    height: 243px;
+}
+
+#diego-name {
+    margin-bottom: 50px;
+}
+
+#beer-original-image {
+    height: 560px;
 }
