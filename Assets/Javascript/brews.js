@@ -1,12 +1,23 @@
 
 //// BEGINNING OF DOCUMENT ASKS IF YOU ARE 21 //
 
+
 $(document).ready(function () {
+    let clicked = false
+    if (sessionStorage.getItem("clicked")) {
+        clicked = sessionStorage.getItem("clicked")
+    }
+
+    if (!clicked) {
     $('#old-enough').hide();
     $('#sorry').hide();
     $('#footer').hide();
     $('#results').hide();
+    } else {
+        $('#legal-age').hide();
+        $('#sorry').hide();
 
+    }
 });
 
 
@@ -15,13 +26,12 @@ $(document).ready(function () {
 // CLICK FUNCTION FOR WHEN NO IS CLICKED
 //CLICK FUNCTION FOR WHEN YES IS CLICKED -- Jumbotron disappears, and rest of the pages reappear
 $('#yesButton').on('click', function () {
-    $('#legal-age').hide();
-    $('#sorry').hide();
-    $('#old-enough').show();
-    $('#footer').show();
-    $('#results').hide();
-
-
+        $('#legal-age').hide();
+        $('#sorry').hide();
+        $('#old-enough').show();
+        $('#footer').show();
+        $('#results').hide();
+        sessionStorage.setItem("clicked", true)
 });
 
 $('#noButton').on('click', function () {
@@ -30,6 +40,7 @@ $('#noButton').on('click', function () {
     $('#sorry').show();
     $('#footer').hide();
     $('#results').hide();
+    sessionStorage.setItem("clicked", false)
 
 
 

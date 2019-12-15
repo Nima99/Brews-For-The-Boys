@@ -18,3 +18,33 @@ p3 {
 #carousel {
     height: 20px;
 }
+
+#beer-info-carousel {
+    width: 25%;
+    margin: 0 auto;
+}
+
+.beer-info-card {
+    width: 100%;
+}
+
+
+.beer-info-text {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#beer-info-container {
+    /* background-image: url("../Images//beer-row.jpg");
+    background-size: cover; */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: black;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
