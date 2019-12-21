@@ -1,4 +1,5 @@
 # Project Features
+
 1. [Overview](#Overview)
 2. [Technology Used](#Technology-Used)
 3. [Challenges](#Challenges)
@@ -8,15 +9,15 @@
 
 This site is for all craft beer lovers in Dallas! Created with google maps api, and making use of a substantial amount of collected data, this app aims to help users find their favorite beers in Dallas and the breweries where you can find them. Simply answer three questions about the kinds of beer you like, and receive a list of all the craft breweries in Dallas that have beers that match your preferences. Then select the breweries you like best on an interactive map to see all the matching beers they carry.
 
-Check out this project deployed [here](https://nima99.github.io/project-1/)
+Check out this project deployed [here](https://nima99.github.io/The-Brewers)
 
 <img src="./Assets/Images/Brweries Project.png" alt="finding an ipa on the map" width="400"/>
 
 ## Technology-Used
 
-* Google Apis
-* Bootstrap
-* jQuery
+- Google Apis
+- Bootstrap
+- jQuery
 
 ## Challenges
 
